@@ -1,0 +1,94 @@
+h1,
+h2,
+h3 {
+    color: var(--purple-1);
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul li::marker {
+    color: var(--purple-1);
+}
+
+.barra_lateral {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.texto-capa {
+    font-size: 3rem;
+}
+
+.capa-9 {
+    font-size: 2rem;
+}
+
+.capa-10 {
+    font-size: 2rem;
+}
+
+.capa-11 {
+    font-size: 2rem;
+}
+
+.capa-12 {
+    font-size: 2rem;
+}
+
+.capa-13 {
+    font-size: 2rem;
+}
+
+.capa-14 {
+    font-size: 2rem;
+}
+
+.capa-15 {
+    font-size: 2rem;
+}
+
+.capa-16 {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .texto-capa {
+        font-size: 1rem;
+    }
+
+    .capa-9 {
+        font-size: .8rem;
+    }
+
+    .capa-10 {
+        font-size: .8rem;
+    }
+
+    .capa-11 {
+        font-size: .8rem;
+    }
+
+    .capa-12 {
+        font-size: .8rem;
+    }
+
+    .capa-13 {
+        font-size: .8rem;
+    }
+
+    .capa-14 {
+        font-size: .8rem;
+    }
+
+    .capa-15 {
+        font-size: .8rem;
+    }
+
+    .capa-16 {
+        font-size: .8rem;
+    }
+}

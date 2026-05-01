@@ -1,0 +1,20 @@
+h1,
+h2,
+h3 {
+    color: var(--green-1);
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul li::marker {
+    color: var(--green-1);
+}
+
+.barra_lateral {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}

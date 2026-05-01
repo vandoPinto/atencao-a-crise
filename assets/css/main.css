@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+html,
+body,
+html * {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+body {
+  position: relative;
+  padding-top: 8vh;
+
+  background-color: var(--color-background);
+  font-size: 22px;
+  color: #000;
+  font-weight: 400;
+  letter-spacing: 1px;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 700 !important;
+
+  /* text-align: justify; */
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--yellow-1);
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+b {
+  /* color: var(--green-main-new); */
+}
+
+* {
+  box-sizing: border-box;
+
+}
+
+
+/* Cores */
+
+:root {
+  --color-font: #333;
+  --color-orange: #F18605;
+  --color-brown-1: #decbac;
+  --color-brown-2: #907445;
+  --color-brown-3: #B1A289;
+  --color-gray: #e4e4e4;
+  --color-blue-1: #90bdcd;
+  --color-blue-2: #2e2c7e;
+  --color-blue-3: #5a9db5;
+
+  --color-background: #fff;
+  --color-background-fullscreen: #C0C0C0;
+  --color-scroll-1: rgb(220, 220, 220);
+  --color-background: #fff;
+  --color-background-fullscreen: #C0C0C0;
+  --color-scroll-1: rgb(220, 220, 220);
+  /* _________________________________________ */
+  --black-1: #272727;
+  --black-2: #3D3C3D;
+  --yellow-1: #FF9D00;
+  --yellow-2: #FFFCEC;
+  --yellow-3: #FE8400;
+  --yellow-4: #FF8500E6;
+  --yellow-5: #FFBC00E6;
+  --yellow-6: #E87C00;
+  --yellow-7: #FF5700;
+  --yellow-8: #FF9100;
+  --yellow-light: #FFDC7B;
+  --yellow-light-2: #FDFFF0;
+  --red-1: #ff0000;
+  --red-2: #FA2424;
+  --red-3: #FE0000;
+  --red-4: #FF0000E6;
+  --red-5: #ff4e02;
+  --blue-1: #0098FF;
+  /* --blue-2: #2F53A0; */
+  --blue-3: #00A2F2;
+  --blue-4: #B5F0FF;
+  --blue-5: #0097FEE6;
+  --blue-6: #0019FF;
+  --blue-soft: #ECF7FF;
+  --purple-1: #CD00FF;
+  --purple-2: #B70FFE;
+  --purple-3: #CD00FFE6;
+  --purple-4: #CC00FEE6;
+  --purple-8: #9A40FF;
+  --purple-5: #F7D6FF;
+  --purple-6: #FEF2FF;
+  --purple-7: #FFF2F2;
+  --green-1: #17C952;
+  --green-2: #2FB44A;
+  --green-3: #17C852E6;
+  --green-4: #08B843;
+  --green-5: #E6FFF5;
+  --gray-1: #3d3d3d;
+
+
+  /* --green-main-new: #043509;
+  --red-main: #66000D;
+  --red-2: #3C0A11;
+  --red-3: #870202;
+  --blue-2: #344C85;
+  --blue-3: #0470D5;
+  --blue-4: #F0F5FA;
+  --blue-5: #202A72;
+  --blue-6: #1A284A;
+  --blue-7: #0e3692;
+  --bg-1: #F0F4F9;
+  --bg-2: #F0F5FA;
+  --bg-3: #F0FAF8;
+  --yellow-2: #C98F0D;
+  --yellow-3: #F5C207;
+  --yellow-4: #BB971B;
+  --purple-1: #565872;
+  --green-1: #59A545;
+  --green-2: #24584E;
+  --green-3: #057a26;
+  --green-4: #009D76; */
+
+  --new-green-1: #057A26;
+  --new-green-2: #22932E;
+  --new-green-3: #004F08;
+  --new-green-4: #22932D;
+
+  --green-main: #22584E;
+  --gray-bg: #F5F5F5;
+
+
+
+
+
+}
+
+/* Navbar Lateral */
+.navbar {
+  background-color: #3d3d3d;
+  /* var(--red-1); */
+  overflow-y: auto;
+  padding: 0;
+  height: 8vh;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+  justify-content: space-between !important;
+
+}
+
+.navbar-nav {
+  min-width: 100vh;
+  background-color: #f7f5f3;
+}
+
+.navbar-nav li {
+  max-width: 15rem;
+  min-width: 15rem;
+}
+
+.navmain {
+  justify-content: space-between !important;
+}
+
+#sidebar {
+  margin-top: 8vh;
+  min-width: 15rem;
+  max-width: 15rem;
+  color: var(--color-background);
+  transition: all 0.3s;
+  position: fixed;
+  min-height: 100vh;
+  padding-bottom: 8vh;
+  overflow-x: hidden;
+  align-items: flex-start;
+}
+
+.fixed-top {
+  max-height: 100vh;
+  overflow: auto;
+}
+
+#sidebar.active {
+  align-items: flex-start;
+  min-height: 100vh;
+  min-width: 0.5rem;
+  max-width: 0.5rem;
+  text-align: center;
+  /* background-color: var(--color-blue-1); */
+  overflow-y: hidden;
+  margin-top: 8vh;
+  margin-bottom: 5vh;
+}
+
+#sidebar ul li a {
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  flex-wrap: wrap;
+  color: #b6492e;
+  /* border-top: 1px solid var(--color-font); */
+}
+
+#sidebar ul li i {
+  padding-right: 0.8rem;
+  font-size: 0.9rem;
+}
+
+#sidebar ul li a:hover {
+  color: var(--color-blue-);
+  background: #b6492e;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+  color: black;
+  background: #d8c7b0;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+
+/* Botão de Navegação */
+.logo {
+  position: fixed;
+  z-index: 2;
+  padding: 0.3rem;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  background-color: var(--gray-1);
+  color: #fff;
+  min-width: 2rem;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: var(--yellow-2);
+}
+
+.totop {
+  bottom: 135px;
+  right: 0.8rem;
+}
+
+.prev {
+  bottom: 80px;
+  right: 0.8rem;
+}
+
+.next {
+  bottom: 28px;
+  right: 0.8rem;
+}
+
+/* Botão Menu */
+.btn-menu {
+  background-color: #b6492e;
+  /* color: #fff; */
+  /* border-color: var(--color-brown-1); */
+  margin-left: 1rem;
+}
+
+.btn-menu:focus {
+  background-color: var(--color-brown-3);
+  border-color: var(--color-brown-1);
+}
+
+.btn-menu:hover {
+  background-color: var(--color-brown-3);
+  color: var(--color-background);
+  border-color: var(--color-brown-1);
+}
+
+.btn-menu:active {
+  background-color: var(--color-brown-3);
+  color: var(--color-background);
+}
+
+.rotulo {
+  font-size: 13px;
+  position: fixed;
+}
+
+.top {
+  top: 10px;
+  right: 5px;
+}
+
+.bot {
+  bottom: 5px;
+  right: 5px;
+}
+
+.reload {
+  float: right;
+  cursor: pointer;
+}
+
+
+/* Fullscreen */
+
+/* botões de tela-cheia */
+/* [class|=fullscreen] {
+    position: absolute;
+    right: 18px;
+    z-index: 2;
+  } */
+.fullscreen-btn {
+  float: right;
+}
+
+.fullscreen-btn i {
+  color: var(--yellow-2);
+  font-size: 1.5rem;
+}
+
+.fullscreen-show {
+  display: none;
+}
+
+.fullscreen-hide {
+  display: block;
+}
+
+:fullscreen::backdrop {
+  background-color: #ccc;
+}
+
+/* fullscreen
+  * as regras a seguir estão separados para evitar um problema no Firefox,
+  * que não encontra os objetos caso exista mais de 1 seletor com a 
+  * pseudo-classe :fullscreen
+  */
+:-webkit-full-screen .fullscreen-show {
+  display: block;
+}
+
+:-moz-full-screen .fullscreen-show {
+  display: block;
+}
+
+:-ms-fullscreen .fullscreen-show {
+  display: block;
+}
+
+:fullscreen .fullscreen-show {
+  display: block;
+}
+
+:-webkit-full-screen .fullscreen-hide {
+  display: none;
+}
+
+:-moz-full-screen .fullscreen-hide {
+  display: none;
+}
+
+:-ms-fullscreen .fullscreen-hide {
+  display: none;
+}
+
+:fullscreen .fullscreen-hide {
+  display: none;
+}
+
+/* Scroll */
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 5px 5px 5px var(--color-background-fullscreen); */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--green-main-new);
+  outline: 1px solid rgb(220, 220, 220);
+}
+
+.navbar::-webkit-scrollbar {
+  width: 0.35em;
+}
+
+.navbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 22px var(--color-blue-1);
+}
+
+.navbar::-webkit-scrollbar-thumb {
+  background-color: var(--color-brown-2);
+  outline: 1px solid rgb(220, 220, 220);
+}
+
+/* Container */
+
+section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+
+@media (max-width: 576px) {
+  body {
+    font-size: 0.8rem;
+  }
+
+  section {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+
+@media (max-width: 768px) {}
+
+@media (max-width: 900px) {}
+
+@media (max-width: 1080px) {}
