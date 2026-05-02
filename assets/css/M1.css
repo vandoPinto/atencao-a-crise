@@ -56,7 +56,7 @@ section {
 } */
 
 .front-cover {
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
 }
 
@@ -240,12 +240,60 @@ section {
     }
 
     .familia {
-        width: 30%;
+        width: 60%;
     }
 }
 
 @media (max-width: 768px) {
 
+    #conteudo1 {
+        width: 109% !important;
+        top: 300px !important;
+        right: -10px !important;
+    }
+
+    #conteudo2 {
+        width: 109% !important;
+        top: 600px !important;
+        right: -10px !important;
+    }
+
+    #conteudo2 p {
+        font-size: .8rem !important;
+    }
+
+    #conteudo3 {
+        width: 109% !important;
+        top: 1420px !important;
+        right: -10px !important;
+    }
+
+    #conteudo3 p {
+        font-size: .8rem !important;
+    }
+
+    .saiba-mais div {
+        flex-direction: column;
+        gap: 10px !important;
+    }
+
+    #conteudo4 {
+        width: 100% !important;
+        top: 860px !important;
+    }
+
+    #conteudo4 p {
+        font-size: .8rem !important;
+    }
+
+    .coluna {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+
+    .coluna div {
+        width: 100% !important;
+    }
 
     #section4 .box-marrom,
     #section4 .box-marrom-claro {
@@ -280,31 +328,40 @@ section {
         text-align: center;
     }
 
+    #section11 .col-lg-12 {
+        align-items: center !important;
+        text-align: center;
+    }
+
     #section8 .box-titulo-marrom span {
         font-size: 1.4rem !important;
         display: block;
         text-align: center;
     }
 
-    #section8 .janela-audio {
+    #section11 {
+        padding: 20px 0;
+    }
+
+    .janela-audio {
         flex-direction: column;
         width: 100%;
         gap: 15px;
     }
 
-    #section8 .componente-audio {
+    .componente-audio {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-around;
     }
 
-    #section8 .componente-audio img {
-        height: 70% !important;
+    .componente-audio img {
+        height: 50% !important;
     }
 
-    #section8 #svgContainer {
-        width: 60%;
+    #svgContainer {
+        width: 80%;
     }
 
     #section8 .text-center {
@@ -316,4 +373,45 @@ section {
         width: 60% !important;
         margin-top: 20px;
     }
+
+    .box-titulo-marrom span {
+        font-size: 1.4rem !important;
+        display: block;
+        text-align: center;
+    }
+
+    .titulo-1 {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .comando {
+        margin-left: 0px !important;
+    }
+
+    .titulo-2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .titulo-3 {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .titulo-4 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .titulo-5 {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .titulo-6 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
 }
