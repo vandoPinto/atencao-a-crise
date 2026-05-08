@@ -2,6 +2,25 @@ section {
     position: relative;
 }
 
+.seta-02 {
+    position: absolute;
+    bottom: -50px;
+    left: 121px;
+    z-index: 2;
+}
+
+.seta-03 {
+    position: absolute;
+    width: 20%;
+    bottom: -110px;
+    right: 60px;
+    z-index: 2;
+}
+
+.texto-citacao {
+    font-size: 1.2rem;
+}
+
 .modal-content {
     background: transparent;
     border: none;
@@ -38,6 +57,7 @@ section {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    /* z-index: -2; */
 }
 
 .bg2 {
@@ -46,6 +66,7 @@ section {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    /* z-index: -2; */
 }
 
 /* .bg1 {
@@ -149,9 +170,22 @@ section {
     margin: 20px 0;
 }
 
+.citacao-marrom {
+    background: #8C6A4A;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    color: white;
+}
+
+.citacao-marrom p {
+    color: white;
+}
+
 
 /* box-marrom */
 .box-marrom {
+    position: relative;
     background: #8C6A4A;
     padding: 15px 20px;
     border-radius: 0px 12px 12px 0px;
@@ -160,6 +194,13 @@ section {
 
 .box-marrom p {
     color: #fff;
+}
+
+.icon-caixa {
+    position: absolute;
+    top: -24%;
+    right: -4%;
+    width: 10%;
 }
 
 /* box-marrom-claro */
@@ -224,7 +265,7 @@ section {
 
 .componente-audio {
     height: 100px;
-    width: 60%;
+    min-width: 60%;
     border-radius: 50px;
     border: 1px solid #6F7F5F;
     display: flex;
@@ -242,17 +283,39 @@ section {
     .familia {
         width: 60%;
     }
+
+    .icon-caixa {
+        width: 14%;
+    }
 }
 
 @media (max-width: 768px) {
+    .icon-caixa {
+        top: -10%;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .texto-citacao {
+        font-size: .9rem !important;
+    }
+
+    .seta-02,
+    .seta-03 {
+        display: none;
+    }
 
     #conteudo1 {
+        pointer-events: none;
         width: 109% !important;
         top: 300px !important;
         right: -10px !important;
     }
 
     #conteudo2 {
+        pointer-events: none;
         width: 109% !important;
         top: 600px !important;
         right: -10px !important;
@@ -263,6 +326,7 @@ section {
     }
 
     #conteudo3 {
+        pointer-events: none;
         width: 109% !important;
         top: 1420px !important;
         right: -10px !important;
@@ -346,6 +410,7 @@ section {
     .janela-audio {
         flex-direction: column;
         width: 100%;
+        padding: 15px 10px;
         gap: 15px;
     }
 
@@ -414,4 +479,49 @@ section {
         gap: 10px;
     }
 
+}
+
+
+#section3 {
+    position: relative;
+}
+
+.hotword-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.hotword {
+    background-color: rgb(140, 106, 74);
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+}
+
+.hotword-conteudo {
+    position: absolute;
+    pointer-events: none;
+    /* 10px abaixo do botão */
+    top: calc(100% + 10px);
+
+    /* alinhado no começo da section */
+    left: 0;
+
+    /* largura máxima da section */
+    width: 100%;
+
+    background: rgb(140, 106, 74);
+    border-radius: 16px;
+
+    padding: 20px;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
 }
