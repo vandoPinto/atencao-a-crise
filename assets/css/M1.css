@@ -198,9 +198,10 @@ section {
 
 .icon-caixa {
     position: absolute;
-    top: -24%;
-    right: -4%;
-    width: 10%;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 5%;
 }
 
 /* box-marrom-claro */
@@ -290,9 +291,6 @@ section {
 }
 
 @media (max-width: 768px) {
-    .icon-caixa {
-        top: -10%;
-    }
 
     p {
         font-size: 1rem;
