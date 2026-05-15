@@ -203,9 +203,9 @@ section {
 }
 
 /* ILUSTRAÇÃO */
-.ilustracao {
+/* .ilustracao {
     max-width: 400px;
-}
+} */
 
 /* TÍTULO */
 .titulo {
@@ -343,6 +343,10 @@ section {
 }
 
 @media (max-width: 768px) {
+
+    .ilustracao {
+        width: 100% !important;
+    }
 
     .seta-titulo-1,
     .seta-titulo-2,
