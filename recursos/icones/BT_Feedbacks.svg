@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="178" height="293.76" viewBox="0 0 178 293.76">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_46" data-name="Retângulo 46" width="157.924" height="206.362" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Retângulo_56" data-name="Retângulo 56" width="70" height="70" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="BT" transform="translate(1)">
+    <text id="Download" transform="translate(88 283.76)" fill="#fff" font-size="32" font-family="SourceSans3-Bold, 'Source Sans \33 '" font-weight="700" letter-spacing="0.05em"><tspan x="-88.176" y="0">DOWNLOAD</tspan></text>
+    <g id="Grupo_49" data-name="Grupo 49" transform="translate(9 0)">
+      <g id="Grupo_47" data-name="Grupo 47" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="Caminho_237" data-name="Caminho 237" d="M138.1,27.051C125.5,13.144,110.036,4.282,91.426,1.1A102.418,102.418,0,0,0,79.149,0,81.855,81.855,0,0,0,21.228,25.65,78.2,78.2,0,0,0,.039,81.67c.432,15.866,6.3,28.83,13.21,42.763q3.438,6.138,7.191,12.094a463.258,463.258,0,0,0,47.617,58.5l6.709,7.09A52.082,52.082,0,0,0,79,206.362l.059-.16c1.114-.936,3.056-3.1,4.117-4.229l7.957-8.544q7.862-8.445,15.393-17.187c10.965-12.514,21.646-25.466,30.664-39.472,1.28-1.927,2.515-3.813,3.693-5.806,1.227-2.071,2.37-4.368,3.721-6.331,7.766-14.562,12.387-24.825,13.222-41.641A78.259,78.259,0,0,0,138.1,27.051M79.715,131.127A54.384,54.384,0,1,1,134.1,76.743a54.384,54.384,0,0,1-54.384,54.384" transform="translate(0 0)" fill="#fff"/>
+      </g>
+    </g>
+    <line id="Linha_6" data-name="Linha 6" x2="165" transform="translate(5.5 240.26)" fill="none" stroke="#fff" stroke-width="3"/>
+    <g id="Grupo_60" data-name="Grupo 60" transform="translate(53 36.76)">
+      <g id="Grupo_60-2" data-name="Grupo 60" clip-path="url(#clip-path-2)">
+        <path id="Caminho_252" data-name="Caminho 252" d="M70,48.125v8.75A13.138,13.138,0,0,1,56.875,70H13.125A13.141,13.141,0,0,1,0,56.875v-8.75a4.375,4.375,0,0,1,8.75,0v8.75a4.382,4.382,0,0,0,4.375,4.375h43.75a4.379,4.379,0,0,0,4.375-4.375v-8.75a4.375,4.375,0,0,1,8.75,0M31.907,51.218h0l.1.092a4.3,4.3,0,0,0,.634.4,3.881,3.881,0,0,0,.722.459,3.777,3.777,0,0,0,4.012-.459,4.493,4.493,0,0,0,.63-.4l.092-.092h0L51.126,38.933a4.374,4.374,0,1,0-5.981-6.383l-.018.017-5.753,5.421V4.375a4.375,4.375,0,0,0-8.75,0V37.988l-5.749-5.421a4.373,4.373,0,0,0-6.016,6.348l.018.017Z" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -17,6 +17,58 @@ section {
     z-index: 2;
 }
 
+.seta-titulo-1 {
+    position: absolute;
+    width: 20%;
+    top: 30px;
+    left: 150px;
+    z-index: 2;
+}
+
+.seta-titulo-4 {
+    position: absolute;
+    width: 20%;
+    bottom: -50px;
+    left: 650px;
+    z-index: 2;
+    transform: rotate(180deg);
+}
+
+.seta-titulo-2 {
+    position: absolute;
+    width: 20%;
+    top: 550px;
+    right: 150px;
+    z-index: 2;
+    transform: rotate(156deg);
+}
+
+.seta-titulo-1-rotation {
+    position: absolute;
+    width: 20%;
+    top: 490px;
+    left: 120px;
+    z-index: 2;
+    transform: rotate(170deg);
+}
+
+.seta-titulo-2-rotation {
+    position: absolute;
+    width: 20%;
+    top: 80px;
+    right: 120px;
+    z-index: 2;
+}
+
+.seta-titulo-3-rotation {
+    position: absolute;
+    width: 20%;
+    top: 80px;
+    right: 640px;
+    transform: rotate(235deg);
+    z-index: 2;
+}
+
 .texto-citacao {
     font-size: 1.2rem;
 }
@@ -291,6 +343,16 @@ section {
 }
 
 @media (max-width: 768px) {
+
+    .seta-titulo-1,
+    .seta-titulo-2,
+    .seta-titulo-3,
+    .seta-titulo-1-rotation,
+    .seta-titulo-2-rotation,
+    .seta-titulo-3-rotation,
+    .seta-titulo-4 {
+        display: none;
+    }
 
     p {
         font-size: 1rem;
