@@ -15,73 +15,6 @@ section {
     color: #333;
 }
 
-.seta-02 {
-    position: absolute;
-    bottom: -50px;
-    left: 121px;
-    z-index: 2;
-}
-
-.seta-03 {
-    position: absolute;
-    width: 20%;
-    bottom: -110px;
-    right: 60px;
-    z-index: 2;
-}
-
-.seta-titulo-1 {
-    position: absolute;
-    width: 20%;
-    top: 30px;
-    left: 150px;
-    z-index: 2;
-}
-
-.seta-titulo-4 {
-    position: absolute;
-    width: 20%;
-    bottom: -50px;
-    left: 650px;
-    z-index: 2;
-    transform: rotate(180deg);
-}
-
-.seta-titulo-2 {
-    position: absolute;
-    width: 20%;
-    top: 550px;
-    right: 150px;
-    z-index: 2;
-    transform: rotate(156deg);
-}
-
-.seta-titulo-1-rotation {
-    position: absolute;
-    width: 20%;
-    top: 490px;
-    left: 120px;
-    z-index: 2;
-    transform: rotate(170deg);
-}
-
-.seta-titulo-2-rotation {
-    position: absolute;
-    width: 20%;
-    top: 80px;
-    right: 120px;
-    z-index: 2;
-}
-
-.seta-titulo-3-rotation {
-    position: absolute;
-    width: 20%;
-    top: 80px;
-    right: 640px;
-    transform: rotate(235deg);
-    z-index: 2;
-}
-
 .texto-citacao {
     font-size: 1.2rem;
 }
@@ -170,20 +103,11 @@ section {
 }
 
 /* CARD */
-.card-wrapper {
+.img-capa {
     position: relative;
-    z-index: 2;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(8px);
-    border-radius: 20px;
-    padding: 70px 40px;
-    max-width: 900px;
-    width: 90%;
-}
-
-.card-img-central {
     width: 100%;
 }
+
 
 /* section 2 */
 
@@ -439,13 +363,16 @@ section {
         width: 100% !important;
     }
 
-    .seta-titulo-1,
-    .seta-titulo-2,
-    .seta-titulo-3,
-    .seta-titulo-1-rotation,
-    .seta-titulo-2-rotation,
-    .seta-titulo-3-rotation,
-    .seta-titulo-4 {
+    
+    .seta1-2_sections, .seta2-esquerda-2_sections,
+    .seta-02, .seta-03, .seta4-citacao,
+    .seta5-reta-2_sections, .seta5-reta-deitada,
+    .seta5-reta-esquerda, .seta5-reta-direita,
+    .seta6-2_sections, .seta8-objetivos,
+    .seta8-direita, .seta8-2_sections,
+    .seta9-esquerda-2_sections, .seta9-esquerda,
+    .seta10-direita, .seta10-2_sections,
+    .seta10-video-audio {
         display: none;
     }
 
@@ -455,11 +382,6 @@ section {
 
     .texto-citacao {
         font-size: .9rem !important;
-    }
-
-    .seta-02,
-    .seta-03 {
-        display: none;
     }
 
     #conteudo1 {
@@ -752,7 +674,7 @@ section {
 
 .bloco-rede-box {
     margin-left: 18%;
-    padding-left: 4%;
+    padding-left: 80px !important;
     padding-right: 40px;
     border-radius: 16px;
     position: relative;
@@ -909,3 +831,190 @@ section {
         font-size: 1.1rem;
     }
 }
+
+/* Posicionamento das setas */
+
+.bloco-texto-objetivos {
+    position: relative;
+}
+
+.seta1-2_sections{
+    position: absolute;
+    bottom: -4px;
+    left: 12%;
+    width: clamp(90px, 26vw, 380px);
+    transform: rotate(17deg);
+    z-index: 5;
+    pointer-events: none;
+}
+
+.seta2-esquerda-2_sections {
+    position: absolute;
+    bottom: 48px;
+    right: 31%;
+    width: clamp(90px, 20vw, 295px);
+    transform: rotate(40deg);
+    z-index: 5;
+    pointer-events: none;
+}
+
+
+.seta-02 {
+    position: absolute;
+    bottom: -50px;
+    left: 121px;
+    z-index: 2;
+}
+
+
+.seta-03 {
+    position: absolute;
+    width: 20%;
+    bottom: -110px;
+    right: 60px;
+    z-index: 2;
+}
+
+
+.seta4-citacao {
+    position: absolute;
+    width: clamp(90px, 12vw, 130px);
+    left: -8%;
+    top: 3%;
+    transform: rotate(91deg);
+    z-index: 3;
+    pointer-events: none;
+}
+
+.seta5-reta-2_sections {
+    position: absolute;
+    width: clamp(80px, 16vw, 80px);
+    right: 25%;
+    bottom: 33px;
+    transform: translateY(50%) scaleX(-1) rotate(-51deg);
+    z-index: 5;
+    pointer-events: none;
+}
+
+.seta5-reta-deitada {
+    position: absolute;
+    width: clamp(80px, 16vw, 80px);
+    right: 21%;
+    top: 29%;
+    transform: scaleX(-1) rotate(91deg);
+    z-index: 5;
+    pointer-events: none;
+}
+
+.seta5-reta-esquerda {
+    position: absolute;
+    width: clamp(80px, 16vw, 80px);
+    left: 3%;
+    top: 40%;
+    transform:  scaleX(-1) rotate(3deg);
+    z-index: 5;
+    pointer-events: none;
+}
+
+.seta5-reta-direita {
+    position: absolute;
+    width: clamp(80px, 16vw, 80px);
+    right: 3%;
+    top: 40%;
+    transform: scaleX(-1) rotate(3deg);
+    z-index: 5;
+    pointer-events: none;
+}
+
+.seta5-reta-esquerda{
+    position: absolute;
+    width: clamp(80px, 16vw, 80px);
+    left: 3%;
+    top: 40%;
+    transform: rotate(8deg);
+    z-index: 5;
+    pointer-events: none;
+}
+
+.seta6-2_sections {
+    position: absolute;
+    width: 16%;
+    bottom: -4%;
+    right: 19%;
+    z-index: 2;
+}
+
+.seta8-objetivos {
+    position: absolute;
+    top: 5%;
+    right: 14%;
+    width: 13%;
+    transform: rotate(131deg);
+    z-index: 8;
+}
+
+.seta8-direita{
+    position: absolute;
+    top: 24%;
+    right: 9%;
+    width: 8%;
+    transform: rotate(196deg);
+    z-index: 8;
+}
+
+.seta8-2_sections {
+    position: absolute;
+    top: 66%;
+    left: 52%;
+    width: 8%;
+    transform: rotate(134deg);
+    z-index: 9;
+}
+
+.seta9-esquerda-2_sections {
+    position: absolute;
+    bottom: -110px;
+    left: 3%;
+    width: clamp(90px, 20vw, 280px);
+    transform: rotate(27deg);
+    z-index: 5;
+    pointer-events: none;
+}
+
+
+.seta9-esquerda{
+    position: absolute;
+    top: 22%;
+    left: -2%;
+    width: clamp(90px, 20vw, 260px);
+    transform: rotate(85deg);
+    z-index: 5;
+    pointer-events: none;
+}
+
+.seta10-direita {
+    position: absolute;
+    width: clamp(90px, 19vw, 400px);
+    right: 5%;
+    top: 67%;
+    transform: rotate(206deg);
+    z-index: 5;
+    pointer-events: none;
+}
+
+.seta10-2_sections{
+    position: absolute;
+    width: clamp(90px, 22vw, 400px);
+    right: 15%;
+    top: 80%;
+    transform: rotate(206deg);
+    z-index: 5;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
