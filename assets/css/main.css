@@ -454,11 +454,11 @@ section {
 .modal-retorno-box {
   background: #fff;
   width: 90%;
-  max-width: 450px;
-  padding: 25px;
+  max-width: 460px;
+  padding: 40px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
-  text-align: center;
+  text-align: left;
 }
 
 .modal-retorno-box h3 {
