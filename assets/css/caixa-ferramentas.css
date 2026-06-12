@@ -278,3 +278,40 @@
          top: 230px;
      }
  }
+
+ .ferramenta-arrastavel {
+     touch-action: none;
+     cursor: grab;
+ }
+
+ .ferramenta-arrastavel.arrastando {
+     cursor: grabbing;
+     z-index: 9999;
+ }
+
+ .area-drop.hover-drop .caixa-ferramenta,
+ .caixa-ferramenta.hover-drop {
+     filter: brightness(1.15);
+
+ }
+
+ .ferramenta-arrastavel.arrastando::after {
+     display: none;
+ }
+
+ .ferramenta-arrastavel.arrastando {
+     z-index: 9999;
+     cursor: grabbing;
+ }
+
+ .ferramenta-arrastavel img {
+     pointer-events: none;
+ }
+
+ .ferramenta-arrastavel.arrastando::after {
+     opacity: 0;
+ }
+
+ .ferramenta-arrastavel.after-visivel::after {
+     opacity: 1;
+ }
