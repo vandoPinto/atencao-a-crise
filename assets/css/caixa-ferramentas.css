@@ -1,0 +1,280 @@
+ /* ==========================================
+   BLOCO PRINCIPAL
+========================================== */
+
+ .ferramenta-box {
+     position: relative;
+     width: 100%;
+     max-width: 400px;
+     height: 380px;
+     margin: 0 auto 40px;
+ }
+
+ /* ==========================================
+   MALA
+========================================== */
+
+ .caixa-ferramenta {
+     position: absolute;
+     width: 50%;
+     left: 50%;
+     top: 76px;
+     transform: translateX(-50%);
+     z-index: 3;
+     cursor: pointer;
+     transition: filter 0.3s ease;
+
+ }
+
+ .caixa-ferramenta:hover {
+     filter: brightness(0.8);
+ }
+
+ /* ==========================================
+   ÍCONES
+========================================== */
+
+ .icone {
+     position: absolute;
+     width: 58px;
+     cursor: pointer;
+     z-index: 3;
+ }
+
+ /* .icone img {
+     width: 100%;
+     display: block;
+ } */
+
+ .icone img {
+     width: 100%;
+     display: block;
+     transition: filter 0.3s ease;
+ }
+
+ .icone:hover img {
+     filter: brightness(0.8);
+ }
+
+ /* ==========================================
+   POSIÇÕES ESQUERDA
+========================================== */
+
+ .icone-1 {
+     top: 0;
+     left: 40px;
+ }
+
+ .icone-2 {
+     top: 140px;
+     left: 5px;
+ }
+
+ .icone-3 {
+     top: 242px;
+     left: 47px;
+ }
+
+ /* ==========================================
+   POSIÇÕES DIREITA
+========================================== */
+
+ .icone-4 {
+     top: 0;
+     right: 40px;
+ }
+
+ .icone-5 {
+     top: 140px;
+     right: 5px;
+ }
+
+ .icone-6 {
+     top: 242px;
+     right: 30px;
+ }
+
+
+ /* ==========================================
+   LINHAS ESQUERDA
+========================================== */
+
+ .icone-1::after {
+     content: "";
+     position: absolute;
+     width: 120px;
+     height: 3px;
+     background: #9a5a45;
+
+     left: 42px;
+     top: 46px;
+
+     transform: rotate(52deg);
+     transform-origin: left center;
+ }
+
+ .icone-2::after {
+     content: "";
+     position: absolute;
+     width: 145px;
+     height: 3px;
+     background: #9a5a45;
+
+     left: 55px;
+     top: 28px;
+ }
+
+ .icone-3::after {
+     content: "";
+     position: absolute;
+     width: 115px;
+     height: 3px;
+     background: #9a5a45;
+
+     left: 42px;
+     top: 18px;
+     z-index: -1;
+     transform: rotate(-36deg);
+     transform-origin: left center;
+ }
+
+ /* ==========================================
+   LINHAS DIREITA
+========================================== */
+
+ .icone-4::after {
+     content: "";
+     position: absolute;
+     width: 120px;
+     height: 3px;
+     background: #9a5a45;
+
+     right: 42px;
+     top: 46px;
+
+     transform: rotate(-52deg);
+     transform-origin: right center;
+ }
+
+ .icone-5::after {
+     content: "";
+     position: absolute;
+     width: 145px;
+     height: 3px;
+     background: #9a5a45;
+
+     right: 55px;
+     top: 28px;
+ }
+
+ .icone-6::after {
+     content: "";
+     position: absolute;
+     width: 115px;
+     height: 3px;
+     background: #9a5a45;
+
+     right: 42px;
+     top: 18px;
+
+     transform: rotate(36deg);
+     transform-origin: right center;
+ }
+
+ /* ==========================================
+   CARD
+========================================== */
+
+ .titulo-ferramenta {
+     position: absolute;
+     width: 230px;
+     left: 52%;
+     top: 310px;
+     transform: translateX(-50%);
+     background: #d8c7b0;
+     border-radius: 22px;
+     padding: 18px 15px;
+     text-align: center;
+     box-shadow: 0 8px 18px rgba(0, 0, 0, .15);
+     z-index: 5;
+ }
+
+ .titulo-ferramenta p {
+     margin: 0;
+     font-size: 1.2rem;
+     font-weight: 700;
+     line-height: 1.15;
+ }
+
+ /* ==========================================
+   RESPONSIVO
+========================================== */
+
+ @media (max-width: 991px) {
+
+     .ferramenta-box {
+         max-width: 360px;
+         height: 360px;
+         margin-bottom: 60px;
+     }
+
+     .caixa-ferramenta {
+         width: 80%;
+     }
+
+     .titulo-ferramenta {
+         width: 210px;
+     }
+ }
+
+ @media (max-width: 767px) {
+
+     .ferramenta-box {
+         max-width: 340px;
+         margin-bottom: 80px;
+     }
+
+     .icone {
+         width: 50px;
+     }
+
+     .icone-1 {
+         left: 80px;
+     }
+
+     .icone-3 {
+         left: 55px;
+     }
+
+     .icone-4 {
+         right: 80px;
+     }
+
+     .icone-6 {
+         right: 55px;
+     }
+
+     .titulo-ferramenta {
+         width: 200px;
+         top: 250px;
+     }
+
+     .titulo-ferramenta p {
+         font-size: 1.1rem;
+     }
+ }
+
+ @media (max-width: 575px) {
+
+     .ferramenta-box {
+         height: 340px;
+     }
+
+     .caixa-ferramenta {
+         top: 95px;
+     }
+
+     .titulo-ferramenta {
+         top: 230px;
+     }
+ }

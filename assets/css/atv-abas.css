@@ -1,0 +1,141 @@
+ .atividade-box {
+     position: relative;
+
+     background: #c14f2f;
+     border-radius: 40px;
+
+     padding: 30px;
+
+     max-width: 1300px;
+     margin: auto;
+ }
+
+ /* Botão fechar */
+
+ .btn-fechar {
+     position: absolute;
+
+     top: 120px;
+     right: 10px;
+
+     width: 54px;
+     height: 54px;
+
+     border: none;
+     border-radius: 50%;
+
+     background: #f1ece5;
+
+     color: #72885d;
+
+     font-size: 28px;
+     font-weight: bold;
+
+     box-shadow: 0 3px 8px rgba(0, 0, 0, .3);
+
+     cursor: pointer;
+
+     z-index: 10;
+ }
+
+ /* Linha de números */
+
+ .numeros {
+     display: flex;
+     justify-content: space-between;
+     gap: 20px;
+
+     margin-bottom: 30px;
+ }
+
+ .numero {
+     width: 85px;
+     height: 75px;
+
+     border: none;
+     border-radius: 22px;
+
+     background: #f1ece5;
+
+     font-size: 34px;
+     font-weight: 700;
+
+     color: #25211f;
+
+     box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+
+     transition: .3s;
+ }
+
+ .numero:hover {
+     transform: translateY(-3px);
+ }
+
+ .numero.ativo {
+     background: #f1ece5;
+ }
+
+ /* Conteúdo */
+
+ .atividade-conteudo {
+     background: #a53315;
+
+     border-radius: 18px;
+
+     min-height: 260px;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     text-align: center;
+
+     padding: 40px;
+ }
+
+ .atividade-conteudo p {
+     color: #fff;
+
+     font-size: 2rem;
+     line-height: 1.2;
+
+     max-width: 850px;
+
+     margin: 0;
+ }
+
+ /* Responsivo */
+
+ @media (max-width: 991px) {
+
+     .numeros {
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+
+     .atividade-conteudo p {
+         font-size: 1.5rem;
+     }
+
+     .btn-fechar {
+         top: 20px;
+         right: 20px;
+     }
+ }
+
+ @media (max-width: 576px) {
+
+     .numero {
+         width: 60px;
+         height: 60px;
+         font-size: 24px;
+     }
+
+     .atividade-conteudo {
+         min-height: 180px;
+     }
+
+     .atividade-conteudo p {
+         font-size: 1.2rem;
+     }
+ }
