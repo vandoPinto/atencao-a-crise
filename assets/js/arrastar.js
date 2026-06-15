@@ -93,7 +93,25 @@ document.addEventListener('pointerup', e => {
                 );
 
                 if (modal) {
-                    new bootstrap.Modal(modal).show();
+
+                    const modalInstance = new bootstrap.Modal(modal);
+
+                    modal.querySelectorAll('[data-bs-dismiss="modal"]').forEach(botao => {
+                        botao.addEventListener('click', () => {
+                            modalInstance.hide();
+                        }, { once: true });
+                    });
+
+                    modalInstance.show();
+
+                    modal.addEventListener('hidden.bs.modal', function () {
+
+                        if (document.activeElement) {
+                            document.activeElement.blur();
+                        }
+
+                    });
+
                 }
             }
         });
