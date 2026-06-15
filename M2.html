@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/caixa-ferramentas.css">
     <link rel="stylesheet" href="assets/css/atv-abas.css">
     <link rel="stylesheet" href="assets/css/atividade-tema.css">
+    <link rel="stylesheet" href="assets/css/carousel-m2.css">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -214,29 +215,22 @@
     </nav>
     <div class="container-fluid">
 
-
         <div id="modal-retorno" class="modal-retorno">
             <div class="modal-retorno-box">
-
                 <h3>Continuar de onde parou?</h3>
-
                 <p>
                     Deseja continuar de onde parou?
                 </p>
-
                 <label class="checkbox-retorno">
                     <input type="checkbox" id="nao-mostrar-novamente">
                     Não mostrar esta mensagem novamente
                 </label>
-
                 <div class="botoes-retorno">
                     <button id="btn-retorno-sim">Sim</button>
                     <button id="btn-retorno-nao">Não</button>
                 </div>
-
             </div>
         </div>
-
 
         <!--Página 1 - Capa-->
         <section id="section1"
@@ -299,9 +293,6 @@
                         <h2 class="title-h2-negrito">Estratégias indiretas</h2>
                         <div
                             class="col-lg-12 d-flex align-items-center justify-content-center bloco-video-audio position-relative mt-5">
-
-
-
 
                             <div class="podcast-main">
                                 <div class="box-audio d-flex flex-column gap-4">
@@ -509,7 +500,7 @@
                                         target="_blank">https://www.youtube.com/watch?v=Y4fDQtuT7_0.</a>
                                 </div>
                                 <div class="col-lg-2 col-md-2 text-center">
-                                    <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                    <img clss="icone_bt" src="recursos/icones/BT_SaibaMais.svg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -601,12 +592,11 @@
                         <p><b>Passe</b> para o lado e conheça as características das estratégias indiretas:</p>
                     </div>
                     <div class="col-lg-10">
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"
-                            style="height: 30vh;">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div id="_1">
-                                        <div class="box-bege">
+                                        <div class="carousel-card">
                                             <p>● Não se restringem ao momento da crise: atravessam antes, durante e
                                                 depois do pico
                                                 do
@@ -626,7 +616,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div id="_2">
-                                        <div class="box-bege">
+                                        <div class="carousel-card">
                                             <p>● Produzem e mantêm conexões.<br>
                                                 ● Atuam sobre o tecido social e intersubjetivo: a vida ordinária, as
                                                 relações, as
@@ -643,7 +633,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div id="_3">
-                                        <div class="box-bege">
+                                        <div class="carousel-card">
                                             <p>● Mudam a forma e o impacto do evento, não sua simples ocorrência.<br>
                                                 ● Deslocam o foco da doença para a existência, do nó para o tecido.
                                             </p>
@@ -658,7 +648,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div id="_4">
-                                        <div class="box-bege">
+                                        <div class="carousel-card">
                                             <p>● Seu objetivo é: transformar as condições que produzem a crise; e
                                                 transformar como a
                                                 crise acontece (intensidade, gravidade, consequências).
@@ -709,93 +699,7 @@
                             alt="Ilustracao de lampada" data-bs-toggle="modal" style="cursor: pointer;"
                             data-bs-target="#modal_lampada">
                     </div>
-                    <!-- Modal 1 -->
-                    <div class="modal fade" id="modal_lampada" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
 
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p>Convocamos a curiosidade e a criação conjunta como forma de cuidado, ou seja,
-                                            como forma
-                                            de criar conexões e garantia de direitos. A criação capaz de criar uma
-                                            surpresa
-                                            (Lancetti, 2006) a partir da singularidade do sujeito em sua relação com o
-                                            outro e com o
-                                            território, uma aposta na invenção como forma primeira de contato e produção
-                                            cotidiana.
-                                            Essa perspectiva ajuda na ideia de que estamos sempre fazendo a importância
-                                            do serviço
-                                            no território, estamos sempre fazendo o trabalho da referência e da equipe
-                                            de
-                                            referência, estamos sempre inventando jeitos para que a pessoa possa
-                                            participar do
-                                            conjunto social do qual faz parte, no qual é a “instituição inventada (e
-                                            nunca dada)”
-                                            (Rotelli, 2019, p. 90).</p>
-                                        <p>É claro que não é qualquer coisa que se faz que produz cuidado, pois a ação
-                                            sem reflexão,
-                                            sem ideia, pode bem ser a repetição automática da lógica asilar excludente.
-                                            No
-                                            “fazejamento”, é preciso estar disposto ao erro, isto é, disposto a
-                                            verificar se a
-                                            aposta avançou para um caminho de emancipação ou não. O fracasso é mais uma
-                                            informação
-                                            importante do desenrolar de uma situação (Dell’Acqua; Mezzina, 1991).
-                                            Portanto,
-                                            precisamos aprender a errar melhor e não simplesmente melhorar a eficácia
-                                            para evitar
-                                            erros.</p>
-                                        <p>Aqui, a ação encontra a ideia: a ideia de que alguém pode ser louco, e o
-                                            cidadão encontra
-                                            a ação, a operação complexa e artesanal de construir essa liberdade no
-                                            cotidiano. A
-                                            ideia persegue a pergunta: como transformar o lema da Luta Antimanicomial
-                                            “Nenhum passo
-                                            atrás, manicômio nunca mais” em ações concretas, cotidianas e
-                                            singularizadas? A ação,
-                                            por sua vez, aproveita a ocasião e tem a ver com o lanche da tarde que virou
-                                            um bolinho
-                                            de chuva produzido com quem estava no serviço porque alguém lembrou que a
-                                            banana bem
-                                            madura da marmita pode ser reaproveitada.</p>
-                                        <p>É ver o usuário ouvindo futebol no rádio e chamá-lo para o novíssimo grupo de
-                                            futebol. É
-                                            o revezamento para acompanhar a pessoa em casa e aproveitar para bater um
-                                            papo com a mãe
-                                            que está cansada e levar um pouco do bolinho de chuva. É uma roda de
-                                            conversa com as
-                                            lideranças do bairro, porque na assembleia reclamaram da falta de
-                                            sinalização na rua de
-                                            frente ao CAPS. É experimentar da comida da família imigrante na visita
-                                            domiciliar. É
-                                            conhecer o novo pastor da igreja da rua. É aproveitar que um usuário
-                                            finalmente apareceu
-                                            e desmarcar algum compromisso menos importante para poder acompanhá-lo ao
-                                            CRAS. É
-                                            aproveitar as discussões sobre racismo que apareceram no grupo de rádio e
-                                            convidar o
-                                            aquilombaSUS do CAPS do lado. É apoiar a liderança dos usuários a preparar
-                                            sua fala para
-                                            o dia da luta antimanicomial. É convidar algumas ACS para visitar o CAPS e
-                                            conhecer o
-                                            trabalho do dia a dia. É fazer uma consulta conjuntamente com o médico da
-                                            UBS que não
-                                            gosta do CAPS – mesmo que não esteja marcada com antecedência. É produzir um
-                                            almoço no
-                                            sábado com as famílias das pessoas que estão dormindo no serviço no final de
-                                            semana. É
-                                            aproveitar a companhia daquele usuário mais calado no sofá da recepção e,
-                                            mesmo que sem
-                                            falar, acompanhar a novela que fez ele rir, e por aí vai.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-lg-12 mt-5 d-flex align-items-start justify-content-center">
                         <div class="refletir" style="position: relative; width: 100%;">
                             <div class="row align-items-center justify-content-center">
@@ -807,7 +711,7 @@
                                         target="_blank">https://www.youtube.com/watch?v=TeERB48kvpA</a>
                                 </div>
                                 <div class="col-lg-2 col-md-2 text-center">
-                                    <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                    <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -1120,7 +1024,7 @@
                                 </div>
 
                                 <div class="col-lg-2 col-md-2 text-center">
-                                    <img src="recursos/icones/BT_Refletir.svg" alt="" style="width: 100%;">
+                                    <img src="recursos/icones/BT_Refletir.svg" alt="">
                                 </div>
 
                             </div>
@@ -1160,63 +1064,7 @@
                             style="width: 100%; border-radius: 20px;cursor: pointer;" data-bs-toggle="modal"
                             data-bs-target="#modal_3">
                     </div>
-                    <!-- Modal 1 -->
-                    <div class="modal fade" id="modal_1" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
 
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p>Mesmo sem pensar muito, Mariana, na segunda tentativa, estabeleceu relação
-                                            com o “William que tinha algo a falar sobre o CAPS” e não com o William “o
-                                            usuário do CAPS AD que não deveria estar no adulto”.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal 2 -->
-                    <div class="modal fade" id="modal_2" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p>Magda, na reunião de troca de plantão, fala irritada da falta de
-                                            comprometimento da equipe. E elogia Mariana. Magda traz de novo as
-                                            discussões que já fizeram e pergunta aos outros profissionais por que não
-                                            ajudaram Mariana e deixaram William gritando pedindo ajuda. Alguns
-                                            profissionais dizem que aquilo era uma “crise” para o CAPS AD. Magda
-                                            questiona se isso é mesmo uma crise.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal 3 -->
-                    <div class="modal fade" id="modal_3" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p>De qualquer forma, a situação com William vira aqui situação de crise,
-                                            garantindo o lugar de todos os atores da cena e trazendo a crise da equipe
-                                            sobre o lugar de cuidado do usuário e sobre uso de drogas.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="mb-5"></div>
                     <div class="mb-5"></div>
                     <div class="mb-5"></div>
@@ -1345,76 +1193,7 @@
                             <div class="hotspot hotspot-4" data-bs-toggle="modal" data-bs-target="#modal_7"></div>
                         </div>
                     </div>
-                    <!-- Modal 4 -->
-                    <div class="modal fade" id="modal_4" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
 
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p>Essa ação abre mais caminhos ou só repete a exclusão típica da lógica do
-                                            manicômio?</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal 5 -->
-                    <div class="modal fade" id="modal_5" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p>A ação se apoia em acordos construídos em conjunto, com regras negociadas e
-                                            que são alteradas e reajustadas sempre que precisar?</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal 6 -->
-                    <div class="modal fade" id="modal_6" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p>Às vezes as regras apertam, ficam mais fechadas, depois abrimos para
-                                            conversar e construir juntos, mas conseguimos manter esse espaço aberto o
-                                            maior tempo possível?</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal 7 -->
-                    <div class="modal fade" id="modal_7" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p>Os profissionais estão atentos para perceber como o poder circula nas
-                                            relações e o lugar que ocupam na situação? E observam como acontecem as
-                                            trocas – de objetos, de falas, de gestos e de afetos?</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="mb-5"></div>
                     <div class="mb-5"></div>
 
@@ -1441,83 +1220,7 @@
                             <div class="hotspot hotspot-11" data-bs-toggle="modal" data-bs-target="#modal_11"></div>
                         </div>
                     </div>
-                    <!-- Modal 8 -->
-                    <div class="modal fade" id="modal_8" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p>A ação de Mariana reverte ou sustenta a exclusão?</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal 9 -->
-                    <div class="modal fade" id="modal_9" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p>É apoiada no diálogo e na construção de um consenso?</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal 10 -->
-                    <div class="modal fade" id="modal_10" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p>Quais foram os momentos fechados e abertos de decisão na instituição?
-                                            <br>
-                                            <br>
-                                            Havia maior tendência de abertura ou de fechamento?
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal 11 -->
-                    <div class="modal fade" id="modal_11" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p>Como se dão as trocas de mensagens, bens e afetos?
-                                            <br>
-                                            <br>
-                                            William consegue ser ouvido?
-                                            <br>
-                                            <br>
-                                            O café é oferecido, servido ou negado?
-                                            <br>
-                                            <br>
-                                            Sua entrada no CAPS é suave?
-                                            <br>
-                                            <br>ß
-                                            Como os outros usuários se comportam com sua chegada?
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="mb-5"></div>
                     <div class="mb-5"></div>
                     <div class="mb-5"></div>
@@ -1573,41 +1276,7 @@
                     <div class="col-lg-8 align-items-center mt-5 mb-5">
                         <p><b>Clique</b> na caixa para ampliar a discussão.</p>
                     </div>
-                    <!-- Modal 12 -->
-                    <div class="modal fade" id="modal_12" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p>Existe um modelo de PTS no seu serviço? O modelo atende às necessidades? Os
-                                            trabalhadores constroem junto com os usuários?
-                                            <br><br>
-                                            Agora, avalie o PTS de uma pessoa que você acompanha a partir das quatro
-                                            chaves de desinstitucionalização:
-                                        </p>
-                                        <p>
-                                            1. As ações elencadas revertem ou sustentam a exclusão?
-                                            <br><br>
-                                            2. As decisões escritas são apoiadas no diálogo e na construção de um
-                                            consenso?
-                                            <br><br>
-                                            3. Quais foram os momentos fechados e abertos de decisão? Havia maior
-                                            tendência de abertura ou de fechamento?
-                                            <br><br>
-                                            4. Como ocorrem as trocas de mensagens, bens e afetos entre a pessoa e seu
-                                            mundo? A pessoa pode expressar descontentamento, raiva ou crítica nos
-                                            círculos que convive? Assume a organização do dinheiro ou necessita de
-                                            alguém que a apoie, ou não tem acesso nenhum a renda? Os afetos são
-                                            restritos ao serviço ou são ouvidos em outros espaços?
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="mb-5"></div>
                     <div class="mb-5"></div>
                 </div>
@@ -1657,7 +1326,7 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-2 col-md-2 text-center">
-                                    <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                    <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -1736,7 +1405,7 @@
                                             target="_blank">https://www.youtube.com/watch?v=xhMxZjIdXOI</a>.</p>
                                 </div>
                                 <div class="col-lg-2 col-md-2 text-center">
-                                    <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                    <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -1996,7 +1665,7 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-2 col-md-2 text-center">
-                                    <img src="recursos/icones/BT_Dica.svg" alt="" style="width: 100%;">
+                                    <img src="recursos/icones/BT_Dica.svg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -2157,6 +1826,7 @@
             <div class="bg-degrade-1 mt-5"></div>
         </section>
 
+        <!--Página 29-->
         <section id="section29" class="bg1">
             <div class="container-text">
                 <div class="row justify-content-center">
@@ -2169,7 +1839,7 @@
                         <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <div class="box-bege2">
+                                    <div class="carousel-card-img">
                                         <div
                                             class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3">
                                             <p>Jaílson é um cara gente boa e conversador. Apesar de ter perdido
@@ -2192,7 +1862,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div id="_2">
-                                        <div class="box-bege2">
+                                        <div class="carousel-card-img">
                                             <div
                                                 class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3">
                                                 <p>Com o dinheiro do Programa de Volta Para Casa (PVC), consegue pagar
@@ -2213,7 +1883,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div id="_3">
-                                        <div class="box-bege2">
+                                        <div class="carousel-card-img">
                                             <div
                                                 class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3">
                                                 <p>No inverno, usa as mesmas roupas durante muitas semanas, sem
@@ -2236,7 +1906,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div id="_4">
-                                        <div class="box-bege2">
+                                        <div class="carousel-card-img">
                                             <div
                                                 class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3">
                                                 <p>A equipe comenta na sala dos técnicos sobre o cheiro de Jaílson e
@@ -2260,7 +1930,7 @@
                                 </div>
                                 <div class="carousel-item ">
                                     <div id="_5">
-                                        <div class="box-bege2">
+                                        <div class="carousel-card-img">
                                             <div
                                                 class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3">
                                                 <p>O cheiro começa a incomodar o profissional também, então ele diz,
@@ -2284,7 +1954,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div id="_6">
-                                        <div class="box-bege2">
+                                        <div class="carousel-card-img">
                                             <div
                                                 class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3">
                                                 <p>A referência responde balançando a cabeça afirmativamente e sugere
@@ -2460,129 +2130,7 @@
                             data-bs-toggle="modal" data-bs-target="#modal_17" style="cursor: pointer;">
                     </div>
 
-                    <!-- Modal 13 -->
-                    <div class="modal fade" id="modal_13" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p><b>1. Acolhimento e vínculo</b></p>
-                                        <ul class="lista-branca">
-                                            <li>Estabelecer uma relação de confiança com o usuário.</li>
-                                            <li>Ser ponto de escuta ativa e empática.</li>
-                                            <li>Garantir que o cuidado seja centrado na pessoa, não apenas no
-                                                diagnóstico.</li>
-                                            <li>Ter sensibilidade cultural que incentiva o diálogo intercultural.</li>
-                                            <li>Conhecer e registrar a história de vida da pessoa, inclusive tomando
-                                                conhecimento do processo de adoecimento do sujeito.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Modal 14 -->
-                    <div class="modal fade" id="modal_14" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p><b>2. Planejamento terapêutico</b></p>
-                                        <ul class="lista-branca">
-                                            <li>Participar da construção do projeto terapêutico singular (PTS).</li>
-                                            <li>Coidentificar necessidades clínicas, sociais, familiares e comunitárias.
-                                            </li>
-                                            <li>Articular intervenções com a equipe multiprofissional.</li>
-                                            <li>Garantir que os necessários diagnósticos realizados pelos profissionais
-                                                sejam dialogados e processuais.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Modal 15 -->
-                    <div class="modal fade" id="modal_15" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p><b>3. Coordenação do cuidado</b></p>
-                                        <ul class="lista-branca">
-                                            <li>Acompanhar o percurso do usuário na rede de saúde e assistência social.
-                                            </li>
-                                            <li>Facilitar o acesso a serviços como CAPS, UBS, residências terapêuticas,
-                                                CRAS, CREAS, entre outros.</li>
-                                            <li>Evitar rupturas no cuidado e garantir continuidade.</li>
-                                            <li>Realizar acompanhamento e articulação das necessidades e dos projetos do
-                                                usuário em seus diversos círculos de vida no território (trabalho,
-                                                escola, igreja, família, vizinhos, boteco da esquina).</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Modal 16 -->
-                    <div class="modal fade" id="modal_16" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p><b>4. Defesa de direitos</b></p>
-                                        <ul class="lista-branca">
-                                            <li>Atuar como mediador entre o usuário, os serviços e as outras relações
-                                                importantes na vida da pessoa.</li>
-                                            <li>Identificar situações de violação de direitos ou de diminuição da
-                                                capacidade de decisões dialogadas.</li>
-                                            <li>Promover autonomia e protagonismo do usuário.</li>
-                                            <li>Estar atento e dar destaque aos grupos invisibilizados socialmente:
-                                                sujeitos historicamente marginalizados por sistemas de opressão racial,
-                                                de gênero, sexual e de classe.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Modal 17 -->
-                    <div class="modal fade" id="modal_17" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p><b>5. Registro e avaliação</b></p>
-                                        <ul class="lista-branca">
-                                            <li>Manter atualizados os registros clínicos e sociais.</li>
-                                            <li>Participar das reuniões de equipe para avaliação da situação.</li>
-                                            <li>Monitorar a evolução do cuidado e ajustar estratégias sempre que
-                                                necessário.</li>
-                                            <li>Fomentar a discussão em reuniões de equipe e de rede.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="mb-5"></div>
                     <div class="mb-5"></div>
@@ -2630,7 +2178,7 @@
                                         target="_blank">https://www.youtube.com/watch?v=Y4fDQtuT7_0.</a>
                                 </div>
                                 <div class="col-lg-2 col-md-2 text-center">
-                                    <img src="recursos/icones/BT_Refletir.svg" alt="" style="width: 100%;">
+                                    <img src="recursos/icones/BT_Refletir.svg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -2656,6 +2204,7 @@
             </div>
         </section>
 
+        <!--Página 33-->
         <section id="section33" class="bg1">
             <div class="container-text">
                 <div class="row justify-content-center">
@@ -2667,7 +2216,7 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div id="_1">
-                                        <div class="box-bege">
+                                        <div class="carousel-card">
                                             <p>Cada pessoa que ocupa o lugar de referência traz consigo um conjunto
                                                 único de conhecimentos, que pode ser mobilizado para refletir sobre o
                                                 percurso da pessoa apoiada. Independentemente do tipo de saber, é
@@ -2689,7 +2238,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div id="_2">
-                                        <div class="box-bege">
+                                        <div class="carousel-card">
                                             <p>É possível voltar às perguntas facilitadoras sobre a ação prática também:
                                                 por onde e como circula o poder dentro da relação estabelecida e como as
                                                 definições das situações vão sendo construídas em conjunto? </p>
@@ -2704,7 +2253,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div id="_3">
-                                        <div class="box-bege">
+                                        <div class="carousel-card">
                                             <p>A função da referência é estratégica. Sua função mais básica e primordial
                                                 é fazer com que o usuário apareça, seja visto e ouvido, isto é, que o
                                                 mundo esteja presente na relação! Para isso, o TR precisa estar a tempo
@@ -2725,7 +2274,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div id="_4">
-                                        <div class="box-bege">
+                                        <div class="carousel-card">
                                             <p>A direção do cuidado depende da pessoa que é cuidada. A referência tem
                                                 como objetivo agir na direção das demandas e necessidades do sujeito,
                                                 mas avaliando e reavaliando a qualidade e a capacidade de diálogo de
@@ -2744,7 +2293,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div id="_5">
-                                        <div class="box-bege">
+                                        <div class="carousel-card">
                                             <p>A demanda é usualmente simplificada no percurso psiquiátrico, e esse
                                                 processo de desinstitucionalização da demanda serve para gerar
                                                 complexidade (Nicácio, 2003). Pela avaliação psiquiátrica, na lógica
@@ -2766,7 +2315,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div id="_6">
-                                        <div class="box-bege">
+                                        <div class="carousel-card">
                                             <p>A pessoa de referência precisa estar atenta às nuances, tanto nas ações
                                                 imediatas ou indiretas quanto no conjunto de espaços e relações: estar
                                                 atenta a como ocorre a diminuição ou o aumento da capacidade de diálogo
@@ -2889,106 +2438,7 @@
                         </style>
                     </div>
 
-                    <!-- Modal 18 -->
-                    <div class="modal fade" id="modal_18" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p><b>Excessiva centralidade no saber técnico</b>: decisões são guiadas
-                                            majoritariamente por protocolos, diagnósticos ou condutas, com pouca
-                                            abertura para o saber da pessoa atendida.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal 19 -->
-                    <div class="modal fade" id="modal_19" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p><b>Desconsideração da singularidade</b>: o sujeito é visto como alguém a ser
-                                            protegido ou corrigido, e não como alguém capaz de participar da construção
-                                            do cuidado, mesmo que processualmente.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal 20 -->
-                    <div class="modal fade" id="modal_20" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p><b>Risco de reforçar estigmas</b>: ao tratar a vulnerabilidade como fraqueza,
-                                            o cuidado pode se tornar fonte de opressão, reforçando sentimentos de
-                                            inferioridade ou exclusão.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal 21 -->
-                    <div class="modal fade" id="modal_21" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
-                                <div class="modal-body">
-                                    <div class="box-verde">
-                                        <p><b>Redução da escuta</b>: o profissional pode não perceber mudanças
-                                            importantes no contexto da pessoa ao não ficar em abertura suficiente.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal 22 -->
-                    <div class="modal fade" id="modal_22" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
-                            <div class="modal-content">
-                                <button type="button"
-                                    class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                                    data-bs-dismiss="modal"></button>
 
-                                <div class="modal-body p-0">
-                                    <div class="imagem-com-texto">
-                                        <img src="recursos/img-m2/NUSMAD_Mod02_Img36.png" class="img-fluid" alt="">
-
-                                        <div class="texto-sobreposto">
-                                            <p>
-                                                O outro risco é a solidão do papel. Talvez justamente por se colocar tão
-                                                próximo ao usuário as referências sentem a invisibilização da qual o
-                                                usuário
-                                                é vítima. Isso pode ser sinal de vínculo estabelecido, o que é bom, mas
-                                                a
-                                                referência precisa estar atenta para não acabar solitariamente no
-                                                desempenho
-                                                da função e não conseguir oferecer o apoio necessário para fazer as
-                                                conexões
-                                                necessárias. Da mesma forma, equipes precisam estar atentas a como estão
-                                                deixando todo o cuidado de algum usuário a cargo de uma só pessoa.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="mb-5"></div>
                     <div class="mb-5"></div>
@@ -3074,7 +2524,7 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-2 col-md-2 text-center">
-                                    <img src="recursos/icones/BT_Refletir.svg" alt="" style="width: 100%;">
+                                    <img src="recursos/icones/BT_Refletir.svg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -3226,6 +2676,837 @@
             <div class="bg-degrade-2"></div>
         </section>
 
+
+
+
+
+        <!-- Página 38 -->
+        <section id="section38" class="bg2">
+            <div class="container-text">
+                <div class="row justify-content-center">
+
+                    <div class="row justify-content-center mt-5">
+
+                        <!-- CAIXA 4 -->
+                        <div class="col-12 col-md-6 col-lg">
+                            <div class="ferramenta-box">
+
+                                <div class="icone icone-1 ferramenta-arrastavel" data-caixa="4"
+                                    data-bs-target="#modal_caixa_4_2">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta01.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-2 ferramenta-arrastavel" data-caixa="4"
+                                    data-bs-target="#modal_caixa_4_3">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta02.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-3 ferramenta-arrastavel" data-caixa="4"
+                                    data-bs-target="#modal_caixa_4_4">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta03.svg" alt="">
+                                </div>
+
+                                <!-- direita -->
+                                <div class="icone icone-4 ferramenta-arrastavel" data-caixa="4"
+                                    data-bs-target="#modal_caixa_4_5">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta04.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-6 ferramenta-arrastavel" data-caixa="4"
+                                    data-bs-target="#modal_caixa_4_6">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta06.svg" alt="">
+                                </div>
+
+                                <img class="caixa-ferramenta area-drop" data-caixa="4" data-bs-toggle="modal"
+                                    data-bs-target="#modal_caixa_4_1"
+                                    src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta__00_Caixa01.svg"
+                                    alt="Estratégias de cidadania">
+
+                                <div class="titulo-ferramenta">
+                                    <p>4. Estratégias de apoio por pares</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- CAIXA 5 -->
+                        <div class="col-12 col-md-6 col-lg">
+                            <div class="ferramenta-box">
+
+                                <!-- esquerda -->
+                                <div class="icone icone-1 ferramenta-arrastavel" data-caixa="5"
+                                    data-bs-target="#modal_caixa_5_2">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta01.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-3 ferramenta-arrastavel" data-caixa="5"
+                                    data-bs-target="#modal_caixa_5_3">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta03.svg" alt="">
+                                </div>
+
+                                <!-- direita -->
+                                <div class="icone icone-4 ferramenta-arrastavel" data-caixa="5"
+                                    data-bs-target="#modal_caixa_5_4">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta04.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-6 ferramenta-arrastavel" data-caixa="5"
+                                    data-bs-target="#modal_caixa_5_5">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta06.svg" alt="">
+                                </div>
+
+                                <img class="caixa-ferramenta area-drop" data-caixa="5" data-bs-toggle="modal"
+                                    data-bs-target="#modal_caixa_5_1"
+                                    src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta__00_Caixa02.svg"
+                                    alt="Estratégias de fala e escuta">
+
+                                <div class="titulo-ferramenta">
+                                    <p>5. Estratégias com saberes e práticas tradicionais</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- CAIXA 6 -->
+                        <div class="col-12 col-md-6 col-lg">
+                            <div class="ferramenta-box">
+
+                                <div class="icone icone-1 ferramenta-arrastavel" data-caixa="6"
+                                    data-bs-target="#modal_caixa_6_2">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta01.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-2 ferramenta-arrastavel" data-caixa="6"
+                                    data-bs-target="#modal_caixa_6_3">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta02.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-3 ferramenta-arrastavel" data-caixa="6"
+                                    data-bs-target="#modal_caixa_6_4">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta03.svg" alt="">
+                                </div>
+
+                                <!-- direita -->
+                                <div class="icone icone-4 ferramenta-arrastavel" data-caixa="6"
+                                    data-bs-target="#modal_caixa_6_5">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta04.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-6 ferramenta-arrastavel" data-caixa="6"
+                                    data-bs-target="#modal_caixa_6_6">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta06.svg" alt="">
+                                </div>
+
+                                <img class="caixa-ferramenta area-drop" data-caixa="6" data-bs-toggle="modal"
+                                    data-bs-target="#modal_caixa_6_1"
+                                    src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta__00_Caixa03.svg"
+                                    alt="Estratégias medicamentosas">
+
+                                <div class="titulo-ferramenta">
+                                    <p>6. Estratégias antecipatórias: diretivas antecipadas (DA)</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row justify-content-center mt-5">
+
+                        <!-- CAIXA 7 -->
+                        <div class="col-12 col-md-6 col-lg">
+                            <div class="ferramenta-box">
+
+                                <div class="icone icone-1 ferramenta-arrastavel" data-caixa="7"
+                                    data-bs-target="#modal_caixa_7_2">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta01.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-2 ferramenta-arrastavel" data-caixa="7"
+                                    data-bs-target="#modal_caixa_7_3">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta02.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-3 ferramenta-arrastavel" data-caixa="7"
+                                    data-bs-target="#modal_caixa_7_4">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta03.svg" alt="">
+                                </div>
+
+                                <!-- direita -->
+                                <div class="icone icone-4 ferramenta-arrastavel" data-caixa="7"
+                                    data-bs-target="#modal_caixa_7_5">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta04.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-5 ferramenta-arrastavel" data-caixa="7"
+                                    data-bs-target="#modal_caixa_7_6">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta05.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-6 ferramenta-arrastavel" data-caixa="7"
+                                    data-bs-target="#modal_caixa_7_7">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta06.svg" alt="">
+                                </div>
+
+                                <img class="caixa-ferramenta area-drop" data-caixa="7" data-bs-toggle="modal"
+                                    data-bs-target="#modal_caixa_7_1"
+                                    src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta__00_Caixa01.svg"
+                                    alt="Estratégias de cidadania">
+
+                                <div class="titulo-ferramenta">
+                                    <p>7. Estratégias com família</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- CAIXA 8 -->
+                        <div class="col-12 col-md-6 col-lg">
+                            <div class="ferramenta-box">
+
+                                <!-- esquerda -->
+                                <div class="icone icone-1 ferramenta-arrastavel" data-caixa="8"
+                                    data-bs-target="#modal_caixa_8_2">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta01.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-2 ferramenta-arrastavel" data-caixa="8"
+                                    data-bs-target="#modal_caixa_8_3">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta02.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-3 ferramenta-arrastavel" data-caixa="8"
+                                    data-bs-target="#modal_caixa_8_4">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta03.svg" alt="">
+                                </div>
+
+                                <!-- direita -->
+                                <div class="icone icone-4 ferramenta-arrastavel" data-caixa="8"
+                                    data-bs-target="#modal_caixa_8_5">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta04.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-5 ferramenta-arrastavel" data-caixa="8"
+                                    data-bs-target="#modal_caixa_8_6">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta05.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-6 ferramenta-arrastavel" data-caixa="8"
+                                    data-bs-target="#modal_caixa_8_7">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta06.svg" alt="">
+                                </div>
+
+                                <img class="caixa-ferramenta area-drop" data-caixa="8" data-bs-toggle="modal"
+                                    data-bs-target="#modal_caixa_8_1"
+                                    src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta__00_Caixa02.svg"
+                                    alt="Estratégias de fala e escuta">
+
+                                <div class="titulo-ferramenta">
+                                    <p>8. Estratégias para o habitar</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- CAIXA 9 -->
+                        <div class="col-12 col-md-6 col-lg">
+                            <div class="ferramenta-box">
+
+                                <div class="icone icone-1 ferramenta-arrastavel" data-caixa="9"
+                                    data-bs-target="#modal_caixa_9_2">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta01.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-2 ferramenta-arrastavel" data-caixa="9"
+                                    data-bs-target="#modal_caixa_9_3">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta02.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-3 ferramenta-arrastavel" data-caixa="9"
+                                    data-bs-target="#modal_caixa_9_4">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta03.svg" alt="">
+                                </div>
+
+                                <!-- direita -->
+                                <div class="icone icone-4 ferramenta-arrastavel" data-caixa="9"
+                                    data-bs-target="#modal_caixa_9_5">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta04.svg" alt="">
+                                </div>
+
+                                <div class="icone icone-6 ferramenta-arrastavel" data-caixa="9"
+                                    data-bs-target="#modal_caixa_9_6">
+                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta06.svg" alt="">
+                                </div>
+
+                                <img class="caixa-ferramenta area-drop" data-caixa="9" data-bs-toggle="modal"
+                                    data-bs-target="#modal_caixa_9_1"
+                                    src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta__00_Caixa03.svg"
+                                    alt="Estratégias medicamentosas">
+
+                                <div class="titulo-ferramenta">
+                                    <p>9. Estratégias de trabalho, renda e emprego</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="mb-5"></div>
+                    <div class="mb-5"></div>
+                </div>
+            </div>
+            <!-- <img src="recursos/img-m2/Seta01.svg" style="bottom: -56px;left: 13%;" class="seta1-2_sections"
+                alt="Elemento decorativo"> -->
+            <div class="bg-degrade-2"></div>
+        </section>
+    </div>
+
+    <div class="modais">
+
+        <!--section 8 -->
+        <div class="modal fade" id="modal_lampada" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p>Convocamos a curiosidade e a criação conjunta como forma de cuidado, ou seja,
+                                como forma
+                                de criar conexões e garantia de direitos. A criação capaz de criar uma
+                                surpresa
+                                (Lancetti, 2006) a partir da singularidade do sujeito em sua relação com o
+                                outro e com o
+                                território, uma aposta na invenção como forma primeira de contato e produção
+                                cotidiana.
+                                Essa perspectiva ajuda na ideia de que estamos sempre fazendo a importância
+                                do serviço
+                                no território, estamos sempre fazendo o trabalho da referência e da equipe
+                                de
+                                referência, estamos sempre inventando jeitos para que a pessoa possa
+                                participar do
+                                conjunto social do qual faz parte, no qual é a “instituição inventada (e
+                                nunca dada)”
+                                (Rotelli, 2019, p. 90).</p>
+                            <p>É claro que não é qualquer coisa que se faz que produz cuidado, pois a ação
+                                sem reflexão,
+                                sem ideia, pode bem ser a repetição automática da lógica asilar excludente.
+                                No
+                                “fazejamento”, é preciso estar disposto ao erro, isto é, disposto a
+                                verificar se a
+                                aposta avançou para um caminho de emancipação ou não. O fracasso é mais uma
+                                informação
+                                importante do desenrolar de uma situação (Dell’Acqua; Mezzina, 1991).
+                                Portanto,
+                                precisamos aprender a errar melhor e não simplesmente melhorar a eficácia
+                                para evitar
+                                erros.</p>
+                            <p>Aqui, a ação encontra a ideia: a ideia de que alguém pode ser louco, e o
+                                cidadão encontra
+                                a ação, a operação complexa e artesanal de construir essa liberdade no
+                                cotidiano. A
+                                ideia persegue a pergunta: como transformar o lema da Luta Antimanicomial
+                                “Nenhum passo
+                                atrás, manicômio nunca mais” em ações concretas, cotidianas e
+                                singularizadas? A ação,
+                                por sua vez, aproveita a ocasião e tem a ver com o lanche da tarde que virou
+                                um bolinho
+                                de chuva produzido com quem estava no serviço porque alguém lembrou que a
+                                banana bem
+                                madura da marmita pode ser reaproveitada.</p>
+                            <p>É ver o usuário ouvindo futebol no rádio e chamá-lo para o novíssimo grupo de
+                                futebol. É
+                                o revezamento para acompanhar a pessoa em casa e aproveitar para bater um
+                                papo com a mãe
+                                que está cansada e levar um pouco do bolinho de chuva. É uma roda de
+                                conversa com as
+                                lideranças do bairro, porque na assembleia reclamaram da falta de
+                                sinalização na rua de
+                                frente ao CAPS. É experimentar da comida da família imigrante na visita
+                                domiciliar. É
+                                conhecer o novo pastor da igreja da rua. É aproveitar que um usuário
+                                finalmente apareceu
+                                e desmarcar algum compromisso menos importante para poder acompanhá-lo ao
+                                CRAS. É
+                                aproveitar as discussões sobre racismo que apareceram no grupo de rádio e
+                                convidar o
+                                aquilombaSUS do CAPS do lado. É apoiar a liderança dos usuários a preparar
+                                sua fala para
+                                o dia da luta antimanicomial. É convidar algumas ACS para visitar o CAPS e
+                                conhecer o
+                                trabalho do dia a dia. É fazer uma consulta conjuntamente com o médico da
+                                UBS que não
+                                gosta do CAPS – mesmo que não esteja marcada com antecedência. É produzir um
+                                almoço no
+                                sábado com as famílias das pessoas que estão dormindo no serviço no final de
+                                semana. É
+                                aproveitar a companhia daquele usuário mais calado no sofá da recepção e,
+                                mesmo que sem
+                                falar, acompanhar a novela que fez ele rir, e por aí vai.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--section 13 -->
+        <div class="modal fade" id="modal_1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p>Mesmo sem pensar muito, Mariana, na segunda tentativa, estabeleceu relação
+                                com o “William que tinha algo a falar sobre o CAPS” e não com o William “o
+                                usuário do CAPS AD que não deveria estar no adulto”.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 2 -->
+        <div class="modal fade" id="modal_2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p>Magda, na reunião de troca de plantão, fala irritada da falta de
+                                comprometimento da equipe. E elogia Mariana. Magda traz de novo as
+                                discussões que já fizeram e pergunta aos outros profissionais por que não
+                                ajudaram Mariana e deixaram William gritando pedindo ajuda. Alguns
+                                profissionais dizem que aquilo era uma “crise” para o CAPS AD. Magda
+                                questiona se isso é mesmo uma crise.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 3 -->
+        <div class="modal fade" id="modal_3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p>De qualquer forma, a situação com William vira aqui situação de crise,
+                                garantindo o lugar de todos os atores da cena e trazendo a crise da equipe
+                                sobre o lugar de cuidado do usuário e sobre uso de drogas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--section 16 -->
+        <!-- Modal 4 -->
+        <div class="modal fade" id="modal_4" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p>Essa ação abre mais caminhos ou só repete a exclusão típica da lógica do
+                                manicômio?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 5 -->
+        <div class="modal fade" id="modal_5" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p>A ação se apoia em acordos construídos em conjunto, com regras negociadas e
+                                que são alteradas e reajustadas sempre que precisar?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 6 -->
+        <div class="modal fade" id="modal_6" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p>Às vezes as regras apertam, ficam mais fechadas, depois abrimos para
+                                conversar e construir juntos, mas conseguimos manter esse espaço aberto o
+                                maior tempo possível?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 7 -->
+        <div class="modal fade" id="modal_7" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p>Os profissionais estão atentos para perceber como o poder circula nas
+                                relações e o lugar que ocupam na situação? E observam como acontecem as
+                                trocas – de objetos, de falas, de gestos e de afetos?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--section 17 -->
+        <!-- Modal 8 -->
+        <div class="modal fade" id="modal_8" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p>A ação de Mariana reverte ou sustenta a exclusão?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 9 -->
+        <div class="modal fade" id="modal_9" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p>É apoiada no diálogo e na construção de um consenso?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 10 -->
+        <div class="modal fade" id="modal_10" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p>Quais foram os momentos fechados e abertos de decisão na instituição?
+                                <br>
+                                <br>
+                                Havia maior tendência de abertura ou de fechamento?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 11 -->
+        <div class="modal fade" id="modal_11" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p>Como se dão as trocas de mensagens, bens e afetos?
+                                <br>
+                                <br>
+                                William consegue ser ouvido?
+                                <br>
+                                <br>
+                                O café é oferecido, servido ou negado?
+                                <br>
+                                <br>
+                                Sua entrada no CAPS é suave?
+                                <br>
+                                <br>ß
+                                Como os outros usuários se comportam com sua chegada?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--section 19 -->
+        <!-- Modal 12 -->
+        <div class="modal fade" id="modal_12" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p>Existe um modelo de PTS no seu serviço? O modelo atende às necessidades? Os
+                                trabalhadores constroem junto com os usuários?
+                                <br><br>
+                                Agora, avalie o PTS de uma pessoa que você acompanha a partir das quatro
+                                chaves de desinstitucionalização:
+                            </p>
+                            <p>
+                                1. As ações elencadas revertem ou sustentam a exclusão?
+                                <br><br>
+                                2. As decisões escritas são apoiadas no diálogo e na construção de um
+                                consenso?
+                                <br><br>
+                                3. Quais foram os momentos fechados e abertos de decisão? Havia maior
+                                tendência de abertura ou de fechamento?
+                                <br><br>
+                                4. Como ocorrem as trocas de mensagens, bens e afetos entre a pessoa e seu
+                                mundo? A pessoa pode expressar descontentamento, raiva ou crítica nos
+                                círculos que convive? Assume a organização do dinheiro ou necessita de
+                                alguém que a apoie, ou não tem acesso nenhum a renda? Os afetos são
+                                restritos ao serviço ou são ouvidos em outros espaços?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--section 31 -->
+        <!-- Modal 13 -->
+        <div class="modal fade" id="modal_13" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p><b>1. Acolhimento e vínculo</b></p>
+                            <ul class="lista-branca">
+                                <li>Estabelecer uma relação de confiança com o usuário.</li>
+                                <li>Ser ponto de escuta ativa e empática.</li>
+                                <li>Garantir que o cuidado seja centrado na pessoa, não apenas no
+                                    diagnóstico.</li>
+                                <li>Ter sensibilidade cultural que incentiva o diálogo intercultural.</li>
+                                <li>Conhecer e registrar a história de vida da pessoa, inclusive tomando
+                                    conhecimento do processo de adoecimento do sujeito.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 14 -->
+        <div class="modal fade" id="modal_14" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p><b>2. Planejamento terapêutico</b></p>
+                            <ul class="lista-branca">
+                                <li>Participar da construção do projeto terapêutico singular (PTS).</li>
+                                <li>Coidentificar necessidades clínicas, sociais, familiares e comunitárias.
+                                </li>
+                                <li>Articular intervenções com a equipe multiprofissional.</li>
+                                <li>Garantir que os necessários diagnósticos realizados pelos profissionais
+                                    sejam dialogados e processuais.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 15 -->
+        <div class="modal fade" id="modal_15" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p><b>3. Coordenação do cuidado</b></p>
+                            <ul class="lista-branca">
+                                <li>Acompanhar o percurso do usuário na rede de saúde e assistência social.
+                                </li>
+                                <li>Facilitar o acesso a serviços como CAPS, UBS, residências terapêuticas,
+                                    CRAS, CREAS, entre outros.</li>
+                                <li>Evitar rupturas no cuidado e garantir continuidade.</li>
+                                <li>Realizar acompanhamento e articulação das necessidades e dos projetos do
+                                    usuário em seus diversos círculos de vida no território (trabalho,
+                                    escola, igreja, família, vizinhos, boteco da esquina).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 16 -->
+        <div class="modal fade" id="modal_16" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p><b>4. Defesa de direitos</b></p>
+                            <ul class="lista-branca">
+                                <li>Atuar como mediador entre o usuário, os serviços e as outras relações
+                                    importantes na vida da pessoa.</li>
+                                <li>Identificar situações de violação de direitos ou de diminuição da
+                                    capacidade de decisões dialogadas.</li>
+                                <li>Promover autonomia e protagonismo do usuário.</li>
+                                <li>Estar atento e dar destaque aos grupos invisibilizados socialmente:
+                                    sujeitos historicamente marginalizados por sistemas de opressão racial,
+                                    de gênero, sexual e de classe.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 17 -->
+        <div class="modal fade" id="modal_17" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p><b>5. Registro e avaliação</b></p>
+                            <ul class="lista-branca">
+                                <li>Manter atualizados os registros clínicos e sociais.</li>
+                                <li>Participar das reuniões de equipe para avaliação da situação.</li>
+                                <li>Monitorar a evolução do cuidado e ajustar estratégias sempre que
+                                    necessário.</li>
+                                <li>Fomentar a discussão em reuniões de equipe e de rede.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--section 35 -->
+        <!-- Modal 18 -->
+        <div class="modal fade" id="modal_18" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p><b>Excessiva centralidade no saber técnico</b>: decisões são guiadas
+                                majoritariamente por protocolos, diagnósticos ou condutas, com pouca
+                                abertura para o saber da pessoa atendida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 19 -->
+        <div class="modal fade" id="modal_19" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p><b>Desconsideração da singularidade</b>: o sujeito é visto como alguém a ser
+                                protegido ou corrigido, e não como alguém capaz de participar da construção
+                                do cuidado, mesmo que processualmente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 20 -->
+        <div class="modal fade" id="modal_20" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p><b>Risco de reforçar estigmas</b>: ao tratar a vulnerabilidade como fraqueza,
+                                o cuidado pode se tornar fonte de opressão, reforçando sentimentos de
+                                inferioridade ou exclusão.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 21 -->
+        <div class="modal fade" id="modal_21" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="box-verde">
+                            <p><b>Redução da escuta</b>: o profissional pode não perceber mudanças
+                                importantes no contexto da pessoa ao não ficar em abertura suficiente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 22 -->
+        <div class="modal fade" id="modal_22" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width:90%">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
+                        data-bs-dismiss="modal"></button>
+
+                    <div class="modal-body p-0">
+                        <div class="imagem-com-texto">
+                            <img src="recursos/img-m2/NUSMAD_Mod02_Img36.png" class="img-fluid" alt="">
+
+                            <div class="texto-sobreposto">
+                                <p>
+                                    O outro risco é a solidão do papel. Talvez justamente por se colocar tão
+                                    próximo ao usuário as referências sentem a invisibilização da qual o
+                                    usuário
+                                    é vítima. Isso pode ser sinal de vínculo estabelecido, o que é bom, mas
+                                    a
+                                    referência precisa estar atenta para não acabar solitariamente no
+                                    desempenho
+                                    da função e não conseguir oferecer o apoio necessário para fazer as
+                                    conexões
+                                    necessárias. Da mesma forma, equipes precisam estar atentas a como estão
+                                    deixando todo o cuidado de algum usuário a cargo de uma só pessoa.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--section 37 -->
         <!-- Modal caixa 1 1 -->
         <div class="modal fade" id="modal_caixa_1_1" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" style="max-width:100%">
@@ -3342,7 +3623,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Nesse âmbito, sugerimos você acessar os seguintes vídeos:</p>
@@ -3825,7 +4106,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_Refletir.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_Refletir.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Que tal você propor um exercício em dupla ou em grupo? Esse exercício
@@ -3914,7 +4195,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Nesse âmbito, sugerimos você acessar os seguintes vídeos:</p>
@@ -4056,7 +4337,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>No vídeo a seguir, o pesquisador Francisco Netto apresenta algumas
@@ -4174,7 +4455,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Nesse âmbito, sugerimos você acessar os seguintes links:</p>
@@ -4305,7 +4586,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_Refletir.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_Refletir.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Primeiramente, assista ao vídeo <a
@@ -4366,8 +4647,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_Importante.svg" alt=""
-                                                    style="width: 100%;">
+                                                <img src="recursos/icones/BT_Importante.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>O apoio entre pares caracteriza-se por uma relação horizontal de
@@ -4397,7 +4677,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Nesse âmbito, sugerimos você acessar os seguintes links:</p>
@@ -4505,7 +4785,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Conheça o relato de experiência Protagonismo político em pauta: <a
@@ -4572,7 +4852,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Para se aprofundar nos Conselhos Gestores, acesse a cartilha
@@ -4651,7 +4931,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Conheça algumas ações que você pode implementar no seu território:
@@ -4682,291 +4962,7 @@
         </div>
 
 
-
-        <!-- Página 38 -->
-        <section id="section38" class="bg2">
-            <div class="container-text">
-                <div class="row justify-content-center">
-
-                    <div class="row justify-content-center mt-5">
-
-                        <!-- CAIXA 4 -->
-                        <div class="col-12 col-md-6 col-lg">
-                            <div class="ferramenta-box">
-
-                                <div class="icone icone-1 ferramenta-arrastavel" data-caixa="4"
-                                    data-bs-target="#modal_caixa_4_2">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta01.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-2 ferramenta-arrastavel" data-caixa="4"
-                                    data-bs-target="#modal_caixa_4_3">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta02.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-3 ferramenta-arrastavel" data-caixa="4"
-                                    data-bs-target="#modal_caixa_4_4">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta03.svg" alt="">
-                                </div>
-
-                                <!-- direita -->
-                                <div class="icone icone-4 ferramenta-arrastavel" data-caixa="4"
-                                    data-bs-target="#modal_caixa_4_5">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta04.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-6 ferramenta-arrastavel" data-caixa="4"
-                                    data-bs-target="#modal_caixa_4_6">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta06.svg" alt="">
-                                </div>
-
-                                <img class="caixa-ferramenta area-drop" data-caixa="4" data-bs-toggle="modal"
-                                    data-bs-target="#modal_caixa_4_1"
-                                    src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta__00_Caixa01.svg"
-                                    alt="Estratégias de cidadania">
-
-                                <div class="titulo-ferramenta">
-                                    <p>4. Estratégias de apoio por pares</p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!-- CAIXA 5 -->
-                        <div class="col-12 col-md-6 col-lg">
-                            <div class="ferramenta-box">
-
-                                <!-- esquerda -->
-                                <div class="icone icone-1 ferramenta-arrastavel" data-caixa="5"
-                                    data-bs-target="#modal_caixa_5_2">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta01.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-3 ferramenta-arrastavel" data-caixa="5"
-                                    data-bs-target="#modal_caixa_5_3">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta03.svg" alt="">
-                                </div>
-
-                                <!-- direita -->
-                                <div class="icone icone-4 ferramenta-arrastavel" data-caixa="5"
-                                    data-bs-target="#modal_caixa_5_4">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta04.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-6 ferramenta-arrastavel" data-caixa="5"
-                                    data-bs-target="#modal_caixa_5_5">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta06.svg" alt="">
-                                </div>
-
-                                <img class="caixa-ferramenta area-drop" data-caixa="5" data-bs-toggle="modal"
-                                    data-bs-target="#modal_caixa_5_1"
-                                    src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta__00_Caixa02.svg"
-                                    alt="Estratégias de fala e escuta">
-
-                                <div class="titulo-ferramenta">
-                                    <p>5. Estratégias com saberes e práticas tradicionais</p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!-- CAIXA 6 -->
-                        <div class="col-12 col-md-6 col-lg">
-                            <div class="ferramenta-box">
-
-                                <div class="icone icone-1 ferramenta-arrastavel" data-caixa="6"
-                                    data-bs-target="#modal_caixa_6_2">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta01.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-2 ferramenta-arrastavel" data-caixa="6"
-                                    data-bs-target="#modal_caixa_6_3">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta02.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-3 ferramenta-arrastavel" data-caixa="6"
-                                    data-bs-target="#modal_caixa_6_4">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta03.svg" alt="">
-                                </div>
-
-                                <!-- direita -->
-                                <div class="icone icone-4 ferramenta-arrastavel" data-caixa="6"
-                                    data-bs-target="#modal_caixa_6_5">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta04.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-6 ferramenta-arrastavel" data-caixa="6"
-                                    data-bs-target="#modal_caixa_6_6">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta06.svg" alt="">
-                                </div>
-
-                                <img class="caixa-ferramenta area-drop" data-caixa="6" data-bs-toggle="modal"
-                                    data-bs-target="#modal_caixa_6_1"
-                                    src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta__00_Caixa03.svg"
-                                    alt="Estratégias medicamentosas">
-
-                                <div class="titulo-ferramenta">
-                                    <p>6. Estratégias antecipatórias: diretivas antecipadas (DA)</p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="row justify-content-center mt-5">
-
-                        <!-- CAIXA 7 -->
-                        <div class="col-12 col-md-6 col-lg">
-                            <div class="ferramenta-box">
-
-                                <div class="icone icone-1 ferramenta-arrastavel" data-caixa="7"
-                                    data-bs-target="#modal_caixa_7_2">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta01.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-2 ferramenta-arrastavel" data-caixa="7"
-                                    data-bs-target="#modal_caixa_7_3">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta02.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-3 ferramenta-arrastavel" data-caixa="7"
-                                    data-bs-target="#modal_caixa_7_4">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta03.svg" alt="">
-                                </div>
-
-                                <!-- direita -->
-                                <div class="icone icone-4 ferramenta-arrastavel" data-caixa="7"
-                                    data-bs-target="#modal_caixa_7_5">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta04.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-5 ferramenta-arrastavel" data-caixa="7"
-                                    data-bs-target="#modal_caixa_7_6">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta05.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-6 ferramenta-arrastavel" data-caixa="7"
-                                    data-bs-target="#modal_caixa_7_7">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta06.svg" alt="">
-                                </div>
-
-                                <img class="caixa-ferramenta area-drop" data-caixa="7" data-bs-toggle="modal"
-                                    data-bs-target="#modal_caixa_7_1"
-                                    src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta__00_Caixa01.svg"
-                                    alt="Estratégias de cidadania">
-
-                                <div class="titulo-ferramenta">
-                                    <p>7. Estratégias com família</p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!-- CAIXA 8 -->
-                        <div class="col-12 col-md-6 col-lg">
-                            <div class="ferramenta-box">
-
-                                <!-- esquerda -->
-                                <div class="icone icone-1 ferramenta-arrastavel" data-caixa="8"
-                                    data-bs-target="#modal_caixa_8_2">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta01.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-2 ferramenta-arrastavel" data-caixa="8"
-                                    data-bs-target="#modal_caixa_8_3">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta02.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-3 ferramenta-arrastavel" data-caixa="8"
-                                    data-bs-target="#modal_caixa_8_4">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta03.svg" alt="">
-                                </div>
-
-                                <!-- direita -->
-                                <div class="icone icone-4 ferramenta-arrastavel" data-caixa="8"
-                                    data-bs-target="#modal_caixa_8_5">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta04.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-5 ferramenta-arrastavel" data-caixa="8"
-                                    data-bs-target="#modal_caixa_8_6">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta05.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-6 ferramenta-arrastavel" data-caixa="8"
-                                    data-bs-target="#modal_caixa_8_7">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta06.svg" alt="">
-                                </div>
-
-                                <img class="caixa-ferramenta area-drop" data-caixa="8" data-bs-toggle="modal"
-                                    data-bs-target="#modal_caixa_8_1"
-                                    src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta__00_Caixa02.svg"
-                                    alt="Estratégias de fala e escuta">
-
-                                <div class="titulo-ferramenta">
-                                    <p>8. Estratégias para o habitar</p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!-- CAIXA 9 -->
-                        <div class="col-12 col-md-6 col-lg">
-                            <div class="ferramenta-box">
-
-                                <div class="icone icone-1 ferramenta-arrastavel" data-caixa="9"
-                                    data-bs-target="#modal_caixa_9_2">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta01.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-2 ferramenta-arrastavel" data-caixa="9"
-                                    data-bs-target="#modal_caixa_9_3">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta02.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-3 ferramenta-arrastavel" data-caixa="9"
-                                    data-bs-target="#modal_caixa_9_4">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta03.svg" alt="">
-                                </div>
-
-                                <!-- direita -->
-                                <div class="icone icone-4 ferramenta-arrastavel" data-caixa="9"
-                                    data-bs-target="#modal_caixa_9_5">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta04.svg" alt="">
-                                </div>
-
-                                <div class="icone icone-6 ferramenta-arrastavel" data-caixa="9"
-                                    data-bs-target="#modal_caixa_9_6">
-                                    <img src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta_V2_Ferramenta06.svg" alt="">
-                                </div>
-
-                                <img class="caixa-ferramenta area-drop" data-caixa="9" data-bs-toggle="modal"
-                                    data-bs-target="#modal_caixa_9_1"
-                                    src="recursos/img-m2/NUSMAD_CRISE_CaixaFerramenta__00_Caixa03.svg"
-                                    alt="Estratégias medicamentosas">
-
-                                <div class="titulo-ferramenta">
-                                    <p>9. Estratégias de trabalho, renda e emprego</p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="mb-5"></div>
-                    <div class="mb-5"></div>
-                </div>
-            </div>
-            <!-- <img src="recursos/img-m2/Seta01.svg" style="bottom: -56px;left: 13%;" class="seta1-2_sections"
-                alt="Elemento decorativo"> -->
-            <div class="bg-degrade-2"></div>
-        </section>
-
-
+        <!--section 38 -->
         <!-- Modal caixa 4 - 1 -->
         <div class="modal fade" id="modal_caixa_4_1" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" style="max-width:100%">
@@ -5078,7 +5074,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_Refletir.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_Refletir.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Como o serviço que você trabalha pode modificar as ações para
@@ -5159,7 +5155,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Nesse âmbito, sugerimos você acessar os seguintes vídeos:</p>
@@ -5255,7 +5251,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Nesse âmbito, sugerimos você acessar os seguintes vídeos:</p>
@@ -5315,7 +5311,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_Dica.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_Dica.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Discuta na equipe em que você trabalha: o que é possível pensar no
@@ -5330,7 +5326,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Conheça o seguinte manual: Formação para prestadores de suporte
@@ -6244,7 +6240,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Ailton Krenak, em conversa com Pedro Bial, apresenta-nos as relações
@@ -6385,7 +6381,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_Refletir.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_Refletir.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Como a comunidade e o povo com a qual você trabalha explica o
@@ -6446,7 +6442,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Para se aprofundar na relação entre corpo-território e saúde,
@@ -6622,13 +6618,14 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Nesse âmbito, sugerimos você acessar os seguintes links:</p>
 
                                                 <p>• <a href="https://www.youtube.com/watch?v=WTa2dCOC58w"
-                                                        target="_blank">O Mistério de Nhemyrô</a></p>
+                                                        target="_blank">O
+                                                        Mistério de Nhemyrô</a></p>
                                                 <p>• <a href="https://brasilia.fiocruz.br/nosnarede/mostra-de-experiencias/bem-viver-e-saude-mental-praticas-interculturais/"
                                                         target="_blank">Bem viver e saúde mental: práticas
                                                         interculturais</a></p>
@@ -6950,7 +6947,8 @@
                                 <div class="col-lg-12 mt-5">
                                     <p>Para realizar o plano de crise, elaboramos um questionário a ser preenchido com
                                         os dados do usuário pela equipe de referência. <a href=""
-                                            target="_blank"><b>Acesse aqui</b></a>.</p>
+                                            target="_blank"><b>Acesse
+                                                aqui</b></a>.</p>
                                     <p>Cabe destacar que o processo de construção do cartão de crise também pode ser
                                         realizado coletivamente, em discussões com grupos de usuários dos serviços de
                                         saúde mental, nas Unidades Básicas de Saúde (UBSs) e em outros pontos da rede.
@@ -7335,7 +7333,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_Refletir.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_Refletir.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Você conhece os grupos que discutem as necessidades de moradia, da
@@ -7355,7 +7353,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Nesse âmbito, sugerimos você acessar o compilado de estudos indicando
@@ -7484,8 +7482,7 @@
                                                     <div class="refletir" style="position: relative; width: 100%;">
                                                         <div class="row align-items-center justify-content-center">
                                                             <div class="col-lg-2 col-md-2 text-center">
-                                                                <img src="recursos/icones/BT_Refletir.svg" alt=""
-                                                                    style="width: 100%;">
+                                                                <img src="recursos/icones/BT_Refletir.svg" alt="">
                                                             </div>
                                                             <div class="col-lg-10 col-md-10">
                                                                 <p style="color: white;">A equipe tem critérios para
@@ -7621,7 +7618,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Nesse âmbito, sugerimos você acessar os seguintes vídeos:</p>
@@ -7686,7 +7683,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Nesse âmbito, acesse o <a
@@ -7757,7 +7754,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Nesse âmbito, sugerimos você acessar os seguintes links:</p>
@@ -7892,7 +7889,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Nesse âmbito, sugerimos você acessar as Orientações sobre o Serviço
@@ -7988,7 +7985,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Nesse âmbito, sugerimos você acessar os seguintes links:</p>
@@ -8074,7 +8071,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Conheça a história da dona Minervina, de 94 anos, que ficou por mais
@@ -8175,7 +8172,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Assista ao filme "<a
@@ -8235,7 +8232,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Para conhecer o caso da Associação Suricato em Belo Horizonte, fruto
@@ -8274,7 +8271,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Para conhecer o caso da Associação Suricato em Belo Horizonte, fruto
@@ -8402,7 +8399,7 @@
                                     <div class="refletir" style="position: relative; width: 100%;">
                                         <div class="row align-items-center justify-content-center">
                                             <div class="col-lg-2 col-md-2 text-center">
-                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="" style="width: 100%;">
+                                                <img src="recursos/icones/BT_SaibaMais.svg" alt="">
                                             </div>
                                             <div class="col-lg-10 col-md-10">
                                                 <p>Nesse âmbito, sugerimos você conhecer os seguintes documentos:</p>
@@ -8431,12 +8428,6 @@
         </div>
 
     </div>
-
-    <div class="modais">
-
-
-    </div>
-
 
     <div class='logo'>
         <a id="btnTop" class="logo totop"><i class="fas fa-angle-double-up"></i></a><br>

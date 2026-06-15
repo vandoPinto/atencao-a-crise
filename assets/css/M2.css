@@ -2,7 +2,6 @@ section {
     position: relative;
 }
 
-
 .title-h2-negrito,
 h2 {
     color: #2B2622;
@@ -77,13 +76,6 @@ h2 {
     /* z-index: -2; */
 }
 
-/* .bg1 {
-    background-image: url('recursos/img-m1/NUSMAD_CRISE_BG_Sessao01.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-} */
-
 .front-cover {
     height: 90vh;
     overflow: hidden;
@@ -118,9 +110,7 @@ h2 {
     width: 100%;
 }
 
-
 /* section 2 */
-
 
 /* IMAGEM LATERAL */
 .bg-lateral {
@@ -148,11 +138,6 @@ h2 {
     position: relative;
     z-index: 2;
 }
-
-/* ILUSTRAÇÃO */
-/* .ilustracao {
-    max-width: 400px;
-} */
 
 /* TÍTULO */
 .titulo {
@@ -193,7 +178,6 @@ h2 {
     border-radius: 50px;
     width: 100%;
 }
-
 
 /* box-marrom */
 .box-marrom {
@@ -250,20 +234,6 @@ h2 {
     border-radius: 20px;
     box-shadow: 6px 8px 16px #00000080;
 
-}
-
-.bolinha-box-vermelho {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #B6492E;
-}
-
-.bolinha-box-verde {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #6F7F5F;
 }
 
 /* box-verde */
@@ -330,14 +300,10 @@ h2 {
 
 }
 
-
-
 .box-branco p:last-child {
     margin: 0;
 
 }
-
-
 
 .saiba-mais {
     background: #6F7F5F;
@@ -367,7 +333,7 @@ h2 {
 }
 
 .refletir img {
-    width: 15%;
+    width: 80%;
     height: auto;
 }
 
@@ -407,7 +373,6 @@ h2 {
     justify-content: space-around;
 }
 
-
 .componente-audio {
     height: 100px;
     min-width: 60%;
@@ -420,8 +385,6 @@ h2 {
     justify-content: space-evenly;
     box-shadow: 6px 8px 18px rgba(0, 0, 0, 0.22);
 }
-
-
 
 @media (max-width: 991px) {
     .pensando {
@@ -438,6 +401,18 @@ h2 {
 }
 
 @media (max-width: 768px) {
+
+    .refletir img {
+        width: 40%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .title-h2-negrito,
+    h2 {
+        font-size: 1.5rem;
+
+    }
 
     .ilustracao {
         width: 100% !important;
@@ -647,7 +622,6 @@ h2 {
 
 }
 
-
 #section3 {
     position: relative;
 }
@@ -740,7 +714,6 @@ h2 {
     color: #fff;
     margin: 0;
 }
-
 
 .bloco-rede-boxes {
     position: relative;
@@ -971,14 +944,12 @@ h2 {
     pointer-events: none;
 }
 
-
 .seta-02 {
     position: absolute;
     bottom: -50px;
     left: 121px;
     z-index: 2;
 }
-
 
 .seta-03 {
     position: absolute;
@@ -987,7 +958,6 @@ h2 {
     right: 60px;
     z-index: 2;
 }
-
 
 .seta4-citacao {
     position: absolute;
@@ -1094,7 +1064,6 @@ h2 {
     pointer-events: none;
 }
 
-
 .seta9-esquerda {
     position: absolute;
     top: 22%;
@@ -1124,7 +1093,6 @@ h2 {
     z-index: 5;
     pointer-events: none;
 }
-
 
 /* Quadrinhos */
 
@@ -1175,7 +1143,6 @@ h2 {
     margin-bottom: 0;
 }
 
-
 /* AUDIO PODCAST */
 
 /* Lado direito */
@@ -1204,6 +1171,8 @@ h2 {
     flex: 0 0 auto;
 }
 
+
+
 .box-audio-texto {
     flex: 1;
     display: flex;
@@ -1227,15 +1196,12 @@ h2 {
     text-decoration: underline;
 }
 
-
 .audio-main-icon {
     width: 80px;
     height: 80px;
     object-fit: contain;
     flex-shrink: 0;
 }
-
-
 
 /* =========================
    VELOCIDADE (dentro do player)
@@ -1313,8 +1279,6 @@ h2 {
     background-color: transparent;
     cursor: pointer;
 }
-
-
 
 /* ÍCONE BASE */
 .audio-play-icon {
@@ -1450,6 +1414,12 @@ h2 {
         padding: 60px 20px;
     }
 
+    .box-audio-player {
+        flex: 1;
+        width: 100vw;
+        max-width: 100vw;
+    }
+
 
     .podcast-inner {
         flex-direction: column !important;
@@ -1527,16 +1497,6 @@ h2 {
     }
 }
 
-.carousel-control-next {
-    position: absolute;
-    right: -12%;
-}
-
-.carousel-control-prev {
-    position: absolute;
-    left: -12%;
-}
-
 .box-bege2 img {
     width: 250px;
     max-width: 100%;
@@ -1559,114 +1519,6 @@ h2 {
     .box-bege2 p {
         margin-bottom: 1rem;
     }
-}
-
-@media (max-width: 991px) {
-
-    .next-btn,
-    .prev-btn {
-        top: auto;
-        bottom: -70px;
-        transform: none;
-        width: 50px;
-        height: 50px;
-    }
-
-    .prev-btn {
-        left: 35%;
-    }
-
-    .next-btn {
-        right: 35%;
-    }
-}
-
-.next-btn {
-    width: 80px;
-    height: 80px;
-    background: #7c9364;
-    border-radius: 50%;
-    opacity: 1;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -120px;
-}
-
-/* Remove o ícone padrão */
-.next-btn .carousel-control-next-icon {
-    display: none;
-}
-
-/* Triângulo branco */
-.next-btn::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 54%;
-    transform: translate(-50%, -50%);
-
-    width: 0;
-    height: 0;
-
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 22px solid #fff;
-}
-
-
-
-
-
-
-.prev-btn {
-    width: 80px;
-    height: 80px;
-    background: #7c9364;
-    border-radius: 50%;
-    opacity: 1;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 20px;
-}
-
-/* Remove o ícone padrão */
-.prev-btn .carousel-control-next-icon {
-    display: none;
-}
-
-/* Triângulo branco */
-.prev-btn::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 46%;
-    transform: translate(-50%, -50%);
-
-    width: 0;
-    height: 0;
-
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 22px solid #fff;
-}
-
-
-
-
-
-
-.carousel-control-next-icon {
-    background-color: #6F7F5F;
-    border-radius: 50%;
-    width: 30%;
-    height: 20%;
-}
-
-.carousel-control-prev-icon {
-    background-color: #6F7F5F;
-    border-radius: 50%;
-    width: 30%;
-    height: 20%;
 }
 
 .accordion {
@@ -1737,9 +1589,6 @@ h2 {
     color: #373737;
     margin: 0;
 }
-
-
-
 
 .temas-container {
     position: relative;
@@ -1864,8 +1713,6 @@ h2 {
     padding-left: 20px;
 }
 
-
-
 .img-texto {
     width: 100%;
     height: 100%;
@@ -1906,12 +1753,6 @@ h2 {
     display: block;
 }
 
-/* .hotspot {
-    position: absolute;
-    cursor: pointer;
-    background: rgba(255, 0, 0, .3);
-} */
-
 .hotspot {
     position: absolute;
     cursor: pointer;
@@ -1948,8 +1789,6 @@ h2 {
     width: 10%;
     height: 15%;
 }
-
-
 
 /* Modal 8 */
 .hotspot-8 {

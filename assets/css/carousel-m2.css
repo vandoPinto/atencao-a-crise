@@ -1,0 +1,243 @@
+/* =====================================
+   CAROUSELS
+===================================== */
+
+.carousel {
+    position: relative;
+    overflow: visible;
+}
+
+/* =====================================
+   CARD TEXTO
+===================================== */
+
+.carousel-card {
+    position: relative;
+    background: #FCF2E8;
+    padding: 40px;
+    border-radius: 40px;
+    margin: 20px 0;
+    box-shadow: 6px 8px 16px rgba(0, 0, 0, .18);
+    min-height: 280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-card p {
+    margin: 0;
+    color: #6F7F5F;
+    text-align: left;
+    line-height: 1.7;
+}
+
+/* =====================================
+   CARD TEXTO + IMAGEM
+===================================== */
+
+.carousel-card-img {
+    position: relative;
+    background: #F4EDE4;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 6px 8px 16px #00000080;
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+}
+
+.carousel-card-img p {
+    margin: 0;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.carousel-card-img img {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+/* =====================================
+   BOTÕES
+===================================== */
+
+.prev-btn,
+.next-btn {
+    width: 90px;
+    height: 90px;
+    opacity: 1 !important;
+    background: #8A9776;
+    border-radius: 50%;
+    top: 50%;
+    /* z-index: 9999; */
+}
+
+.prev-btn {
+    left: -110px !important;
+    transform: translateY(-50%);
+}
+
+.next-btn {
+    right: -110px !important;
+    transform: translateY(-50%);
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    opacity: .9 !important;
+}
+
+/* =====================================
+   REMOVE ÍCONES BOOTSTRAP
+===================================== */
+
+.prev-btn .carousel-control-prev-icon,
+.next-btn .carousel-control-next-icon {
+    background-image: none;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =====================================
+   SETAS PERFEITAMENTE CENTRALIZADAS
+===================================== */
+
+.prev-btn .carousel-control-prev-icon::after {
+    content: "";
+    width: 0;
+    height: 0;
+
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-right: 28px solid #fff;
+
+    margin-left: -4px;
+}
+
+.next-btn .carousel-control-next-icon::after {
+    content: "";
+    width: 0;
+    height: 0;
+
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 28px solid #fff;
+
+    margin-right: -4px;
+}
+
+/* =====================================
+   BOLINHAS
+===================================== */
+
+.bolinha-box-vermelho {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #B6492E;
+}
+
+.bolinha-box-verde {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #6F7F5F;
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 768px) {
+
+    .carousel {
+        overflow: visible;
+    }
+
+    .carousel-card,
+    .carousel-card-img {
+        padding: 20px;
+    }
+
+    .carousel-card {
+        min-height: auto;
+    }
+
+    .carousel-card-img {
+        min-height: auto;
+    }
+
+    .carousel-card p,
+    .carousel-card-img p {
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .carousel-card-img img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* =====================
+       BOTÕES MOBILE
+    ===================== */
+
+    .prev-btn,
+    .next-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .prev-btn {
+        left: -10px !important;
+    }
+
+    .next-btn {
+        right: -10px !important;
+    }
+
+    /* =====================
+       SETAS MOBILE
+    ===================== */
+
+    .prev-btn .carousel-control-prev-icon::after {
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 12px solid #fff;
+        margin-left: -2px;
+    }
+
+    .next-btn .carousel-control-next-icon::after {
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 12px solid #fff;
+        margin-right: -2px;
+    }
+
+    /* =====================
+       BOLINHAS
+    ===================== */
+
+    .bolinha-box-verde,
+    .bolinha-box-vermelho {
+        width: 8px;
+        height: 8px;
+    }
+}
