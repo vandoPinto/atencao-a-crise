@@ -544,3 +544,44 @@ if (document.readyState !== "loading") {
 } else {
   document.addEventListener("DOMContentLoaded", initAudioPlayers);
 }
+
+// Aba lateral
+
+
+document.querySelectorAll('.abas-laterais').forEach(function (grupo) {
+    const abas = grupo.querySelectorAll('.aba-lateral');
+    const classesAtivas = ['aba-ativa-1', 'aba-ativa-2', 'aba-ativa-3', 'aba-ativa-4'];
+
+    function limparEstado() {
+        grupo.classList.remove(...classesAtivas);
+
+        abas.forEach(function (aba) {
+            aba.classList.remove('is-active');
+
+            const botao = aba.querySelector('.aba-lateral__botao');
+            botao.setAttribute('aria-expanded', 'false');
+        });
+    }
+
+    abas.forEach(function (aba, index) {
+        const botao = aba.querySelector('.aba-lateral__botao');
+
+        botao.addEventListener('click', function () {
+            const jaEstaAberta = aba.classList.contains('is-active') && !grupo.classList.contains('is-closed');
+
+            limparEstado();
+
+            if (jaEstaAberta) {
+                grupo.classList.add('is-closed');
+                return;
+            }
+
+            grupo.classList.remove('is-closed');
+            grupo.classList.add('aba-ativa-' + (index + 1));
+
+            aba.classList.add('is-active');
+            botao.setAttribute('aria-expanded', 'true');
+        });
+    });
+});
+
