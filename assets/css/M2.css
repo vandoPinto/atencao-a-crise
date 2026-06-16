@@ -954,7 +954,7 @@ h2 {
 .seta-03 {
     position: absolute;
     width: 20%;
-    bottom: -110px;
+    top: -150px;
     right: 60px;
     z-index: 2;
 }
@@ -1038,7 +1038,7 @@ h2 {
 
 .seta8-direita {
     position: absolute;
-    top: 24%;
+    bottom: 5%;
     right: 9%;
     width: 8%;
     transform: rotate(196deg);
@@ -1047,8 +1047,8 @@ h2 {
 
 .seta8-2_sections {
     position: absolute;
-    top: 66%;
-    left: 52%;
+    top: 85%;
+    left: 25%;
     width: 8%;
     transform: rotate(134deg);
     z-index: 9;
@@ -1056,7 +1056,7 @@ h2 {
 
 .seta9-esquerda-2_sections {
     position: absolute;
-    bottom: -110px;
+    bottom: 680px;
     left: 3%;
     width: clamp(90px, 20vw, 280px);
     transform: rotate(27deg);
