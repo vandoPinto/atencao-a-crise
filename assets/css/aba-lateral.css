@@ -1,0 +1,488 @@
+/* =========================================================
+   ABAS LATERAIS DO MODAL
+   ========================================================= */
+
+.abas-laterais,
+.abas-laterais * {
+    box-sizing: border-box;
+}
+
+.abas-laterais {
+    --largura-orelha: 120px;
+    --altura-orelha: 120px;
+    --sobreposicao-orelha: 60px;
+    --saida-orelha: calc(var(--largura-orelha) - var(--sobreposicao-orelha));
+
+    --trilho: calc(100% - var(--saida-orelha));
+    --faixa-fechada: calc(var(--trilho) / 3);
+    --faixa-aberta: clamp(72px, 7.5vw, 94px);
+
+    width: 100%;
+    height: 540px;
+    margin: 28px auto 0;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+
+/* Cada aba é uma camada posicionada dentro do box */
+.aba-lateral {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    overflow: visible;
+    background: var(--cor-faixa);
+    transition: left 0.35s ease, width 0.35s ease;
+}
+
+/* Cores e posições verticais */
+.aba-1 {
+    --cor-faixa: #D8C4A8;
+    --cor-ativa: #F4EDE4;
+    --tab-bg: #F4EDE4;
+    --tab-color: #707070;
+    --tab-y: 25px;
+}
+
+.aba-2 {
+    --cor-faixa: #D8C4A8;
+    --cor-ativa: #D8C4A8;
+    --tab-bg: #D8C4A8;
+    --tab-color: #ffffff;
+    --tab-y: 150px;
+}
+
+.aba-3 {
+    --cor-faixa: #6F7F5F;
+    --cor-ativa: #6F7F5F;
+    --cor-texto: #ffffff;
+    --tab-bg: #6F7F5F;
+    --tab-color: #ffffff;
+    --tab-y: 271px;
+}
+
+.aba-4 {
+    --cor-faixa: #B6492E;
+    --cor-ativa: #B6492E;
+    --cor-texto: #ffffff;
+    --tab-bg: #B6492E;
+    --tab-color: #ffffff;
+    --tab-y: 392px;
+}
+
+/* Botões / orelhas */
+.aba-lateral__botao {
+    position: absolute;
+    top: var(--tab-y);
+    left: 0;
+    z-index: 30;
+
+    width: var(--largura-orelha);
+    height: var(--altura-orelha);
+
+    border: 0;
+    border-radius: 0 24px 24px 0;
+    background: var(--tab-bg);
+    color: var(--tab-color);
+
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    padding: 0;
+}
+
+/* .aba-lateral__botao:hover {
+    filter: brightness(0.97);
+} */
+
+/* Conteúdo */
+.aba-lateral__conteudo {
+    display: none;
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+
+    height: 100%;
+    overflow-y: auto;
+
+    padding: 44px 70px 44px 70px;
+
+    color: var(--cor-texto);
+    font-size: 1rem;
+    line-height: 1.35;
+}
+
+.aba-lateral.is-active .aba-lateral__conteudo {
+    display: block;
+}
+
+.aba-3 .aba-lateral__conteudo,
+.aba-3 .aba-lateral__conteudo p,
+.aba-4 .aba-lateral__conteudo,
+.aba-4 .aba-lateral__conteudo p {
+    color: #ffffff;
+}
+
+/* Scroll discreto */
+.aba-lateral__conteudo::-webkit-scrollbar {
+    width: 6px;
+}
+
+.aba-lateral__conteudo::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 999px;
+}
+
+.aba-lateral__botao:focus,
+.aba-lateral__botao:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+/* =========================================================
+   ESTADO FECHADO
+   ========================================================= */
+
+.abas-laterais.is-closed {
+    background:
+        linear-gradient(
+            90deg,
+            #D8C4A8 0%,
+            #D8C4A8 33.333%,
+            #6F7F5F 33.333%,
+            #6F7F5F 66.666%,
+            #B6492E 66.666%,
+            #B6492E 100%
+        )
+        left top / var(--trilho) 100%
+        no-repeat;
+}
+
+.abas-laterais.is-closed .aba-lateral {
+    background: transparent;
+    pointer-events: none;
+}
+
+.abas-laterais.is-closed .aba-lateral__botao {
+    pointer-events: auto;
+}
+
+/* Posição fechada das abas */
+.abas-laterais.is-closed .aba-1 {
+    left: 0;
+    width: var(--faixa-fechada);
+}
+
+.abas-laterais.is-closed .aba-2 {
+    left: var(--faixa-fechada);
+    width: var(--faixa-fechada);
+}
+
+.abas-laterais.is-closed .aba-3 {
+    left: calc(var(--faixa-fechada) + var(--faixa-fechada));
+    width: var(--faixa-fechada);
+}
+
+.abas-laterais.is-closed .aba-4 {
+    left: calc(var(--trilho) - var(--sobreposicao-orelha));
+    width: var(--largura-orelha);
+}
+
+/* Aba 4 fechada vira orelha para a direita, sem sair do modal */
+.abas-laterais.is-closed .aba-4 .aba-lateral__botao {
+    left: 0;
+}
+
+/* Sem conteúdo quando fechado */
+.abas-laterais.is-closed .aba-lateral__conteudo {
+    display: none;
+}
+
+/* =========================================================
+   ESTADO ABERTO — REGRAS GERAIS
+   ========================================================= */
+
+.abas-laterais:not(.is-closed) .aba-lateral {
+    background: var(--cor-faixa);
+}
+
+.abas-laterais:not(.is-closed) .aba-lateral.is-active {
+    background: var(--cor-ativa);
+}
+
+/* As abas 1, 2 e 3, quando ativas, mantêm a orelha na borda direita */
+.abas-laterais:not(.is-closed) .aba-lateral.is-active .aba-lateral__botao {
+    left: calc(100% - var(--sobreposicao-orelha));
+}
+
+/* A aba 4 também ganha orelha, mas dentro do limite do modal */
+.abas-laterais:not(.is-closed) .aba-4 .aba-lateral__botao {
+    left: calc(100% - var(--sobreposicao-orelha));
+}
+
+/* =========================================================
+   ABA 1 ABERTA
+   ========================================================= */
+
+.abas-laterais.aba-ativa-1 .aba-1 {
+    left: 0;
+    width: calc(var(--trilho) - var(--faixa-aberta) - var(--faixa-aberta) - var(--faixa-aberta));
+}
+
+.abas-laterais.aba-ativa-1 .aba-2 {
+    left: calc(var(--trilho) - var(--faixa-aberta) - var(--faixa-aberta) - var(--faixa-aberta));
+    width: var(--faixa-aberta);
+}
+
+.abas-laterais.aba-ativa-1 .aba-3 {
+    left: calc(var(--trilho) - var(--faixa-aberta) - var(--faixa-aberta));
+    width: var(--faixa-aberta);
+}
+
+.abas-laterais.aba-ativa-1 .aba-4 {
+    left: calc(var(--trilho) - var(--faixa-aberta));
+    width: var(--faixa-aberta);
+}
+
+/* =========================================================
+   ABA 2 ABERTA
+   ========================================================= */
+
+.abas-laterais.aba-ativa-2 .aba-1 {
+    left: 0;
+    width: var(--faixa-aberta);
+}
+
+.abas-laterais.aba-ativa-2 .aba-2 {
+    left: var(--faixa-aberta);
+    width: calc(var(--trilho) - var(--faixa-aberta) - var(--faixa-aberta) - var(--faixa-aberta));
+}
+
+.abas-laterais.aba-ativa-2 .aba-3 {
+    left: calc(var(--trilho) - var(--faixa-aberta) - var(--faixa-aberta));
+    width: var(--faixa-aberta);
+}
+
+.abas-laterais.aba-ativa-2 .aba-4 {
+    left: calc(var(--trilho) - var(--faixa-aberta));
+    width: var(--faixa-aberta);
+}
+
+/* =========================================================
+   ABA 3 ABERTA
+   ========================================================= */
+
+.abas-laterais.aba-ativa-3 .aba-1 {
+    left: 0;
+    width: var(--faixa-aberta);
+}
+
+.abas-laterais.aba-ativa-3 .aba-2 {
+    left: var(--faixa-aberta);
+    width: var(--faixa-aberta);
+}
+
+.abas-laterais.aba-ativa-3 .aba-3 {
+    left: calc(var(--faixa-aberta) + var(--faixa-aberta));
+    width: calc(var(--trilho) - var(--faixa-aberta) - var(--faixa-aberta) - var(--faixa-aberta));
+}
+
+.abas-laterais.aba-ativa-3 .aba-4 {
+    left: calc(var(--trilho) - var(--faixa-aberta));
+    width: var(--faixa-aberta);
+}
+
+/* =========================================================
+   ABA 4 ABERTA
+   ========================================================= */
+
+.abas-laterais.aba-ativa-4 .aba-1 {
+    left: 0;
+    width: var(--faixa-aberta);
+}
+
+.abas-laterais.aba-ativa-4 .aba-2 {
+    left: var(--faixa-aberta);
+    width: var(--faixa-aberta);
+}
+
+.abas-laterais.aba-ativa-4 .aba-3 {
+    left: calc(var(--faixa-aberta) + var(--faixa-aberta));
+    width: var(--faixa-aberta);
+}
+
+.abas-laterais.aba-ativa-4 .aba-4 {
+    left: calc(var(--faixa-aberta) + var(--faixa-aberta) + var(--faixa-aberta));
+    width: calc(var(--trilho) - var(--faixa-aberta) - var(--faixa-aberta) - var(--faixa-aberta));
+}
+
+/* =========================================================
+   RESPONSIVO TABLET
+   ========================================================= */
+
+@media (max-width: 992px) {
+    .abas-laterais {
+        height: 500px;
+
+        --largura-orelha: 112px;
+        --altura-orelha: 86px;
+        --sobreposicao-orelha: 24px;
+        --faixa-aberta: 68px;
+    }
+
+    .aba-lateral__botao {
+        font-size: 3.8rem;
+        border-radius: 0 20px 20px 0;
+    }
+
+    .aba-lateral__conteudo {
+        padding: 36px 130px 36px 52px;
+    }
+
+    .aba-1 {
+        --tab-y: 34px;
+    }
+
+    .aba-2 {
+        --tab-y: 132px;
+    }
+
+    .aba-3 {
+        --tab-y: 230px;
+    }
+
+    .aba-4 {
+        --tab-y: 336px;
+    }
+}
+
+/* =========================================================
+   RESPONSIVO MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+    .abas-laterais {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        margin-top: 24px;
+        overflow: hidden;
+        background: none;
+    }
+
+    .abas-laterais.is-closed {
+        background: none;
+    }
+
+    .abas-laterais .aba-lateral,
+    .abas-laterais.is-closed .aba-lateral,
+    .abas-laterais:not(.is-closed) .aba-lateral,
+    .abas-laterais.aba-ativa-1 .aba-lateral,
+    .abas-laterais.aba-ativa-2 .aba-lateral,
+    .abas-laterais.aba-ativa-3 .aba-lateral,
+    .abas-laterais.aba-ativa-4 .aba-lateral {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        height: auto;
+        min-height: 76px;
+        background: var(--cor-faixa);
+        pointer-events: auto;
+    }
+
+    .abas-laterais .aba-lateral.is-active {
+        background: var(--cor-ativa);
+    }
+
+    .abas-laterais .aba-lateral__botao,
+    .abas-laterais.is-closed .aba-lateral__botao,
+    .abas-laterais:not(.is-closed) .aba-lateral__botao,
+    .abas-laterais:not(.is-closed) .aba-lateral.is-active .aba-lateral__botao,
+    .abas-laterais:not(.is-closed) .aba-4 .aba-lateral__botao {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        height: 76px;
+        border-radius: 0;
+        justify-content: flex-start;
+        padding-left: 28px;
+        font-size: 3rem;
+    }
+
+    .aba-lateral__conteudo,
+    .aba-lateral.is-active .aba-lateral__conteudo {
+        position: relative;
+        inset: auto;
+        height: auto;
+        padding: 24px;
+    }
+
+    .abas-laterais.is-closed .aba-lateral__conteudo {
+        display: none;
+    }
+}
+
+.recurso-hover-img {
+    position: relative;
+    width: 100%;
+}
+
+.recurso-hover-img img {
+    width: 100%;
+    display: block;
+}
+
+.recurso-hover-1,
+.recurso-hover-2,
+.recurso-hover-3 {
+    top: 0;
+    width: 33.33%;
+    height: 100%;
+    z-index: 10;
+}
+
+.recurso-hover-1 {
+    left: 0;
+}
+
+.recurso-hover-2 {
+    left: 33.33%;
+}
+
+.recurso-hover-3 {
+    left: 66.66%;
+}
+
+.recurso-hover-texto {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 82%;
+    z-index: 20;
+    margin: 0;
+    padding: 18px 26px;
+    border-radius: 18px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.recurso-hover-texto p {
+    margin: 0;
+    color: #fff;
+    line-height: 1.28;
+}
+
+.recurso-hover-1:hover ~ .recurso-hover-texto-1,
+.recurso-hover-2:hover ~ .recurso-hover-texto-2,
+.recurso-hover-3:hover ~ .recurso-hover-texto-3 {
+    display: block;
+}

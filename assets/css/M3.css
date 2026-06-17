@@ -363,6 +363,36 @@ h2 {
     color: #fff;
 }
 
+/* Box - importante */
+
+.importante {
+    background: #6F7F5F;
+    padding: 40px;
+    border-radius: 50px;
+    margin: 20px 0;
+}
+
+.importante img {
+    width: 80%;
+    height: auto;
+}
+
+.importante p {
+    color: #fff;
+}
+
+.importante ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    color: #fff;
+
+}
+
+.importante a {
+    color: #fff;
+}
+
+
 .borda {
     border-radius: 16px;
 }
@@ -1795,9 +1825,9 @@ h2 {
 
 /* Modal 4 */
 .hotspot-4 {
-    top: 36.5%;
-    left: 5%;
-    width: 28%;
+    top: 35.5%;
+    left: 72%;
+    width: 23%;
     height: 24%;
 }
 
@@ -1811,10 +1841,12 @@ h2 {
 
 /* Modal 6 */
 .hotspot-6 {
-    top: 35.5%;
-    left: 72%;
-    width: 23%;
+    top: 36.5%;
+    left: 5%;
+    width: 28%;
     height: 24%;
+
+    
 }
 
 /* Modal 7 */
@@ -1936,429 +1968,3 @@ h2 {
     }
 }
 
-/* =========================================================
-   ABAS LATERAIS DO MODAL
-   ========================================================= */
-
-.abas-laterais,
-.abas-laterais * {
-    box-sizing: border-box;
-}
-
-.abas-laterais {
-    --bege: #d9c8a8;
-    --verde: #738463;
-    --terracota: #b8462c;
-    --off-white: #f4f0e8;
-    --cinza-numero: #666666;
-
-    --largura-orelha: 132px;
-    --altura-orelha: 100px;
-    --sobreposicao-orelha: 90px;
-    --saida-orelha: calc(var(--largura-orelha) - var(--sobreposicao-orelha));
-
-    --trilho: calc(100% - var(--saida-orelha));
-    --faixa-fechada: calc(var(--trilho) / 3);
-    --faixa-aberta: clamp(72px, 7.5vw, 94px);
-
-    width: 100%;
-    height: 540px;
-    margin: 28px auto 0;
-    position: relative;
-    overflow: hidden;
-    background: transparent;
-}
-
-/* Cada aba é uma camada posicionada dentro do box */
-.aba-lateral {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    overflow: visible;
-    background: var(--cor-faixa);
-    transition: left 0.35s ease, width 0.35s ease;
-}
-
-/* Cores e posições verticais */
-.aba-1 {
-    --cor-faixa: var(--bege);
-    --cor-ativa: var(--off-white);
-    --cor-texto: #333333;
-    --tab-bg: var(--off-white);
-    --tab-color: var(--cinza-numero);
-    --tab-y: 38px;
-}
-
-.aba-2 {
-    --cor-faixa: var(--bege);
-    --cor-ativa: var(--bege);
-    --cor-texto: #333333;
-    --tab-bg: var(--bege);
-    --tab-color: #ffffff;
-    --tab-y: 150px;
-}
-
-.aba-3 {
-    --cor-faixa: var(--verde);
-    --cor-ativa: var(--verde);
-    --cor-texto: #ffffff;
-    --tab-bg: var(--verde);
-    --tab-color: #ffffff;
-    --tab-y: 262px;
-}
-
-.aba-4 {
-    --cor-faixa: var(--terracota);
-    --cor-ativa: var(--terracota);
-    --cor-texto: #ffffff;
-    --tab-bg: var(--terracota);
-    --tab-color: #ffffff;
-    --tab-y: 384px;
-}
-
-/* Botões / orelhas */
-.aba-lateral__botao {
-    position: absolute;
-    top: var(--tab-y);
-    left: 0;
-    z-index: 30;
-
-    width: var(--largura-orelha);
-    height: var(--altura-orelha);
-
-    border: 0;
-    border-radius: 0 24px 24px 0;
-    background: var(--tab-bg);
-    color: var(--tab-color);
-
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 1;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    cursor: pointer;
-    padding: 0;
-}
-
-.aba-lateral__botao:hover {
-    filter: brightness(0.97);
-}
-
-/* Conteúdo */
-.aba-lateral__conteudo {
-    display: none;
-    position: absolute;
-    inset: 0;
-    z-index: 5;
-
-    height: 100%;
-    overflow-y: auto;
-
-    padding: 44px 170px 44px 70px;
-
-    color: var(--cor-texto);
-    font-size: 1rem;
-    line-height: 1.35;
-}
-
-.aba-lateral.is-active .aba-lateral__conteudo {
-    display: block;
-}
-
-/* Scroll discreto */
-.aba-lateral__conteudo::-webkit-scrollbar {
-    width: 6px;
-}
-
-.aba-lateral__conteudo::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.25);
-    border-radius: 999px;
-}
-
-/* =========================================================
-   ESTADO FECHADO
-   ========================================================= */
-
-.abas-laterais.is-closed {
-    background:
-        linear-gradient(
-            90deg,
-            var(--bege) 0%,
-            var(--bege) 33.333%,
-            var(--verde) 33.333%,
-            var(--verde) 66.666%,
-            var(--terracota) 66.666%,
-            var(--terracota) 100%
-        )
-        left top / var(--trilho) 100%
-        no-repeat;
-}
-
-.abas-laterais.is-closed .aba-lateral {
-    background: transparent;
-    pointer-events: none;
-}
-
-.abas-laterais.is-closed .aba-lateral__botao {
-    pointer-events: auto;
-}
-
-/* Posição fechada das abas */
-.abas-laterais.is-closed .aba-1 {
-    left: 0;
-    width: var(--faixa-fechada);
-}
-
-.abas-laterais.is-closed .aba-2 {
-    left: var(--faixa-fechada);
-    width: var(--faixa-fechada);
-}
-
-.abas-laterais.is-closed .aba-3 {
-    left: calc(var(--faixa-fechada) + var(--faixa-fechada));
-    width: var(--faixa-fechada);
-}
-
-.abas-laterais.is-closed .aba-4 {
-    left: calc(var(--trilho) - var(--sobreposicao-orelha));
-    width: var(--largura-orelha);
-}
-
-/* Aba 4 fechada vira orelha para a direita, sem sair do modal */
-.abas-laterais.is-closed .aba-4 .aba-lateral__botao {
-    left: 0;
-}
-
-/* Sem conteúdo quando fechado */
-.abas-laterais.is-closed .aba-lateral__conteudo {
-    display: none;
-}
-
-/* =========================================================
-   ESTADO ABERTO — REGRAS GERAIS
-   ========================================================= */
-
-.abas-laterais:not(.is-closed) .aba-lateral {
-    background: var(--cor-faixa);
-}
-
-.abas-laterais:not(.is-closed) .aba-lateral.is-active {
-    background: var(--cor-ativa);
-}
-
-/* As abas 1, 2 e 3, quando ativas, mantêm a orelha na borda direita */
-.abas-laterais:not(.is-closed) .aba-lateral.is-active .aba-lateral__botao {
-    left: calc(100% - var(--sobreposicao-orelha));
-}
-
-/* A aba 4 também ganha orelha, mas dentro do limite do modal */
-.abas-laterais:not(.is-closed) .aba-4 .aba-lateral__botao {
-    left: calc(100% - var(--sobreposicao-orelha));
-}
-
-/* =========================================================
-   ABA 1 ABERTA
-   ========================================================= */
-
-.abas-laterais.aba-ativa-1 .aba-1 {
-    left: 0;
-    width: calc(var(--trilho) - var(--faixa-aberta) - var(--faixa-aberta) - var(--faixa-aberta));
-}
-
-.abas-laterais.aba-ativa-1 .aba-2 {
-    left: calc(var(--trilho) - var(--faixa-aberta) - var(--faixa-aberta) - var(--faixa-aberta));
-    width: var(--faixa-aberta);
-}
-
-.abas-laterais.aba-ativa-1 .aba-3 {
-    left: calc(var(--trilho) - var(--faixa-aberta) - var(--faixa-aberta));
-    width: var(--faixa-aberta);
-}
-
-.abas-laterais.aba-ativa-1 .aba-4 {
-    left: calc(var(--trilho) - var(--faixa-aberta));
-    width: var(--faixa-aberta);
-}
-
-/* =========================================================
-   ABA 2 ABERTA
-   ========================================================= */
-
-.abas-laterais.aba-ativa-2 .aba-1 {
-    left: 0;
-    width: var(--faixa-aberta);
-}
-
-.abas-laterais.aba-ativa-2 .aba-2 {
-    left: var(--faixa-aberta);
-    width: calc(var(--trilho) - var(--faixa-aberta) - var(--faixa-aberta) - var(--faixa-aberta));
-}
-
-.abas-laterais.aba-ativa-2 .aba-3 {
-    left: calc(var(--trilho) - var(--faixa-aberta) - var(--faixa-aberta));
-    width: var(--faixa-aberta);
-}
-
-.abas-laterais.aba-ativa-2 .aba-4 {
-    left: calc(var(--trilho) - var(--faixa-aberta));
-    width: var(--faixa-aberta);
-}
-
-/* =========================================================
-   ABA 3 ABERTA
-   ========================================================= */
-
-.abas-laterais.aba-ativa-3 .aba-1 {
-    left: 0;
-    width: var(--faixa-aberta);
-}
-
-.abas-laterais.aba-ativa-3 .aba-2 {
-    left: var(--faixa-aberta);
-    width: var(--faixa-aberta);
-}
-
-.abas-laterais.aba-ativa-3 .aba-3 {
-    left: calc(var(--faixa-aberta) + var(--faixa-aberta));
-    width: calc(var(--trilho) - var(--faixa-aberta) - var(--faixa-aberta) - var(--faixa-aberta));
-}
-
-.abas-laterais.aba-ativa-3 .aba-4 {
-    left: calc(var(--trilho) - var(--faixa-aberta));
-    width: var(--faixa-aberta);
-}
-
-/* =========================================================
-   ABA 4 ABERTA
-   ========================================================= */
-
-.abas-laterais.aba-ativa-4 .aba-1 {
-    left: 0;
-    width: var(--faixa-aberta);
-}
-
-.abas-laterais.aba-ativa-4 .aba-2 {
-    left: var(--faixa-aberta);
-    width: var(--faixa-aberta);
-}
-
-.abas-laterais.aba-ativa-4 .aba-3 {
-    left: calc(var(--faixa-aberta) + var(--faixa-aberta));
-    width: var(--faixa-aberta);
-}
-
-.abas-laterais.aba-ativa-4 .aba-4 {
-    left: calc(var(--faixa-aberta) + var(--faixa-aberta) + var(--faixa-aberta));
-    width: calc(var(--trilho) - var(--faixa-aberta) - var(--faixa-aberta) - var(--faixa-aberta));
-}
-
-/* =========================================================
-   RESPONSIVO TABLET
-   ========================================================= */
-
-@media (max-width: 992px) {
-    .abas-laterais {
-        height: 500px;
-
-        --largura-orelha: 112px;
-        --altura-orelha: 86px;
-        --sobreposicao-orelha: 24px;
-        --faixa-aberta: 68px;
-    }
-
-    .aba-lateral__botao {
-        font-size: 3.8rem;
-        border-radius: 0 20px 20px 0;
-    }
-
-    .aba-lateral__conteudo {
-        padding: 36px 130px 36px 52px;
-    }
-
-    .aba-1 {
-        --tab-y: 34px;
-    }
-
-    .aba-2 {
-        --tab-y: 132px;
-    }
-
-    .aba-3 {
-        --tab-y: 230px;
-    }
-
-    .aba-4 {
-        --tab-y: 336px;
-    }
-}
-
-/* =========================================================
-   RESPONSIVO MOBILE
-   ========================================================= */
-
-@media (max-width: 768px) {
-    .abas-laterais {
-        width: 100%;
-        height: auto;
-        min-height: 0;
-        margin-top: 24px;
-        overflow: hidden;
-        background: none;
-    }
-
-    .abas-laterais.is-closed {
-        background: none;
-    }
-
-    .abas-laterais .aba-lateral,
-    .abas-laterais.is-closed .aba-lateral,
-    .abas-laterais:not(.is-closed) .aba-lateral,
-    .abas-laterais.aba-ativa-1 .aba-lateral,
-    .abas-laterais.aba-ativa-2 .aba-lateral,
-    .abas-laterais.aba-ativa-3 .aba-lateral,
-    .abas-laterais.aba-ativa-4 .aba-lateral {
-        position: relative;
-        left: auto;
-        top: auto;
-        width: 100%;
-        height: auto;
-        min-height: 76px;
-        background: var(--cor-faixa);
-        pointer-events: auto;
-    }
-
-    .abas-laterais .aba-lateral.is-active {
-        background: var(--cor-ativa);
-    }
-
-    .abas-laterais .aba-lateral__botao,
-    .abas-laterais.is-closed .aba-lateral__botao,
-    .abas-laterais:not(.is-closed) .aba-lateral__botao,
-    .abas-laterais:not(.is-closed) .aba-lateral.is-active .aba-lateral__botao,
-    .abas-laterais:not(.is-closed) .aba-4 .aba-lateral__botao {
-        position: relative;
-        top: auto;
-        left: auto;
-        width: 100%;
-        height: 76px;
-        border-radius: 0;
-        justify-content: flex-start;
-        padding-left: 28px;
-        font-size: 3rem;
-    }
-
-    .aba-lateral__conteudo,
-    .aba-lateral.is-active .aba-lateral__conteudo {
-        position: relative;
-        inset: auto;
-        height: auto;
-        padding: 24px;
-    }
-
-    .abas-laterais.is-closed .aba-lateral__conteudo {
-        display: none;
-    }
-}

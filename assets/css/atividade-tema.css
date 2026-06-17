@@ -13,20 +13,22 @@
     align-items: center;
     justify-content: center;
     padding: 50px;
+    padding-left: 120px;
 }
 
 .texto-centro {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    text-align: center;
-    max-width: 800px;
+    text-align: left;
+    max-width: 850px;
 }
 
 .texto-centro p {
     color: #fff;
     font-weight: normal;
-    text-align: center;
+    text-align: left;
+    
 }
 
 .tema-btn {
@@ -36,7 +38,7 @@
     background: #bc4b2d;
     color: #fff;
     border: none;
-    font-size: 1.2rem;
+    /* font-size: 1.1rem; */
     font-weight: 700;
     cursor: pointer;
     transition: .3s;
@@ -80,12 +82,12 @@
 
 /* Posições */
 .tema1 {
-    top: 50px;
+    top: 60px;
     left: -50px;
 }
 
 .tema2 {
-    top: 190px;
+    top: 198px;
     left: -50px;
 }
 
