@@ -1,0 +1,125 @@
+.book-interativo {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.book-interativo img {
+    width: 100%;
+    display: block;
+}
+
+.book-capa {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    display: none;
+    cursor: pointer;
+}
+
+.book-capa.is-active {
+    display: block;
+}
+
+.book-aberto,
+.book-final {
+    display: none;
+    position: relative;
+}
+
+.book-final {
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+.book-aberto.is-active,
+.book-final.is-active {
+    display: block;
+}
+
+.book-texto {
+    position: absolute;
+    color: #3c3935;
+}
+
+.book-texto p {
+    font-size: 1.1rem!important;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.book-texto-esquerda {
+    top: 15%;
+    left: 17%;
+    width: 29%;
+}
+
+.book-texto-direita {
+    top: 20%;
+    left: 55%;
+    width: 29%;
+}
+
+.book-texto h3 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.book-tab {
+    position: absolute;
+    width: 8%;
+    height: 10%;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.book-tab:focus,
+.book-tab:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+.book-tab-1 { top: 16%; left: 5%; }
+.book-tab-2 { top: 30%; left: 5%; }
+.book-tab-3 { top: 43%; left: 5%; }
+.book-tab-4 { top: 56%; left: 5%; }
+.book-tab-5 { top: 69%; left: 5%; }
+.book-tab-6 { top: 16%; left: 87%; }
+.book-tab-7 { top: 30%; left: 87%; }
+.book-tab-8 { top: 43%; left: 87%; }
+.book-tab-9 { top: 56%; left: 87%; }
+.book-tab-10 { top: 69%; left: 87%; }
+
+@media (max-width: 991px) {
+    .book-texto h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .book-texto p {
+        font-size: 0.82rem;
+        line-height: 1.15;
+        margin-bottom: 0.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .book-capa {
+        width: 100%;
+    }
+
+    .book-texto h3 {
+        font-size: 1rem;
+    }
+
+    .book-texto p {
+        font-size: 0.65rem;
+    }
+}
