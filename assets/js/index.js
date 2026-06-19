@@ -585,3 +585,158 @@ document.querySelectorAll('.abas-laterais').forEach(function (grupo) {
     });
 });
 
+// Accordion lateral
+function initAccordionLateral() {
+    document.querySelectorAll('[data-accordion-lateral]').forEach(function (accordion) {
+        const itens = Array.from(accordion.querySelectorAll('.accordion-lateral__item'));
+
+        itens.forEach(function (item) {
+            const botao = item.querySelector('.accordion-lateral__botao');
+            const painel = item.querySelector('.accordion-lateral__painel');
+
+            if (!botao || !painel) return;
+
+            botao.addEventListener('click', function () {
+                const estavaAberto = item.classList.contains('is-active');
+
+                itens.forEach(function (outroItem) {
+                    const outroBotao = outroItem.querySelector('.accordion-lateral__botao');
+                    const outroPainel = outroItem.querySelector('.accordion-lateral__painel');
+
+                    outroItem.classList.remove('is-active');
+                    if (outroBotao) outroBotao.setAttribute('aria-expanded', 'false');
+                    if (outroPainel) outroPainel.hidden = true;
+                });
+
+                if (estavaAberto) return;
+
+                item.classList.add('is-active');
+                botao.setAttribute('aria-expanded', 'true');
+                painel.hidden = false;
+            });
+        });
+    });
+}
+
+if (document.readyState !== 'loading') {
+    initAccordionLateral();
+} else {
+    document.addEventListener('DOMContentLoaded', initAccordionLateral);
+}
+
+// Carrossel módulo 2 - section 3
+function initCarouselM3() {
+    document.querySelectorAll('[data-carousel-m3]').forEach(function (carousel) {
+        const track = carousel.querySelector('[data-carousel-m3-track]');
+        const slides = Array.from(carousel.querySelectorAll('[data-carousel-m3-slide]'));
+        const dots = Array.from(carousel.querySelectorAll('[data-carousel-m3-dot]'));
+        const prevButton = carousel.querySelector('[data-carousel-m3-prev]');
+        const nextButton = carousel.querySelector('[data-carousel-m3-next]');
+
+        if (!track || slides.length === 0) return;
+
+        let currentIndex = 0;
+
+        function goToSlide(index) {
+            currentIndex = (index + slides.length) % slides.length;
+            track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+
+            slides.forEach(function (slide, slideIndex) {
+                slide.classList.toggle('is-active', slideIndex === currentIndex);
+            });
+
+            dots.forEach(function (dot, dotIndex) {
+                const isActive = dotIndex === currentIndex;
+                dot.classList.toggle('is-active', isActive);
+                dot.setAttribute('aria-current', isActive ? 'true' : 'false');
+            });
+        }
+
+        if (prevButton) {
+            prevButton.addEventListener('click', function () {
+                goToSlide(currentIndex - 1);
+            });
+        }
+
+        if (nextButton) {
+            nextButton.addEventListener('click', function () {
+                goToSlide(currentIndex + 1);
+            });
+        }
+
+        dots.forEach(function (dot, dotIndex) {
+            dot.addEventListener('click', function () {
+                goToSlide(dotIndex);
+            });
+        });
+
+        goToSlide(0);
+    });
+}
+
+if (document.readyState !== 'loading') {
+    initCarouselM3();
+} else {
+    document.addEventListener('DOMContentLoaded', initCarouselM3);
+}
+
+// Hotword dentro do carrossel: mostra o box fora do overflow do slide.
+function initCarouselHotwords() {
+    document.querySelectorAll('.carousel-m3 .hotword-item').forEach(function (item) {
+        const box = item.querySelector('.hotword-conteudo');
+        const trigger = item.querySelector('.hotword');
+
+        if (!box || !trigger) return;
+
+        let timer;
+        const originalParent = box.parentNode;
+        const originalNext = box.nextSibling;
+
+        function positionBox() {
+            const rect = trigger.getBoundingClientRect();
+            const gap = 10;
+            const boxWidth = Math.min(520, window.innerWidth - 32);
+            const left = Math.min(Math.max(16, rect.left), window.innerWidth - boxWidth - 16);
+
+            box.style.position = 'fixed';
+            box.style.top = (rect.bottom + gap) + 'px';
+            box.style.left = left + 'px';
+            box.style.width = boxWidth + 'px';
+            box.style.zIndex = '9999';
+        }
+
+        function showBox() {
+            clearTimeout(timer);
+            if (box.parentNode !== document.body) {
+                document.body.appendChild(box);
+            }
+            positionBox();
+            box.style.display = 'block';
+        }
+
+        function hideBox() {
+            timer = setTimeout(function () {
+                box.style.display = 'none';
+                box.removeAttribute('style');
+                originalParent.insertBefore(box, originalNext);
+            }, 300);
+        }
+
+        item.addEventListener('mouseenter', showBox);
+        item.addEventListener('mouseleave', hideBox);
+        box.addEventListener('mouseenter', function () { clearTimeout(timer); });
+        box.addEventListener('mouseleave', hideBox);
+        window.addEventListener('scroll', function () {
+            if (box.parentNode === document.body && box.style.display !== 'none') positionBox();
+        });
+        window.addEventListener('resize', function () {
+            if (box.parentNode === document.body && box.style.display !== 'none') positionBox();
+        });
+    });
+}
+
+if (document.readyState !== 'loading') {
+    initCarouselHotwords();
+} else {
+    document.addEventListener('DOMContentLoaded', initCarouselHotwords);
+}
