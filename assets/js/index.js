@@ -740,3 +740,77 @@ if (document.readyState !== 'loading') {
 } else {
     document.addEventListener('DOMContentLoaded', initCarouselHotwords);
 }
+
+// Boxes radio 1 a 6
+function initBoxesRadio() {
+    const dados = {
+        1: {
+            cor: '#548B6C',
+            posicao: 'baixo',
+            texto: 'A indicação das contenções é baseada na experiência, já que não existem estudos rigorosos que autorizem o seu uso (Sailas; Fenton, 2000) e se restringiria às situações de crise muito graves, em situações de risco evidente, em curso ou iminente, e nas quais as medidas de continência se mostraram infrutíferas (NICE, 2005; OMS, 2005).'
+        },
+        2: {
+            cor: '#66939B',
+            posicao: 'topo',
+            texto: 'A contenção é uma intervenção de segurança, tipo último recurso, o que não significa que seja realizada com violência e desprezo pela segurança, saúde e direitos humanos do usuário (Department of Health and Human Services, 1999; NICE, 2005; OMS, 2005).'
+        },
+        3: {
+            cor: '#B0A767',
+            posicao: 'baixo',
+            texto: 'Não é recomendada a contenção de crianças e adolescentes.'
+        },
+        4: {
+            cor: '#DB8A2A',
+            posicao: 'topo',
+            texto: 'A comunicação do procedimento ao usuário, familiares ou responsáveis é imperativa. A revisão e discussão do evento de contenção, após sua realização, também deve ser realizada (NICE, 2005).'
+        },
+        5: {
+            cor: '#D07F79',
+            posicao: 'baixo',
+            texto: 'A contenção jamais será utilizada para propósitos de disciplina, retaliação e coerção; para conveniências da equipe de qualquer espécie, inclusive, para a remoção de usuário para outros níveis de tratamento e como procedimento para compensar as pressões de tempo.'
+        },
+        6: {
+            cor: '#9E8494',
+            posicao: 'topo',
+            texto: 'A rede de atenção às crises humanizada, centrada no usuário, deve prevenir, reduzir e, no horizonte, eliminar as contenções.'
+        }
+    };
+
+    document.querySelectorAll('[data-boxes-radio]').forEach(function (recurso) {
+        const botoes = recurso.querySelectorAll('[data-box-radio]');
+        const boxTopo = recurso.querySelector('[data-boxes-radio-topo]');
+        const boxBaixo = recurso.querySelector('[data-boxes-radio-baixo]');
+
+        function fecharBoxes() {
+            boxTopo.classList.remove('is-active');
+            boxBaixo.classList.remove('is-active');
+            boxTopo.innerHTML = '';
+            boxBaixo.innerHTML = '';
+        }
+
+        botoes.forEach(function (botao) {
+            botao.addEventListener('click', function () {
+                const item = dados[botao.dataset.boxRadio];
+                const box = item.posicao === 'topo' ? boxTopo : boxBaixo;
+
+                fecharBoxes();
+                botoes.forEach(function (outroBotao) {
+                    outroBotao.classList.remove('is-active');
+                    outroBotao.setAttribute('aria-expanded', 'false');
+                });
+
+                botao.classList.add('is-active');
+                botao.setAttribute('aria-expanded', 'true');
+                box.style.background = item.cor;
+                box.innerHTML = `<p>${item.texto}</p>`;
+                box.classList.add('is-active');
+            });
+        });
+    });
+}
+
+if (document.readyState !== 'loading') {
+    initBoxesRadio();
+} else {
+    document.addEventListener('DOMContentLoaded', initBoxesRadio);
+}

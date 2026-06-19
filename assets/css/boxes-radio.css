@@ -1,0 +1,188 @@
+/* boxes de A ate E */
+.principios-letras input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.principios-letras__opcoes {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 28px;
+    align-items: start;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.principios-letras__item {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.principios-letras__item img {
+    width: min(100%, 118px);
+    transition: transform .2s ease;
+}
+
+.principios-letras__item:hover img,
+#principio-a:checked ~ .principios-letras__opcoes .principios-letras__item--a img,
+#principio-b:checked ~ .principios-letras__opcoes .principios-letras__item--b img,
+#principio-c:checked ~ .principios-letras__opcoes .principios-letras__item--c img,
+#principio-d:checked ~ .principios-letras__opcoes .principios-letras__item--d img,
+#principio-e:checked ~ .principios-letras__opcoes .principios-letras__item--e img {
+    transform: translateY(-4px);
+}
+
+.principios-letras__respostas {
+    margin-top: 30px;
+}
+
+.principios-letras__box {
+    width: min(86%, 920px);
+    margin: 0 auto;
+    max-height: 0;
+    padding: 0 42px;
+    border-radius: 24px;
+    opacity: 0;
+    overflow: hidden;
+    box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.18);
+    transform: translateY(-8px);
+    transition: max-height .35s ease, padding .35s ease, opacity .25s ease, transform .35s ease;
+}
+
+.principios-letras__box p {
+    margin: 0;
+    color: #fff;
+}
+
+.principios-letras__box--a {
+    background: #628A77;
+}
+
+.principios-letras__box--b {
+    background: #5F7D7F;
+}
+
+.principios-letras__box--c {
+    background: #8C8652;
+}
+
+.principios-letras__box--d {
+    background: #CE9140;
+}
+
+.principios-letras__box--e {
+    background: #B47668;
+}
+
+#principio-a:checked ~ .principios-letras__respostas [data-principio="a"],
+#principio-b:checked ~ .principios-letras__respostas [data-principio="b"],
+#principio-c:checked ~ .principios-letras__respostas [data-principio="c"],
+#principio-d:checked ~ .principios-letras__respostas [data-principio="d"],
+#principio-e:checked ~ .principios-letras__respostas [data-principio="e"] {
+    max-height: 220px;
+    padding: 24px 42px;
+    opacity: 1;
+    transform: none;
+}
+
+@media (max-width: 768px) {
+    .principios-letras__opcoes {
+        gap: 14px;
+    }
+
+    .principios-letras__box {
+        width: 100%;
+        padding-right: 26px;
+        padding-left: 26px;
+    }
+
+    #principio-a:checked ~ .principios-letras__respostas [data-principio="a"],
+    #principio-b:checked ~ .principios-letras__respostas [data-principio="b"],
+    #principio-c:checked ~ .principios-letras__respostas [data-principio="c"],
+    #principio-d:checked ~ .principios-letras__respostas [data-principio="d"],
+    #principio-e:checked ~ .principios-letras__respostas [data-principio="e"] {
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+}
+
+/* boxes de 1 a 6 */
+.boxes-radio__opcoes {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 26px;
+    align-items: center;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.boxes-radio__item {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.boxes-radio__item img {
+    width: min(100%, 118px);
+    transition: transform .2s ease;
+}
+
+.boxes-radio__item:hover img,
+.boxes-radio__item.is-active img {
+    transform: translateY(-4px);
+}
+
+.boxes-radio__resposta {
+    width: min(86%, 920px);
+    max-height: 0;
+    margin: 0 auto;
+    padding: 0 42px;
+    border-radius: 24px;
+    opacity: 0;
+    overflow: hidden;
+    box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.18);
+    transform: translateY(-8px);
+    transition: max-height .35s ease, padding .35s ease, opacity .25s ease, transform .35s ease;
+}
+
+.boxes-radio__resposta--topo {
+    margin-bottom: 24px;
+}
+
+.boxes-radio__resposta--baixo {
+    margin-top: 24px;
+}
+
+.boxes-radio__resposta.is-active {
+    max-height: 260px;
+    padding: 24px 42px;
+    opacity: 1;
+    transform: none;
+}
+
+.boxes-radio__resposta p {
+    margin: 0;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .boxes-radio__opcoes {
+        gap: 12px;
+    }
+
+    .boxes-radio__resposta {
+        width: 100%;
+        padding-right: 26px;
+        padding-left: 26px;
+    }
+
+    .boxes-radio__resposta.is-active {
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+}

@@ -2348,16 +2348,9 @@ h2 {
     height: 20%;
 }
 
-/* Modal 31 */
-.hotspot-31 {
-    top: 58%;
-    left: 12%;
-    width: 10%;
-    height: 20%;
-}
 
 /* Modal 32 */
-.hotspot-32 {
+.hotspot-31 {
     top: 58%;
     left: 24%;
     width: 10%;
@@ -2365,7 +2358,7 @@ h2 {
 }
 
 /* Modal 33 */
-.hotspot-33 {
+.hotspot-32 {
     top: 58%;
     left: 37%;
     width: 10%;
@@ -2373,7 +2366,7 @@ h2 {
 }
 
 /* Modal 34 */
-.hotspot-34 {
+.hotspot-33 {
     top: 58%;
     left: 50%;
     width: 10%;
@@ -2381,7 +2374,7 @@ h2 {
 }
 
 /* Modal 35 */
-.hotspot-35 {
+.hotspot-34 {
     top: 58%;
     left: 63%;
     width: 10%;
@@ -2389,7 +2382,7 @@ h2 {
 }
 
 /* Modal 36 */
-.hotspot-36 {
+.hotspot-35 {
     top: 58%;
     left: 76%;
     width: 10%;
@@ -2486,6 +2479,65 @@ h2 {
     max-height: 180px;
     opacity: 1;
     transform: none;
+}
+
+/* 4 boxes numerados */
+.boxes-numerados {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 48px;
+    margin-top: 28px;
+}
+
+.box-numerado {
+    display: grid;
+    grid-template-columns: clamp(72px, 8vw, 120px) minmax(0, 1fr);
+    align-items: center;
+}
+
+.box-numerado__numero {
+    z-index: 1;
+    font-family: "Source Serif 4", sans-serif;
+    font-size: clamp(5.5rem, 9vw, 8.5rem);
+    font-weight: 900;
+    line-height: .75;
+    text-align: right;
+   transform: translateX(35px);
+}
+
+.box-numerado__texto {
+    min-height: 145px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 26px 34px 26px 46px;
+    border-radius: 14px;
+}
+
+.box-numerado__texto p {
+    margin: 0;
+}
+
+.box-numerado--1 .box-numerado__numero {
+    color: #4F9995;
+}
+
+.box-numerado--2 .box-numerado__numero {
+    color: #2F6F73;
+}
+
+.box-numerado--3 .box-numerado__numero {
+    color: #8FA65C;
+}
+
+.box-numerado--4 .box-numerado__numero {
+    color: #5A87A9;
+}
+
+@media (max-width: 991px) {
+    .boxes-numerados {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Modal 1 */
@@ -2828,6 +2880,26 @@ h2 {
     width: 17%;
 }
 
+/* SOAP - letras clicáveis */
+.soap-hotspot--s {
+    left: 0;
+    width: 20%;
+}
+
+.soap-hotspot--o {
+    left: 25%;
+    width: 22%;
+}
+
+.soap-hotspot--a {
+    left: 52%;
+    width: 21%;
+}
+
+.soap-hotspot--p {
+    left: 78%;
+    width: 22%;
+}
 .acena-box {
     position: absolute;
     left: 50%;
