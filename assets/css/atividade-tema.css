@@ -131,3 +131,9 @@
         display: none;
     }
 }
+
+@media (max-width: 768px) {
+    .painel-conteudo{
+        padding-left: 30px;
+    }
+}

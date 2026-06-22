@@ -691,46 +691,98 @@ function initCarouselHotwords() {
         let timer;
         const originalParent = box.parentNode;
         const originalNext = box.nextSibling;
+        const hasHover = window.matchMedia('(hover: hover)').matches;
 
         function positionBox() {
             const rect = trigger.getBoundingClientRect();
             const gap = 10;
             const boxWidth = Math.min(520, window.innerWidth - 32);
-            const left = Math.min(Math.max(16, rect.left), window.innerWidth - boxWidth - 16);
+            const left = Math.min(
+                Math.max(16, rect.left),
+                window.innerWidth - boxWidth - 16
+            );
 
             box.style.position = 'fixed';
             box.style.top = (rect.bottom + gap) + 'px';
             box.style.left = left + 'px';
             box.style.width = boxWidth + 'px';
-            box.style.zIndex = '9999';
-        }
-
-        function showBox() {
-            clearTimeout(timer);
-            if (box.parentNode !== document.body) {
-                document.body.appendChild(box);
-            }
-            positionBox();
+            box.style.maxWidth = 'calc(100vw - 32px)';
+            box.style.zIndex = '999999';
             box.style.display = 'block';
         }
 
-        function hideBox() {
-            timer = setTimeout(function () {
-                box.style.display = 'none';
-                box.removeAttribute('style');
+        function closeBox() {
+            clearTimeout(timer);
+
+            box.style.display = 'none';
+            box.removeAttribute('style');
+
+            if (originalParent && box.parentNode !== originalParent) {
                 originalParent.insertBefore(box, originalNext);
-            }, 300);
+            }
         }
 
-        item.addEventListener('mouseenter', showBox);
-        item.addEventListener('mouseleave', hideBox);
-        box.addEventListener('mouseenter', function () { clearTimeout(timer); });
-        box.addEventListener('mouseleave', hideBox);
-        window.addEventListener('scroll', function () {
-            if (box.parentNode === document.body && box.style.display !== 'none') positionBox();
+        function showBox(duration) {
+            clearTimeout(timer);
+
+            if (box.parentNode !== document.body) {
+                document.body.appendChild(box);
+            }
+
+            positionBox();
+
+            timer = setTimeout(closeBox, duration);
+        }
+
+        function isOpen() {
+            return box.parentNode === document.body && box.style.display === 'block';
+        }
+
+        if (hasHover) {
+            item.addEventListener('mouseenter', function () {
+                showBox(3000);
+            });
+
+            item.addEventListener('mouseleave', function () {
+                timer = setTimeout(closeBox, 300);
+            });
+
+            box.addEventListener('mouseenter', function () {
+                clearTimeout(timer);
+            });
+
+            box.addEventListener('mouseleave', function () {
+                timer = setTimeout(closeBox, 300);
+            });
+        }
+
+        trigger.addEventListener('pointerdown', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            if (e.pointerType === 'mouse') {
+                showBox(3000);
+            } else {
+                showBox(2500);
+            }
         });
+
+        document.addEventListener('pointerdown', function (e) {
+            if (
+                isOpen() &&
+                !trigger.contains(e.target) &&
+                !box.contains(e.target)
+            ) {
+                closeBox();
+            }
+        });
+
+        window.addEventListener('scroll', function () {
+            if (isOpen()) positionBox();
+        });
+
         window.addEventListener('resize', function () {
-            if (box.parentNode === document.body && box.style.display !== 'none') positionBox();
+            if (isOpen()) positionBox();
         });
     });
 }
@@ -740,7 +792,6 @@ if (document.readyState !== 'loading') {
 } else {
     document.addEventListener('DOMContentLoaded', initCarouselHotwords);
 }
-
 // Boxes radio 1 a 6
 function initBoxesRadio() {
     const dados = {

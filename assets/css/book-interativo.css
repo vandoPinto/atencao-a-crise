@@ -48,7 +48,7 @@
 }
 
 .book-texto p {
-    font-size: 1.1rem!important;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
     line-height: 1.2;
 }
@@ -97,29 +97,57 @@
 .book-tab-9 { top: 56%; left: 87%; }
 .book-tab-10 { top: 69%; left: 87%; }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
     .book-texto h3 {
         font-size: 1.4rem;
         margin-bottom: 0.6rem;
     }
 
     .book-texto p {
-        font-size: 0.82rem;
+        font-size: 0.9rem;
         line-height: 1.15;
         margin-bottom: 0.6rem;
     }
+
+
+    .book-texto {
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-right: 8px;
+    }
+
+    .book-texto-esquerda {
+        max-height: 58%;
+    }
+
+    .book-texto-direita {
+        max-height: 55%;
+    }
+
+    .book-texto::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .book-texto::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+
+    .book-texto::-webkit-scrollbar-track {
+        background: transparent;
+    }    
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
     .book-capa {
         width: 100%;
     }
 
     .book-texto h3 {
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .book-texto p {
-        font-size: 0.65rem;
+        font-size: 0.55rem!important;
     }
 }
