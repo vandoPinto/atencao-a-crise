@@ -176,7 +176,7 @@
 
      right: 42px;
      top: 18px;
-
+     z-index: -1;
      transform: rotate(36deg);
      transform-origin: right center;
  }
@@ -316,26 +316,26 @@
      opacity: 1;
  }
 
-/* Mantem o botao de fechar separado do conteudo nos modais da atividade. */
-.modal[id^="modal_caixa_"] .modal-dialog {
-    width: calc(100% - 32px);
-    margin: 76px auto 24px;
-    min-height: calc(100% - 100px);
-}
+ /* Mantem o botao de fechar separado do conteudo nos modais da atividade. */
+ .modal[id^="modal_caixa_"] .modal-dialog {
+     width: calc(100% - 32px);
+     margin: 76px auto 24px;
+     min-height: calc(100% - 100px);
+ }
 
-.modal[id^="modal_caixa_"] .modal-content {
-    max-height: calc(100vh - 100px);
-}
+ .modal[id^="modal_caixa_"] .modal-content {
+     max-height: calc(100vh - 100px);
+ }
 
-.modal[id^="modal_caixa_"] .modal-body {
-    max-height: calc(100vh - 100px);
-    overflow-y: auto;
-    overscroll-behavior: contain;
-}
+ .modal[id^="modal_caixa_"] .modal-body {
+     max-height: calc(100vh - 100px);
 
-@media (max-width: 575px) {
-    .modal[id^="modal_caixa_"] .modal-dialog {
-        width: calc(100% - 16px);
-        margin-top: 72px;
-    }
-}
+     overscroll-behavior: contain;
+ }
+
+ @media (max-width: 575px) {
+     .modal[id^="modal_caixa_"] .modal-dialog {
+         width: calc(100% - 16px);
+         margin-top: 72px;
+     }
+ }
