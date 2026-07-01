@@ -592,7 +592,7 @@ p {
     position: relative;
     display: flex;
     align-items: center;
-    padding: 18px 32px;
+    padding: 10px 10px;
     border-radius: 999px;
     border: 3px solid #6F7F5F;
     background-color: transparent;
@@ -602,8 +602,8 @@ p {
 
 /* ÍCONE BASE */
 .audio-play-icon {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: var(--red-main);
     position: relative;
@@ -657,7 +657,7 @@ p {
    Uma wave só: branco -> vira cinza conforme progresso
 ========================= */
 .audio-wave {
-    width: 220px;
+    width: 240px;
     height: 28px;
     position: relative;
     /* overflow: hidden; */
@@ -741,7 +741,22 @@ p {
 ========================= */
 @media (max-width: 768px) {
 
-    .box-podcast {
+    .refletir {
+        padding: 20px !important;
+    }
+
+    .refletir img {
+        width: 50% !important;
+        height: auto;
+        padding: 10px;
+    }
+
+    .box-titulo-marrom {
+        background: #8C6A4A;
+        padding: 20px;
+    }
+
+    /* .box-podcast {
 
         padding: 60px 20px;
     }
@@ -768,17 +783,6 @@ p {
 
 
     .box-audio-player .audio-bubble {
-        /* display: flex !important;
-        width: 100%; 
-         box-sizing: border-box;
-
-        gap: 10px;
-        padding: 14px 16px;
-
-        flex-wrap: nowrap;
-        align-items: center;
-        color: #6F7F5F;
-        ; */
         position: relative;
         display: grid;
         gap: 20px;
@@ -828,5 +832,33 @@ p {
     .audio-play-icon {
         width: 30px;
         height: 30px;
-    }
+    } */
+}
+
+
+.refletir {
+    background: #6F7F5F;
+    padding: 40px;
+    border-radius: 50px;
+    margin: 20px 0;
+}
+
+.refletir img {
+    width: 100%;
+    height: auto;
+}
+
+.refletir p {
+    color: #fff;
+}
+
+.refletir ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    color: #fff;
+
+}
+
+.refletir a {
+    color: #fff;
 }
