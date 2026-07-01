@@ -157,7 +157,7 @@
             <!-- <img src="recursos/img-m1/home.jpg" class="bg-img" alt="Imagem de fundo"> -->
 
             <div class="img-capa d-flex justify-content-center">
-                <img src="recursos/img-m1/NUSMAD_CRISE_Mod01_capa.svg" class="card-img-central img-fluid"
+                <img src="recursos/img-m1/banner-logo-curso.png" class="card-img-central img-fluid"
                     alt="Card central">
             </div>
 
@@ -240,7 +240,7 @@
                                     <p>
                                         <b>Clique</b> e conheça a história de Antônia.
                                         <b>Acesse</b> a transcrição
-                                        <a href="recursos/pdf/NUSMAD-Crise-M1-RAU-1.pdf"
+                                        <a href="recursos/pdf/NUSMAD-Crise-M1-RAN1.pdf"
                                             target="_blank"><b>aqui</b></a>.
                                     </p>
                                 </div>
@@ -796,6 +796,66 @@
                         </div>
                     </div>
 
+                   <div
+                        class="col-lg-12 d-flex align-items-center justify-content-center bloco-video-audio position-relative mt-5">
+                        <!-- <img src="recursos/img-m1/Seta10.svg" class="seta10-direita"> -->
+
+                        <div class="podcast-main">
+                            <div class="box-audio">
+
+                                
+
+                                <div class="box-audio-player">
+                                    <button type="button" class="audio-bubble" data-audio="audio-transcricao-2"
+                                        aria-label="Reproduzir áudio">
+
+                                        <img src="recursos/img-m1/icon_audio.svg" class="audio-main-icon"
+                                            alt="Ícone de áudio">
+
+                                        <span class="audio-play-icon"></span>
+                                        <span class="audio-wave"></span>
+                                        <span class="audio-time-start" style="color: #6F7F5F;">00:00</span>
+                                        <span class="audio-time-end" style="color: #6F7F5F;">00:00</span>
+
+                                        <span class="audio-speed-wrap" data-open="0">
+                                            <span class="audio-speed-trigger" role="button" tabindex="0"
+                                                aria-label="Velocidade do áudio">
+                                                <span class="audio-speed-label">1x</span>
+                                                <span class="audio-speed-caret">▾</span>
+                                            </span>
+
+                                            <span class="audio-speed-menu" role="menu" aria-hidden="true">
+                                                <span class="audio-speed-item" role="menuitem" tabindex="0"
+                                                    data-rate="0.75">0.75x</span>
+                                                <span class="audio-speed-item" role="menuitem" tabindex="0"
+                                                    data-rate="1">1x</span>
+                                                <span class="audio-speed-item" role="menuitem" tabindex="0"
+                                                    data-rate="1.5">1.5x</span>
+                                                <span class="audio-speed-item" role="menuitem" tabindex="0"
+                                                    data-rate="2">2x</span>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <div class="box-audio-texto">
+                                    <p>
+                                        <b>Escute</b> o áudio sobre a palavra crise e acesse a transcrição
+                                        <a href="recursos/pdf/NUSMAD-Crise-M1-RAU-1.pdf"
+                                            target="_blank"><b>aqui</b></a>.
+                                    </p>
+                                </div>
+
+
+
+                            </div>
+
+                            <audio id="audio-transcricao-2" preload="metadata">
+                                <source src="recursos/audios/Ap_crises_M1_RAU01_v1.1.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+
+                    </div>
 
 
                     <div class="mb-5"></div>
@@ -808,6 +868,7 @@
         <!--Página 4-->
         <section id="section4" class="bg1">
             <div class="container-text">
+                
                 <div class="row justify-content-center">
                     <div class="col-lg-12 mt-5 mb-5 d-flex align-items-start justify-content-center">
 
@@ -1058,7 +1119,7 @@
                                 </div>
 
                                 <div class="box-audio-player">
-                                    <button type="button" class="audio-bubble" data-audio="audio-transcricao-1"
+                                    <button type="button" class="audio-bubble" data-audio="audio-transcricao-3"
                                         aria-label="Reproduzir áudio">
 
                                         <img src="recursos/img-m1/icon_audio.svg" class="audio-main-icon"
@@ -1094,7 +1155,7 @@
 
                             </div>
 
-                            <audio id="audio-transcricao-1" preload="metadata">
+                            <audio id="audio-transcricao-3" preload="metadata">
                                 <source src="recursos/audios/Crises_M1_RAU02_v1.0.mp3" type="audio/mpeg">
                             </audio>
                         </div>
@@ -1212,8 +1273,11 @@
             <div class="modal fade" id="meuModal_timeline_1" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:90%">
                     <div class="modal-content">
-                        <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                            data-bs-dismiss="modal"></button>
+                        <button type="button"
+                                    class="modal-close-custom position-absolute"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Fechar">
+                                </button>
 
                         <div class="modal-body" data-bs-dismiss="modal">
                             <div class="box-marrom-claro-modal">
@@ -1235,8 +1299,11 @@
             <div class="modal fade" id="meuModal_timeline_2" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:90%">
                     <div class="modal-content">
-                        <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                            data-bs-dismiss="modal"></button>
+                        <button type="button"
+                                    class="modal-close-custom position-absolute" style="right: 47px;"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Fechar">
+                                </button>
 
                         <div class="modal-body" data-bs-dismiss="modal">
                             <div class="box-marrom-claro-modal">
@@ -1296,8 +1363,11 @@
             <div class="modal fade" id="meuModal_timeline_3" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:90%">
                     <div class="modal-content">
-                        <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                            data-bs-dismiss="modal"></button>
+                        <button type="button"
+                                    class="modal-close-custom position-absolute"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Fechar">
+                                </button>
 
                         <div class="modal-body" data-bs-dismiss="modal">
                             <div class="box-marrom-claro-modal">
@@ -1324,8 +1394,11 @@
             <div class="modal fade" id="meuModal_timeline_4" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:90%">
                     <div class="modal-content">
-                        <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                            data-bs-dismiss="modal"></button>
+                        <button type="button"
+                                    class="modal-close-custom position-absolute" style="right: 47px;"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Fechar">
+                                </button>
 
                         <div class="modal-body" data-bs-dismiss="modal">
                             <div class="box-marrom-claro-modal">
@@ -1368,7 +1441,7 @@
         <section id="section10" class="bg1">
             <div class="container-text">
                 <div class="row justify-content-center">
-                    <div class="col-lg-12 mt-5  d-flex align-items-start justify-content-center">
+                    <div class="col-lg-12 mt-5  d-flex align-items-start justify-content-center flex-column">
                         <p>
                             Cabe ressaltar que o Hospital Psiquiátrico não compõe a RAPS. O processo de desinstitucionalização prevê o fechamento de leitos psiquiátricos em hospitais especializados, bem como o fechamento dessas instituições. 
                         </p>
@@ -1379,7 +1452,7 @@
                             No campo da atenção hospitalar, a publicação da Portaria nº 148/2012 instituiu os Leitos de Saúde Mental em Hospital Geral (LSMHG), consolidando a diretriz de que o cuidado na atenção hospitalar, quando necessário, deve ocorrer em articulação com a Rede de Atenção Psicossocial e sob a perspectiva da atenção psicossocial, pelo menor tempo possível, integrado ao território e comprometido com a continuidade do cuidado em liberdade. 
                         </p>
                     </div>
-                    <img src="recursos/img-m1/Seta08.svg" class="seta8-direita">
+                    <!-- <img src="recursos/img-m1/Seta08.svg" class="seta8-direita"> -->
 
                     <div class="col-lg-12 mb-5 d-flex align-items-start justify-content-center">
                         <div class="saiba-mais" style="position: relative; width: 100%;">
@@ -1871,8 +1944,11 @@
             <div class="modal fade" id="meuModal_timeline_5" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:90%">
                     <div class="modal-content">
-                        <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                            data-bs-dismiss="modal"></button>
+                        <button type="button"
+                                    class="modal-close-custom position-absolute" style="right: 47px;"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Fechar">
+                                </button>
 
                         <div class="modal-body" data-bs-dismiss="modal">
                             <div class="box-marrom-claro-modal">
@@ -1913,8 +1989,11 @@
             <div class="modal fade" id="meuModal_timeline_6" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:90%">
                     <div class="modal-content">
-                        <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                            data-bs-dismiss="modal"></button>
+                        <button type="button"
+                                    class="modal-close-custom position-absolute"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Fechar">
+                                </button>
 
                         <div class="modal-body" data-bs-dismiss="modal">
                             <div class="box-marrom-claro-modal">
@@ -1933,8 +2012,11 @@
             <div class="modal fade" id="meuModal_timeline_7" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:90%">
                     <div class="modal-content">
-                        <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                            data-bs-dismiss="modal"></button>
+                        <button type="button"
+                                    class="modal-close-custom position-absolute"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Fechar">
+                                </button>
 
                         <div class="modal-body" data-bs-dismiss="modal">
                             <div class="box-marrom-claro-modal">
@@ -1956,8 +2038,11 @@
             <div class="modal fade" id="meuModal_timeline_8" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:90%">
                     <div class="modal-content">
-                        <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                            data-bs-dismiss="modal"></button>
+                        <button type="button"
+                                    class="modal-close-custom position-absolute"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Fechar">
+                                </button>
 
                         <div class="modal-body" data-bs-dismiss="modal">
                             <div class="box-marrom-claro-modal">
@@ -1976,8 +2061,11 @@
             <div class="modal fade" id="meuModal_timeline_9" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:90%">
                     <div class="modal-content">
-                        <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                            data-bs-dismiss="modal"></button>
+                        <button type="button"
+                                    class="modal-close-custom position-absolute"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Fechar">
+                                </button>
 
                         <div class="modal-body" data-bs-dismiss="modal">
                             <div class="box-marrom-claro-modal">
@@ -1999,8 +2087,11 @@
             <div class="modal fade" id="meuModal_timeline_10" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width:90%">
                     <div class="modal-content">
-                        <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 me-4"
-                            data-bs-dismiss="modal"></button>
+                        <button type="button"
+                                    class="modal-close-custom position-absolute"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Fechar">
+                                </button>
 
                         <div class="modal-body" data-bs-dismiss="modal">
                             <div class="box-marrom-claro-modal">
@@ -2086,7 +2177,7 @@
 
 
                                 <div class="box-audio-player">
-                                    <button type="button" class="audio-bubble" data-audio="audio-transcricao-1"
+                                    <button type="button" class="audio-bubble" data-audio="audio-transcricao-4"
                                         aria-label="Reproduzir áudio">
 
                                         <img src="recursos/img-m1/icon_audio.svg" class="audio-main-icon"
@@ -2122,7 +2213,7 @@
 
                             </div>
 
-                            <audio id="audio-transcricao-1" preload="metadata">
+                            <audio id="audio-transcricao-4" preload="metadata">
                                 <source src="recursos/audios/Crises_M1_RAU03_v1.0.mp3" type="audio/mpeg">
                             </audio>
                         </div>
@@ -2646,7 +2737,7 @@
                                 </div>
 
                                 <div class="box-audio-player">
-                                    <button type="button" class="audio-bubble" data-audio="audio-transcricao-1"
+                                    <button type="button" class="audio-bubble" data-audio="audio-transcricao-5"
                                         aria-label="Reproduzir áudio">
 
                                         <img src="recursos/img-m1/icon_audio.svg" class="audio-main-icon"
@@ -2682,7 +2773,7 @@
 
                             </div>
 
-                            <audio id="audio-transcricao-1" preload="metadata">
+                            <audio id="audio-transcricao-5" preload="metadata">
                                 <source src="recursos/audios/Crises_M1_RAU04_v1.0.mp3" type="audio/mpeg">
                             </audio>
                         </div>

@@ -225,7 +225,7 @@ section {
 
 .box-marrom-claro-modal {
     background: #D8C4A8;
-    padding: 15px 20px;
+    padding: 40px 45px;
     border-radius: 12px;
     margin: 20px 0;
 }
@@ -1402,6 +1402,58 @@ section {
     width: 30px;
     height: 30px;
   }
+}
+
+/* Botão de fechar o modal */
+.btn-close {
+    position: fixed !important;
+    top: 80px !important;
+    right: 115px !important;
+    z-index: 99999;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.modal-close-custom {
+    position: absolute;
+    top: 54px;
+    right: 33px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: #B84F32;
+    cursor: pointer;
+    z-index: 9999;
+    display: block;
+}
+
+.modal-close-custom::before,
+.modal-close-custom::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 22px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.modal-close-custom::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal-close-custom::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.modal-close-custom:hover{
+    background-color: #6F7F5F;
 }
 
 
