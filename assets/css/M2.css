@@ -665,7 +665,7 @@ h2 {
     pointer-events: auto;
     top: calc(100% + 10px);
     left: 0;
-    width: 520px;
+    /* width: 520px; */
     background: #fff;
     border-radius: 16px;
     padding: 20px !important;
@@ -673,7 +673,7 @@ h2 {
     box-sizing: border-box;
     box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.18);
 
-    font-size: 1rem;
+    /* font-size: 1rem; */
     color: #000;
     line-height: 1.15;
     font-weight: normal;
@@ -1964,8 +1964,8 @@ h2 {
 
 .hotword-conteudo {
     position: absolute;
-    left: 0;
-    width: 100%;
+    left: 5%;
+    width: 90%;
     background: rgb(140, 106, 74);
     color: white;
     padding: 20px;

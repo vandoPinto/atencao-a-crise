@@ -68,11 +68,13 @@
      transition: .3s;
  }
 
- .numero:hover {
+ .numero,
+ .numero2:hover {
      transform: translateY(-3px);
  }
 
- .numero.ativo {
+ .numero.ativo,
+ .numero2.ativo {
      background: gray;
  }
 
@@ -96,12 +98,7 @@
  .atividade-conteudo p,
  .atividade-conteudo2 p {
      color: #fff;
-
-     font-size: 2rem;
      line-height: 1.2;
-
-     /* max-width: 850px; */
-
      margin: 0;
  }
 
