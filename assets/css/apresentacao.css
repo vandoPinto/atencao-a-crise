@@ -862,3 +862,44 @@ p {
 .refletir a {
     color: #fff;
 }
+
+
+.modal-close-custom {
+    position: absolute;
+    top: 40px;
+    right: 33px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: #B84F32;
+    cursor: pointer;
+    z-index: 9999;
+    display: block;
+}
+
+.modal-close-custom::before,
+.modal-close-custom::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 22px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.modal-close-custom::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal-close-custom::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.modal-close-custom:hover {
+    background-color: #6F7F5F;
+}
