@@ -54,7 +54,7 @@ $(document).keydown(function (e) {
             break;
 
         case 38: // up
-            upScreen();
+            // upScreen();
             break;
 
         case 39: // right
