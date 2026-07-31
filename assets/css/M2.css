@@ -966,7 +966,7 @@ h2 {
 .seta-03 {
     position: absolute;
     width: 20%;
-    top: -150px;
+    top: -260px;
     right: 60px;
     z-index: 2;
 }
@@ -1792,6 +1792,18 @@ h2 {
 .hotspot {
     position: absolute;
     cursor: pointer;
+    transition: all .3s ease;
+}
+
+
+.hotspot img {
+    transition: all .3s ease;
+}
+
+/* Estado após clicar */
+.hotspot.clicado img {
+    filter: brightness(0.4);
+    transform: scale(0.95);
 }
 
 /* Modal 4 */
@@ -1804,7 +1816,7 @@ h2 {
 
 /* Modal 5 */
 .hotspot-2 {
-    top: 4%;
+    top: 1%;
     left: 26%;
     width: 10%;
     height: 15%;
@@ -1864,6 +1876,8 @@ h2 {
     width: 100%;
 }
 
+
+
 .mapa-interativo img {
     width: 100%;
     display: block;
@@ -1872,6 +1886,7 @@ h2 {
 .hotspot {
     position: absolute;
     cursor: pointer;
+    transition: all .3s ease;
     /* background: rgba(255, 0, 0, .3); */
     /* remover depois */
 }
@@ -1894,7 +1909,7 @@ h2 {
 
 /* Modal 20 */
 .hotspot-20 {
-    top: 30%;
+    top: 25%;
     left: -1%;
     width: 48%;
     height: 25%;
@@ -1902,7 +1917,7 @@ h2 {
 
 /* Modal 21 */
 .hotspot-21 {
-    top: 45%;
+    top: 40%;
     left: 48%;
     width: 53%;
     height: 26%;
@@ -1910,7 +1925,7 @@ h2 {
 
 /* Modal 22 */
 .hotspot-22 {
-    top: 68%;
+    top: 58%;
     left: 7%;
     width: 34%;
     height: 33%;
@@ -1939,7 +1954,15 @@ h2 {
     margin: 0;
 }
 
+.pedras {
+    height: 100%;
+}
+
 @media (max-width: 768px) {
+    .pedras {
+        height: 23rem;
+    }
+
     .texto-sobreposto {
         width: 85%;
     }
@@ -1947,6 +1970,10 @@ h2 {
     .texto-sobreposto p {
         font-size: 0.9rem;
         line-height: 1.4;
+    }
+
+    .modal-dialog-centered {
+        max-width: 100% !important;
     }
 }
 
