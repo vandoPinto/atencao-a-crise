@@ -2044,3 +2044,7 @@ h2 {
 .modal-close-custom:hover {
     background-color: #6F7F5F;
 }
+
+.modal-body :is(h1, h2, h3, h4, h5, h6) {
+    font-family: "Source Sans 3", sans-serif;
+}
