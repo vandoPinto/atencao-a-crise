@@ -680,9 +680,9 @@ if (document.readyState !== 'loading') {
     document.addEventListener('DOMContentLoaded', initCarouselM3);
 }
 
-// Hotword dentro do carrossel: mostra o box fora do overflow do slide.
+// Hotword dentro do carrossel ou das abas: mostra o box fora do overflow.
 function initCarouselHotwords() {
-    document.querySelectorAll('.carousel-m3 .hotword-item').forEach(function (item) {
+    document.querySelectorAll('.carousel-m3 .hotword-item, #abasModal1 .hotword-item').forEach(function (item) {
         const box = item.querySelector('.hotword-conteudo');
         const trigger = item.querySelector('.hotword');
 
