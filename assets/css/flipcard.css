@@ -121,6 +121,19 @@
     transform: rotateX(180deg);
 }
 
+.flipcard-grid2x2--texto-centralizado .flipcard__scroll {
+    display: flex;
+    flex-direction: column;
+}
+
+.flipcard-grid2x2--texto-centralizado .flipcard__scroll p:first-child {
+    margin-top: auto;
+}
+
+.flipcard-grid2x2--texto-centralizado .flipcard__scroll p:last-child {
+    margin-bottom: auto;
+}
+
 .flipcard:hover .flipcard__front,
 .flipcard:focus-visible .flipcard__front {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);

@@ -111,6 +111,10 @@
     transition: transform 180ms ease, background-color 180ms ease;
 }
 
+.carousel-m3__control[hidden] {
+    display: none;
+}
+
 .carousel-m3__control:hover,
 .carousel-m3__control:focus-visible {
     background: #5f704f;

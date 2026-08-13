@@ -1,119 +1,107 @@
 $(document).ready(function () {
-
-    /* Fullscreen */
-    $(".fullscreen-enter").click(
-        function () {
-            document.documentElement.requestFullscreen().catch((e) => {
-                console.log(e);
-            });
-        }
-    )
-    $(".fullscreen-exit").click(
-        function () {
-            if (document.exitFullscreen)
-                document.exitFullscreen();
-            else if (document.mozCancelFullScreen)
-                document.mozCancelFullScreen();
-            else if (document.webkitExitFullscreen)
-                document.webkitExitFullscreen();
-            else if (document.msExitFullscreen)
-                document.msExitFullscreen();
-        }
-    )
-
-    // /* Audios */
-
-    // /* Elementos de áudio */
-    // let D1_A1 = document.getElementById("D1_A1");
-    // let D1_A1_Mobile = document.getElementById("D1_A1_Mobile");
-
-    // /* Captura de cliques de áudio */
-
-    // $('#btnD1_A1').on('click', function () {
-    //     if(D1_A1.paused){
-    //         playAudio(D1_A1);
-    //     } else{
-    //         pauseAudio(D1_A1);
-    //     }
-    // });
-    // $('#btnD1_A1_Mobile').on('click', function () {
-    //     if(D1_A1_Mobile.paused){
-    //         playAudio(D1_A1_Mobile);
-    //     } else{
-    //         pauseAudio(D1_A1_Mobile);
-    //     }
-    // });
-
-    // /* Funções de play/pause */
-    // function playAudio(element) {
-    //     console.log('element',element.id)
-    //     if(element.paused){
-    //         element.play();
-    //         $('#btn'+element.id+'_Img').attr("src","recursos/icones/icon-pause-spot.svg");
-    //         $('#btn'+element.id+'_Text').html('pause');
-    //         $('#btn'+element.id+'').toggleClass('col-player col-player-playing');
-    //     }
-    // }
-    // function pauseAudio(element) {
-    //     element.pause();
-    //     $('#btn'+element.id+'_Img').attr("src","recursos/icones/icone_07.svg");
-    //     $('#btn'+element.id+'_Text').html('play');
-    //     $('#btn'+element.id+'').toggleClass('col-player col-player-playing');
-    // }
-
-    /* Accordion*/
-    /* D4_C1 */
-    $('#accordionD1_C1').click(function () {
-        $('#btnCollapseDetachD4_C1').toggleClass('fa-angle-down fa-angle-up');
+  /* Fullscreen */
+  $(".fullscreen-enter").click(function () {
+    document.documentElement.requestFullscreen().catch((e) => {
+      console.log(e);
     });
-    /* D2_C1 */
-    $('#accordionD2_C1').click(function () {
-        $('#accordionD2_C1 .click-down').toggleClass('hide-class');
-        if ($('#accordionD2_C1 .click-down').hasClass('hide-class')) {
-            $('.square p').removeAttr('hidden');
-            $('.square i').removeAttr('hidden');
-        } else {
-            $('.square p').attr("hidden", true);
-            $('.square i').attr("hidden", true);
-        }
+  });
+  $(".fullscreen-exit").click(function () {
+    if (document.exitFullscreen) document.exitFullscreen();
+    else if (document.mozCancelFullScreen) document.mozCancelFullScreen();
+    else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+    else if (document.msExitFullscreen) document.msExitFullscreen();
+  });
+
+  // /* Audios */
+
+  // /* Elementos de áudio */
+  // let D1_A1 = document.getElementById("D1_A1");
+  // let D1_A1_Mobile = document.getElementById("D1_A1_Mobile");
+
+  // /* Captura de cliques de áudio */
+
+  // $('#btnD1_A1').on('click', function () {
+  //     if(D1_A1.paused){
+  //         playAudio(D1_A1);
+  //     } else{
+  //         pauseAudio(D1_A1);
+  //     }
+  // });
+  // $('#btnD1_A1_Mobile').on('click', function () {
+  //     if(D1_A1_Mobile.paused){
+  //         playAudio(D1_A1_Mobile);
+  //     } else{
+  //         pauseAudio(D1_A1_Mobile);
+  //     }
+  // });
+
+  // /* Funções de play/pause */
+  // function playAudio(element) {
+  //     console.log('element',element.id)
+  //     if(element.paused){
+  //         element.play();
+  //         $('#btn'+element.id+'_Img').attr("src","recursos/icones/icon-pause-spot.svg");
+  //         $('#btn'+element.id+'_Text').html('pause');
+  //         $('#btn'+element.id+'').toggleClass('col-player col-player-playing');
+  //     }
+  // }
+  // function pauseAudio(element) {
+  //     element.pause();
+  //     $('#btn'+element.id+'_Img').attr("src","recursos/icones/icone_07.svg");
+  //     $('#btn'+element.id+'_Text').html('play');
+  //     $('#btn'+element.id+'').toggleClass('col-player col-player-playing');
+  // }
+
+  /* Accordion*/
+  /* D4_C1 */
+  $("#accordionD1_C1").click(function () {
+    $("#btnCollapseDetachD4_C1").toggleClass("fa-angle-down fa-angle-up");
+  });
+  /* D2_C1 */
+  $("#accordionD2_C1").click(function () {
+    $("#accordionD2_C1 .click-down").toggleClass("hide-class");
+    if ($("#accordionD2_C1 .click-down").hasClass("hide-class")) {
+      $(".square p").removeAttr("hidden");
+      $(".square i").removeAttr("hidden");
+    } else {
+      $(".square p").attr("hidden", true);
+      $(".square i").attr("hidden", true);
+    }
+  });
+  $('[id^="accordionD2_C"]').click(function () {
+    const $this = $(this); // O acordeão clicado
+    const collapseId = $this.find(".collapse").attr("id"); // ID do painel colapsável associado
+
+    // Alterna a classe na div com "square-end-15"
+    $this.find(".square-end-15").toggleClass("hide-class");
+
+    // Verifica se o painel está aberto e ajusta os atributos de elementos internos
+    if (!$(`#${collapseId}`).hasClass("show")) {
+      $this.find(".click-down").attr("hidden", true);
+      $this.find(".square-detach-15").attr("hidden", true);
+    } else {
+      $this.find(".click-down").attr("hidden", false);
+      $this.find(".square-detach-15").attr("hidden", false);
+    }
+  });
+
+  // Impede que links dentro do acordeão fechem o painel
+  $('[id^="accordionD2_C"] a').click(function (event) {
+    event.stopPropagation(); // Impede o evento de clique de se propagar para o acordeão
+  });
+
+  /* TollTip*/
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip({
+      delay: { show: 0, hide: 2000 },
+      trigger: "hover",
     });
-    $('[id^="accordionD2_C"]').click(function () {
-        const $this = $(this); // O acordeão clicado
-        const collapseId = $this.find('.collapse').attr('id'); // ID do painel colapsável associado
-
-        // Alterna a classe na div com "square-end-15"
-        $this.find('.square-end-15').toggleClass('hide-class');
-
-        // Verifica se o painel está aberto e ajusta os atributos de elementos internos
-        if (!$(`#${collapseId}`).hasClass('show')) {
-            $this.find('.click-down').attr("hidden", true);
-            $this.find('.square-detach-15').attr("hidden", true);
-        } else {
-            $this.find('.click-down').attr("hidden", false);
-            $this.find('.square-detach-15').attr("hidden", false);
-        }
+    var tempToolTip = $('[data-toggle="tooltip"]');
+    tempToolTip.hover(function () {
+      tempToolTip.not(this).tooltip("hide");
+      $(this).tooltip("show");
     });
-
-    // Impede que links dentro do acordeão fechem o painel
-    $('[id^="accordionD2_C"] a').click(function (event) {
-        event.stopPropagation(); // Impede o evento de clique de se propagar para o acordeão
-    });
-
-    /* TollTip*/
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip(
-            {
-                delay: { "show": 0, "hide": 2000 },
-                trigger: 'hover'
-
-            });
-        var tempToolTip = $('[data-toggle="tooltip"]');
-        tempToolTip.hover(function () {
-            tempToolTip.not(this).tooltip('hide');
-            $(this).tooltip('show');
-        });
-    });
-
+  });
 });
 
 // Revelar respostas - Accordion
@@ -122,92 +110,87 @@ var acc = document.getElementsByClassName("accordion_container-detach-3");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-    });
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
 }
-
-
 
 // Podcast 2
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+  // Selecionar todos os containers de players
+  const players = document.querySelectorAll(".podcast-container");
 
-    // Selecionar todos os containers de players
-    const players = document.querySelectorAll('.podcast-container');
+  players.forEach((player) => {
+    // Selecionar elementos necessários do player
+    const audio = player.querySelector(".audio-element");
+    const playPauseBtn = player.querySelector(".play-pause-btn");
 
+    const barraProgress = player.querySelector(".progress-bar");
 
-    players.forEach(player => {
-        // Selecionar elementos necessários do player
-        const audio = player.querySelector('.audio-element');
-        const playPauseBtn = player.querySelector('.play-pause-btn');
+    // Verificar se todos os elementos existem
+    if (!audio || !playPauseBtn || !barraProgress) {
+      console.error("Elementos ausentes em um player:", player);
+      return; // Ignorar este player
+    }
 
-        const barraProgress = player.querySelector('.progress-bar');
+    // Atualizar barra de progresso
+    audio.addEventListener("timeupdate", () => {
+      const progress = (audio.currentTime / audio.duration) * 100;
+      barraProgress.value = progress;
 
-        // Verificar se todos os elementos existem
-        if (!audio || !playPauseBtn || !barraProgress) {
-            console.error('Elementos ausentes em um player:', player);
-            return; // Ignorar este player
-        }
-
-        // Atualizar barra de progresso
-        audio.addEventListener('timeupdate', () => {
-            const progress = (audio.currentTime / audio.duration) * 100;
-            barraProgress.value = progress;
-
-            // Atualiza a cor da barra com gradiente
-            barraProgress.style.background = `linear-gradient(to right, red ${progress}%, #ccc ${progress}%)`;
-        });
-
-        // Inicializar a barra de progresso com gradiente
-        barraProgress.style.background = `linear-gradient(to right, red 0%, #ccc 0%)`;
-
-        // Atualizar a posição do áudio ao mover a barra
-        barraProgress.addEventListener('input', () => {
-            audio.currentTime = (barraProgress.value / 100) * audio.duration;
-
-            // Atualiza a cor da barra com gradiente ao mover manualmente
-            const progress = barraProgress.value;
-            barraProgress.style.background = `linear-gradient(to right, red ${progress}%, #ccc ${progress}%)`;
-        });
-
-        // Alternar entre Play e Pause
-        playPauseBtn.addEventListener('click', () => {
-
-            if (audio.paused) {
-                // Pausar todos os outros players
-                players.forEach(otherPlayer => {
-                    const otherAudio = otherPlayer.querySelector('.audio-element');
-                    const otherBtn = otherPlayer.querySelector('.play-pause-btn');
-                    if (otherAudio && otherAudio !== audio) {
-                        otherAudio.pause();
-                        if (otherBtn) otherBtn.textContent = '▶';
-                    }
-                });
-
-                audio.play();
-                playPauseBtn.textContent = '❚❚'; // Ícone de pause
-            } else {
-                audio.pause();
-                playPauseBtn.textContent = '▶'; // Ícone de play
-            }
-        });
+      // Atualiza a cor da barra com gradiente
+      barraProgress.style.background = `linear-gradient(to right, red ${progress}%, #ccc ${progress}%)`;
     });
+
+    // Inicializar a barra de progresso com gradiente
+    barraProgress.style.background = `linear-gradient(to right, red 0%, #ccc 0%)`;
+
+    // Atualizar a posição do áudio ao mover a barra
+    barraProgress.addEventListener("input", () => {
+      audio.currentTime = (barraProgress.value / 100) * audio.duration;
+
+      // Atualiza a cor da barra com gradiente ao mover manualmente
+      const progress = barraProgress.value;
+      barraProgress.style.background = `linear-gradient(to right, red ${progress}%, #ccc ${progress}%)`;
+    });
+
+    // Alternar entre Play e Pause
+    playPauseBtn.addEventListener("click", () => {
+      if (audio.paused) {
+        // Pausar todos os outros players
+        players.forEach((otherPlayer) => {
+          const otherAudio = otherPlayer.querySelector(".audio-element");
+          const otherBtn = otherPlayer.querySelector(".play-pause-btn");
+          if (otherAudio && otherAudio !== audio) {
+            otherAudio.pause();
+            if (otherBtn) otherBtn.textContent = "▶";
+          }
+        });
+
+        audio.play();
+        playPauseBtn.textContent = "❚❚"; // Ícone de pause
+      } else {
+        audio.pause();
+        playPauseBtn.textContent = "▶"; // Ícone de play
+      }
+    });
+  });
 });
 
 // tooltip
 
 $(document).ready(function () {
-    // Inicializa as tooltips com opções de atraso
-    $('[data-toggle="tooltip"]').tooltip({
-        delay: { "show": 0, "hide": 100 } // Controla a velocidade de entrada e saída
-    });
+  // Inicializa as tooltips com opções de atraso
+  $('[data-toggle="tooltip"]').tooltip({
+    delay: { show: 0, hide: 100 }, // Controla a velocidade de entrada e saída
+  });
 });
 
 // Audio
@@ -216,7 +199,6 @@ $(document).ready(function () {
 //     $(document).ready(function(){
 //         setTimeout('$("#ano1").addClass("load")', 200);
 //   });
-
 
 // Podcast (player + menu de velocidade + wave como barra de progresso clicável)
 function initAudioPlayers() {
@@ -241,7 +223,7 @@ function initAudioPlayers() {
   }
 
   function closeAllSpeedMenus() {
-    players.forEach(p => {
+    players.forEach((p) => {
       if (p.speedWrap) {
         p.speedWrap.dataset.open = "0";
         if (p.speedMenu) p.speedMenu.setAttribute("aria-hidden", "true");
@@ -276,8 +258,8 @@ function initAudioPlayers() {
     // desenha alturas iniciais e configura animação “wave” com delays diferentes
     bars.forEach((bar, i) => {
       const h = 6 + Math.floor(Math.random() * 18); // 6..23
-      const d = (i * 35) % 700;                     // delay espalhado
-      const dur = 650 + ((i * 37) % 550);           // duração variada
+      const d = (i * 35) % 700; // delay espalhado
+      const dur = 650 + ((i * 37) % 550); // duração variada
 
       bar.style.height = `${h}px`;
       bar.style.animationDelay = `${d}ms`;
@@ -317,7 +299,7 @@ function initAudioPlayers() {
     player.lastPlayedCount = playedCount;
   }
 
-  buttons.forEach(btn => {
+  buttons.forEach((btn) => {
     // Idempotência pra SPA
     if (btn.dataset.audioInit === "1") return;
     btn.dataset.audioInit = "1";
@@ -326,7 +308,8 @@ function initAudioPlayers() {
     const audio = document.getElementById(audioId);
     if (!audio) return;
 
-    if (!audio.getAttribute("preload")) audio.setAttribute("preload", "metadata");
+    if (!audio.getAttribute("preload"))
+      audio.setAttribute("preload", "metadata");
 
     const timeStart = btn.querySelector(".audio-time-start");
     const timeEnd = btn.querySelector(".audio-time-end");
@@ -348,7 +331,7 @@ function initAudioPlayers() {
     if (speedLabel) speedLabel.textContent = "1x";
 
     function markSelectedRate(rate) {
-      speedItems.forEach(item => {
+      speedItems.forEach((item) => {
         const r = parseFloat(item.dataset.rate);
         item.classList.toggle("is-selected", r === rate);
       });
@@ -356,10 +339,15 @@ function initAudioPlayers() {
     markSelectedRate(1);
 
     const player = {
-      btn, audio, timeStart, timeEnd,
-      speedWrap, speedMenu,
-      waveEl, waveBars,
-      lastPlayedCount: 0
+      btn,
+      audio,
+      timeStart,
+      timeEnd,
+      speedWrap,
+      speedMenu,
+      waveEl,
+      waveBars,
+      lastPlayedCount: 0,
     };
     players.push(player);
 
@@ -405,13 +393,13 @@ function initAudioPlayers() {
       audio.currentTime = 0;
       player.lastPlayedCount = 0;
       // limpa tudo
-      player.waveBars?.forEach(b => b.classList.remove("is-played"));
+      player.waveBars?.forEach((b) => b.classList.remove("is-played"));
       updateCurrentTimeAndProgress();
       setPlayingUI(player, false);
     });
 
     function pauseOthers(currentAudio) {
-      players.forEach(p => {
+      players.forEach((p) => {
         if (p.audio !== currentAudio) {
           if (!p.audio.paused) p.audio.pause();
           setPlayingUI(p, false);
@@ -448,7 +436,7 @@ function initAudioPlayers() {
 
         const rect = waveEl.getBoundingClientRect();
         const x = Math.max(0, Math.min(rect.width, clientX - rect.left));
-        const p = rect.width ? (x / rect.width) : 0;
+        const p = rect.width ? x / rect.width : 0;
 
         audio.currentTime = p * dur;
 
@@ -476,7 +464,9 @@ function initAudioPlayers() {
       const endSeek = (e) => {
         if (!seeking) return;
         seeking = false;
-        try { waveEl.releasePointerCapture?.(e.pointerId); } catch (_) {}
+        try {
+          waveEl.releasePointerCapture?.(e.pointerId);
+        } catch (_) {}
       };
 
       waveEl.addEventListener("pointerup", endSeek);
@@ -489,9 +479,10 @@ function initAudioPlayers() {
     // VELOCIDADE: abre/fecha menu + seleciona taxa
     if (speedWrap && speedTrigger && speedMenu) {
       function toggleMenu(forceOpen) {
-        const shouldOpen = typeof forceOpen === "boolean"
-          ? forceOpen
-          : (speedWrap.dataset.open !== "1");
+        const shouldOpen =
+          typeof forceOpen === "boolean"
+            ? forceOpen
+            : speedWrap.dataset.open !== "1";
 
         closeAllSpeedMenus();
 
@@ -513,7 +504,7 @@ function initAudioPlayers() {
         }
       });
 
-      speedItems.forEach(item => {
+      speedItems.forEach((item) => {
         item.addEventListener("click", (e) => {
           e.preventDefault();
           e.stopPropagation();
@@ -547,321 +538,242 @@ if (document.readyState !== "loading") {
 
 // Aba lateral
 
+document.querySelectorAll(".abas-laterais").forEach(function (grupo) {
+  const abas = grupo.querySelectorAll(".aba-lateral");
+  const classesAtivas = [
+    "aba-ativa-1",
+    "aba-ativa-2",
+    "aba-ativa-3",
+    "aba-ativa-4",
+  ];
 
-document.querySelectorAll('.abas-laterais').forEach(function (grupo) {
-    const abas = grupo.querySelectorAll('.aba-lateral');
-    const classesAtivas = ['aba-ativa-1', 'aba-ativa-2', 'aba-ativa-3', 'aba-ativa-4'];
+  function limparEstado() {
+    grupo.classList.remove(...classesAtivas);
 
-    function limparEstado() {
-        grupo.classList.remove(...classesAtivas);
+    abas.forEach(function (aba) {
+      aba.classList.remove("is-active");
 
-        abas.forEach(function (aba) {
-            aba.classList.remove('is-active');
-
-            const botao = aba.querySelector('.aba-lateral__botao');
-            botao.setAttribute('aria-expanded', 'false');
-        });
-    }
-
-    abas.forEach(function (aba, index) {
-        const botao = aba.querySelector('.aba-lateral__botao');
-
-        botao.addEventListener('click', function () {
-            const jaEstaAberta = aba.classList.contains('is-active') && !grupo.classList.contains('is-closed');
-
-            limparEstado();
-
-            if (jaEstaAberta) {
-                grupo.classList.add('is-closed');
-                return;
-            }
-
-            grupo.classList.remove('is-closed');
-            grupo.classList.add('aba-ativa-' + (index + 1));
-
-            aba.classList.add('is-active');
-            botao.setAttribute('aria-expanded', 'true');
-        });
+      const botao = aba.querySelector(".aba-lateral__botao");
+      botao.setAttribute("aria-expanded", "false");
     });
+  }
+
+  abas.forEach(function (aba, index) {
+    const botao = aba.querySelector(".aba-lateral__botao");
+
+    botao.addEventListener("click", function () {
+      const jaEstaAberta =
+        aba.classList.contains("is-active") &&
+        !grupo.classList.contains("is-closed");
+
+      limparEstado();
+
+      if (jaEstaAberta) {
+        grupo.classList.add("is-closed");
+        return;
+      }
+
+      grupo.classList.remove("is-closed");
+      grupo.classList.add("aba-ativa-" + (index + 1));
+
+      aba.classList.add("is-active");
+      botao.setAttribute("aria-expanded", "true");
+    });
+  });
 });
 
 // Accordion lateral
 function initAccordionLateral() {
-    document.querySelectorAll('[data-accordion-lateral]').forEach(function (accordion) {
-        const itens = Array.from(accordion.querySelectorAll('.accordion-lateral__item'));
+  document
+    .querySelectorAll("[data-accordion-lateral]")
+    .forEach(function (accordion) {
+      const itens = Array.from(
+        accordion.querySelectorAll(".accordion-lateral__item"),
+      );
 
-        itens.forEach(function (item) {
-            const botao = item.querySelector('.accordion-lateral__botao');
-            const painel = item.querySelector('.accordion-lateral__painel');
+      itens.forEach(function (item) {
+        const botao = item.querySelector(".accordion-lateral__botao");
+        const painel = item.querySelector(".accordion-lateral__painel");
 
-            if (!botao || !painel) return;
+        if (!botao || !painel) return;
 
-            botao.addEventListener('click', function () {
-                const estavaAberto = item.classList.contains('is-active');
+        botao.addEventListener("click", function () {
+          const estavaAberto = item.classList.contains("is-active");
 
-                itens.forEach(function (outroItem) {
-                    const outroBotao = outroItem.querySelector('.accordion-lateral__botao');
-                    const outroPainel = outroItem.querySelector('.accordion-lateral__painel');
+          itens.forEach(function (outroItem) {
+            const outroBotao = outroItem.querySelector(
+              ".accordion-lateral__botao",
+            );
+            const outroPainel = outroItem.querySelector(
+              ".accordion-lateral__painel",
+            );
 
-                    outroItem.classList.remove('is-active');
-                    if (outroBotao) outroBotao.setAttribute('aria-expanded', 'false');
-                    if (outroPainel) outroPainel.hidden = true;
-                });
+            outroItem.classList.remove("is-active");
+            if (outroBotao) outroBotao.setAttribute("aria-expanded", "false");
+            if (outroPainel) outroPainel.hidden = true;
+          });
 
-                if (estavaAberto) return;
+          if (estavaAberto) return;
 
-                item.classList.add('is-active');
-                botao.setAttribute('aria-expanded', 'true');
-                painel.hidden = false;
-            });
+          item.classList.add("is-active");
+          botao.setAttribute("aria-expanded", "true");
+          painel.hidden = false;
         });
+      });
     });
 }
 
-if (document.readyState !== 'loading') {
-    initAccordionLateral();
+if (document.readyState !== "loading") {
+  initAccordionLateral();
 } else {
-    document.addEventListener('DOMContentLoaded', initAccordionLateral);
+  document.addEventListener("DOMContentLoaded", initAccordionLateral);
 }
 
 // Carrossel módulo 2 - section 3
 function initCarouselM3() {
-    document.querySelectorAll('[data-carousel-m3]').forEach(function (carousel) {
-        const track = carousel.querySelector('[data-carousel-m3-track]');
-        const slides = Array.from(carousel.querySelectorAll('[data-carousel-m3-slide]'));
-        const dots = Array.from(carousel.querySelectorAll('[data-carousel-m3-dot]'));
-        const prevButton = carousel.querySelector('[data-carousel-m3-prev]');
-        const nextButton = carousel.querySelector('[data-carousel-m3-next]');
+  document.querySelectorAll("[data-carousel-m3]").forEach(function (carousel) {
+    const track = carousel.querySelector("[data-carousel-m3-track]");
+    const slides = Array.from(
+      carousel.querySelectorAll("[data-carousel-m3-slide]"),
+    );
+    const dots = Array.from(
+      carousel.querySelectorAll("[data-carousel-m3-dot]"),
+    );
+    const prevButton = carousel.querySelector("[data-carousel-m3-prev]");
+    const nextButton = carousel.querySelector("[data-carousel-m3-next]");
 
-        if (!track || slides.length === 0) return;
+    if (!track || slides.length === 0) return;
 
-        let currentIndex = 0;
+    let currentIndex = 0;
 
-        function goToSlide(index) {
-            currentIndex = (index + slides.length) % slides.length;
-            track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+    function goToSlide(index) {
+      currentIndex = Math.max(0, Math.min(index, slides.length - 1));
+      track.style.transform = "translateX(-" + currentIndex * 100 + "%)";
 
-            slides.forEach(function (slide, slideIndex) {
-                slide.classList.toggle('is-active', slideIndex === currentIndex);
-            });
+      if (prevButton) {
+        prevButton.hidden = currentIndex === 0;
+        prevButton.disabled = currentIndex === 0;
+      }
 
-            dots.forEach(function (dot, dotIndex) {
-                const isActive = dotIndex === currentIndex;
-                dot.classList.toggle('is-active', isActive);
-                dot.setAttribute('aria-current', isActive ? 'true' : 'false');
-            });
-        }
+      if (nextButton) {
+        nextButton.hidden = currentIndex === slides.length - 1;
+        nextButton.disabled = currentIndex === slides.length - 1;
+      }
 
-        if (prevButton) {
-            prevButton.addEventListener('click', function () {
-                goToSlide(currentIndex - 1);
-            });
-        }
+      slides.forEach(function (slide, slideIndex) {
+        slide.classList.toggle("is-active", slideIndex === currentIndex);
+      });
 
-        if (nextButton) {
-            nextButton.addEventListener('click', function () {
-                goToSlide(currentIndex + 1);
-            });
-        }
+      dots.forEach(function (dot, dotIndex) {
+        const isActive = dotIndex === currentIndex;
+        dot.classList.toggle("is-active", isActive);
+        dot.setAttribute("aria-current", isActive ? "true" : "false");
+      });
+    }
 
-        dots.forEach(function (dot, dotIndex) {
-            dot.addEventListener('click', function () {
-                goToSlide(dotIndex);
-            });
-        });
+    if (prevButton) {
+      prevButton.addEventListener("click", function () {
+        goToSlide(currentIndex - 1);
+      });
+    }
 
-        goToSlide(0);
+    if (nextButton) {
+      nextButton.addEventListener("click", function () {
+        goToSlide(currentIndex + 1);
+      });
+    }
+
+    dots.forEach(function (dot, dotIndex) {
+      dot.addEventListener("click", function () {
+        goToSlide(dotIndex);
+      });
     });
+
+    goToSlide(0);
+  });
 }
 
-if (document.readyState !== 'loading') {
-    initCarouselM3();
+if (document.readyState !== "loading") {
+  initCarouselM3();
 } else {
-    document.addEventListener('DOMContentLoaded', initCarouselM3);
+  document.addEventListener("DOMContentLoaded", initCarouselM3);
 }
 
-// Hotword dentro do carrossel ou das abas: mostra o box fora do overflow.
-function initCarouselHotwords() {
-    document.querySelectorAll('.carousel-m3 .hotword-item, #abasModal1 .hotword-item').forEach(function (item) {
-        const box = item.querySelector('.hotword-conteudo');
-        const trigger = item.querySelector('.hotword');
-
-        if (!box || !trigger) return;
-
-        let timer;
-        const originalParent = box.parentNode;
-        const originalNext = box.nextSibling;
-        const hasHover = window.matchMedia('(hover: hover)').matches;
-
-        function positionBox() {
-            const rect = trigger.getBoundingClientRect();
-            const gap = 10;
-            const boxWidth = Math.min(520, window.innerWidth - 32);
-            const left = Math.min(
-                Math.max(16, rect.left),
-                window.innerWidth - boxWidth - 16
-            );
-
-            box.style.position = 'fixed';
-            box.style.top = (rect.bottom + gap) + 'px';
-            box.style.left = left + 'px';
-            box.style.width = boxWidth + 'px';
-            box.style.maxWidth = 'calc(100vw - 32px)';
-            box.style.zIndex = '999999';
-            box.style.display = 'block';
-        }
-
-        function closeBox() {
-            clearTimeout(timer);
-
-            box.style.display = 'none';
-            box.removeAttribute('style');
-
-            if (originalParent && box.parentNode !== originalParent) {
-                originalParent.insertBefore(box, originalNext);
-            }
-        }
-
-        function showBox(duration) {
-            clearTimeout(timer);
-
-            if (box.parentNode !== document.body) {
-                document.body.appendChild(box);
-            }
-
-            positionBox();
-
-            timer = setTimeout(closeBox, duration);
-        }
-
-        function isOpen() {
-            return box.parentNode === document.body && box.style.display === 'block';
-        }
-
-        if (hasHover) {
-            item.addEventListener('mouseenter', function () {
-                showBox(3000);
-            });
-
-            item.addEventListener('mouseleave', function () {
-                timer = setTimeout(closeBox, 300);
-            });
-
-            box.addEventListener('mouseenter', function () {
-                clearTimeout(timer);
-            });
-
-            box.addEventListener('mouseleave', function () {
-                timer = setTimeout(closeBox, 300);
-            });
-        }
-
-        trigger.addEventListener('pointerdown', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            if (e.pointerType === 'mouse') {
-                showBox(3000);
-            } else {
-                showBox(2500);
-            }
-        });
-
-        document.addEventListener('pointerdown', function (e) {
-            if (
-                isOpen() &&
-                !trigger.contains(e.target) &&
-                !box.contains(e.target)
-            ) {
-                closeBox();
-            }
-        });
-
-        window.addEventListener('scroll', function () {
-            if (isOpen()) positionBox();
-        });
-
-        window.addEventListener('resize', function () {
-            if (isOpen()) positionBox();
-        });
-    });
-}
-
-if (document.readyState !== 'loading') {
-    initCarouselHotwords();
-} else {
-    document.addEventListener('DOMContentLoaded', initCarouselHotwords);
-}
 // Boxes radio 1 a 6
 function initBoxesRadio() {
-    const dados = {
-        1: {
-            cor: '#548B6C',
-            posicao: 'baixo',
-            texto: 'A indicação das contenções é baseada na experiência, já que não existem estudos rigorosos que autorizem o seu uso (Sailas; Fenton, 2000) e se restringiria às situações de crise muito graves, em situações de risco evidente, em curso ou iminente, e nas quais as medidas de continência se mostraram infrutíferas (NICE, 2005; OMS, 2005).'
-        },
-        2: {
-            cor: '#66939B',
-            posicao: 'topo',
-            texto: 'A contenção é uma intervenção de segurança, tipo último recurso, o que não significa que seja realizada com violência e desprezo pela segurança, saúde e direitos humanos do usuário (Department of Health and Human Services, 1999; NICE, 2005; OMS, 2005).'
-        },
-        3: {
-            cor: '#B0A767',
-            posicao: 'baixo',
-            texto: 'Não é recomendada a contenção de crianças e adolescentes.'
-        },
-        4: {
-            cor: '#DB8A2A',
-            posicao: 'topo',
-            texto: 'A comunicação do procedimento ao usuário, familiares ou responsáveis é imperativa. A revisão e discussão do evento de contenção, após sua realização, também deve ser realizada (NICE, 2005).'
-        },
-        5: {
-            cor: '#D07F79',
-            posicao: 'baixo',
-            texto: 'A contenção jamais será utilizada para propósitos de disciplina, retaliação e coerção; para conveniências da equipe de qualquer espécie, inclusive, para a remoção de usuário para outros níveis de tratamento e como procedimento para compensar as pressões de tempo.'
-        },
-        6: {
-            cor: '#9E8494',
-            posicao: 'topo',
-            texto: 'A rede de atenção às crises humanizada, centrada no usuário, deve prevenir, reduzir e, no horizonte, eliminar as contenções.'
-        }
-    };
+  const dados = {
+    1: {
+      cor: "#548B6C",
+      posicao: "baixo",
+      texto:
+        "A indicação das contenções é baseada na experiência, já que não existem estudos rigorosos que autorizem o seu uso (Sailas; Fenton, 2000) e se restringiria às situações de crise muito graves, em situações de risco evidente, em curso ou iminente, e nas quais as medidas de continência se mostraram infrutíferas (NICE, 2005; OMS, 2005).",
+    },
+    2: {
+      cor: "#66939B",
+      posicao: "topo",
+      texto:
+        "A contenção é uma intervenção de segurança, tipo último recurso, o que não significa que seja realizada com violência e desprezo pela segurança, saúde e direitos humanos do usuário (Department of Health and Human Services, 1999; NICE, 2005; OMS, 2005).",
+    },
+    3: {
+      cor: "#B0A767",
+      posicao: "baixo",
+      texto: "Não é recomendada a contenção de crianças e adolescentes.",
+    },
+    4: {
+      cor: "#DB8A2A",
+      posicao: "topo",
+      texto:
+        "A comunicação do procedimento ao usuário, aos familiares ou aos responsáveis é imperativa. A revisão e a discussão do evento de contenção, após sua realização, também devem ser realizadas (NICE, 2005).",
+    },
+    5: {
+      cor: "#D07F79",
+      posicao: "baixo",
+      texto:
+        "A contenção jamais será utilizada para propósitos de disciplina, retaliação e coerção; para conveniências da equipe de qualquer espécie, inclusive para a remoção de usuário para outros níveis de tratamento e como procedimento para compensar as pressões de tempo.",
+    },
+    6: {
+      cor: "#9E8494",
+      posicao: "topo",
+      texto:
+        "A rede de atenção às crises humanizada, centrada no usuário, deve prevenir, reduzir e, no horizonte, eliminar as contenções.",
+    },
+  };
 
-    document.querySelectorAll('[data-boxes-radio]').forEach(function (recurso) {
-        const botoes = recurso.querySelectorAll('[data-box-radio]');
-        const boxTopo = recurso.querySelector('[data-boxes-radio-topo]');
-        const boxBaixo = recurso.querySelector('[data-boxes-radio-baixo]');
+  document.querySelectorAll("[data-boxes-radio]").forEach(function (recurso) {
+    const botoes = recurso.querySelectorAll("[data-box-radio]");
+    const boxTopo = recurso.querySelector("[data-boxes-radio-topo]");
+    const boxBaixo = recurso.querySelector("[data-boxes-radio-baixo]");
 
-        function fecharBoxes() {
-            boxTopo.classList.remove('is-active');
-            boxBaixo.classList.remove('is-active');
-            boxTopo.innerHTML = '';
-            boxBaixo.innerHTML = '';
-        }
+    function fecharBoxes() {
+      boxTopo.classList.remove("is-active");
+      boxBaixo.classList.remove("is-active");
+      boxTopo.innerHTML = "";
+      boxBaixo.innerHTML = "";
+    }
 
-        botoes.forEach(function (botao) {
-            botao.addEventListener('click', function () {
-                const item = dados[botao.dataset.boxRadio];
-                const box = item.posicao === 'topo' ? boxTopo : boxBaixo;
+    botoes.forEach(function (botao) {
+      botao.addEventListener("click", function () {
+        const item = dados[botao.dataset.boxRadio];
+        const box = item.posicao === "topo" ? boxTopo : boxBaixo;
 
-                fecharBoxes();
-                botoes.forEach(function (outroBotao) {
-                    outroBotao.classList.remove('is-active');
-                    outroBotao.setAttribute('aria-expanded', 'false');
-                });
-
-                botao.classList.add('is-active');
-                botao.setAttribute('aria-expanded', 'true');
-                box.style.background = item.cor;
-                box.innerHTML = `<p>${item.texto}</p>`;
-                box.classList.add('is-active');
-            });
+        fecharBoxes();
+        botoes.forEach(function (outroBotao) {
+          outroBotao.classList.remove("is-active");
+          outroBotao.setAttribute("aria-expanded", "false");
         });
+
+        botao.classList.add("is-active");
+        botao.setAttribute("aria-expanded", "true");
+        box.style.background = item.cor;
+        box.innerHTML = `<p>${item.texto}</p>`;
+        box.classList.add("is-active");
+      });
     });
+  });
 }
 
-if (document.readyState !== 'loading') {
-    initBoxesRadio();
+if (document.readyState !== "loading") {
+  initBoxesRadio();
 } else {
-    document.addEventListener('DOMContentLoaded', initBoxesRadio);
+  document.addEventListener("DOMContentLoaded", initBoxesRadio);
 }
