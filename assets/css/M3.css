@@ -2488,41 +2488,42 @@ h2 {
   --marco-left: -11%;
 }
 .hotspot-17 {
-  --marco-left: -4%;
-  --marco-top: 3%;
-  --marco-width: 103%;
-  --marco-height: 103%;
+  --marco-left: -5%;
+  --marco-top: 2%;
+  --marco-width: 104%;
+  --marco-height: 104%;
 }
 .hotspot-18 {
   --marco-left: -2%;
-  --marco-top: 3%;
+  --marco-top: 2%;
   --marco-width: 104%;
   --marco-height: 104%;
 }
 .hotspot-19 {
-  --marco-left: 4%;
-  --marco-top: 3%;
-  --marco-width: 103%;
-  --marco-height: 103%;
+  --marco-left: 3%;
+  --marco-top: 2%;
+  --marco-width: 104%;
+  --marco-height: 104%;
 }
 .hotspot-20 {
   --marco-left: 3%;
-  --marco-top: 3%;
-  --marco-width: 103%;
-  --marco-height: 103%;
+  --marco-top: 2%;
+  --marco-width: 104%;
+  --marco-height: 104%;
 }
 .hotspot-21 {
-  --marco-left: 0%;
-  --marco-top: 3%;
-  --marco-width: 103%;
-  --marco-height: 103%;
+    --marco-left: -1%;
+    --marco-top: 2%;
+    --marco-width: 104%;
+    --marco-height: 104%;
 }
 .hotspot-22 {
-  --marco-left: 5%;
-  --marco-top: 3%;
-  --marco-width: 103%;
-  --marco-height: 103%;
+  --marco-left: 4%;
+  --marco-top: 2%;
+  --marco-width: 104%;
+  --marco-height: 104%;
 }
+
 
 .hotspot-23 {
   --marco-left: 7%;
@@ -3541,7 +3542,7 @@ h2 {
 }
 
 .pergaminho-box .pergaminho-fechar {
-  top: calc(4% + 10px);
+  top: calc(1% + 10px);
   right: calc(17% + 5px);
   z-index: 2;
   color: #4d2714;
