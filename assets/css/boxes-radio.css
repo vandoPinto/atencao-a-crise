@@ -122,8 +122,13 @@
   #principio-c:checked ~ .principios-letras__respostas [data-principio="c"],
   #principio-d:checked ~ .principios-letras__respostas [data-principio="d"],
   #principio-e:checked ~ .principios-letras__respostas [data-principio="e"] {
+    max-height: min(55vh, 360px);
     padding-top: 22px;
+    padding-right: 18px;
     padding-bottom: 22px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
   }
 }
 
@@ -205,7 +210,12 @@
   }
 
   .boxes-radio__resposta.is-active {
+    max-height: min(55vh, 360px);
     padding-top: 22px;
+    padding-right: 18px;
     padding-bottom: 22px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
   }
 }

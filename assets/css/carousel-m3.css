@@ -228,12 +228,14 @@
 
 @media (max-width: 700px) {
     .carousel-m3__control {
-        top: calc((100% - 57px) / 2);
+        top: auto;
+        bottom: 6px;
+        transform: none;
     }
 
     .carousel-m3 {
         width: 100%;
-        padding: 0 44px 28px;
+        padding: 0 0 16px;
     }
 
     .carousel-m3__card {
@@ -255,12 +257,29 @@
     .carousel-m3__image {
         max-width: 220px;
     }
+
+    .carousel-m3__control--prev {
+        left: 12%;
+    }
+
+    .carousel-m3__control--next {
+        right: 12%;
+    }
+
+    .carousel-m3__control:hover,
+    .carousel-m3__control:focus-visible {
+        transform: scale(1.05);
+    }
+
+    .carousel-m3__dots {
+        margin-top: 16px;
+    }
 }
 
 @media (max-width: 575px) {
     .carousel-m3 {
         margin-top: 18px;
-        padding: 0 36px 26px;
+        padding: 0 0 14px;
     }
 
     .carousel-m3__viewport {
@@ -283,15 +302,16 @@
 .carousel-m3__control {
         width: 28px;
         height: 28px;
-        top: calc((100% - 53px) / 2);
+        top: auto;
+        bottom: 5px;
     }
 
     .carousel-m3__control--prev {
-        left: 3px;
+        left: 8%;
     }
 
     .carousel-m3__control--next {
-        right: 3px;
+        right: 8%;
     }
 
     .carousel-m3__dot {
