@@ -310,7 +310,7 @@ h2 {
 }
 
 .borda {
-  border-radius: 16px;
+  border-radius: 40px;
 }
 
 @media (max-width: 768px) {
@@ -445,7 +445,6 @@ h2 {
     flex-direction: column;
     gap: 10px;
   }
-
 }
 
 @media (max-width: 485px) {
@@ -1893,10 +1892,10 @@ h2 {
   --marco-height: 104%;
 }
 .hotspot-21 {
-    --marco-left: -1%;
-    --marco-top: 2%;
-    --marco-width: 104%;
-    --marco-height: 104%;
+  --marco-left: -1%;
+  --marco-top: 2%;
+  --marco-width: 104%;
+  --marco-height: 104%;
 }
 .hotspot-22 {
   --marco-left: 4%;
@@ -1904,7 +1903,6 @@ h2 {
   --marco-width: 104%;
   --marco-height: 104%;
 }
-
 
 .hotspot-23 {
   --marco-left: 7%;
@@ -2786,7 +2784,6 @@ h2 {
   .numerais-rafael .rafael-numero-box p {
     font-size: 0.95rem;
   }
-
 }
 
 /* Box pergaminho */

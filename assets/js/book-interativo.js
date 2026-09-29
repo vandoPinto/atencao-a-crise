@@ -46,7 +46,7 @@ const bookTemas = {
       "O estudo de Hogg e colaboradores (2023) encontrou uma ligação muito forte entre ter vivido traumas em qualquer fase da vida e desenvolver algum transtorno mental: quem passou por trauma teve quase três vezes mais chance de apresentar um transtorno em comparação a quem não passou. O mesmo padrão apareceu para traumas na infância, que também aumentaram o risco em quase três vezes. ",
     ],
     direita: [
-      "Quando os pesquisadores olharam tipo por tipo de trauma, os resultados ficaram bem claros. O abuso físico apareceu fortemente associado a vários transtornos mentais, com mais do que o dobro do risco. O abuso sexual mostrou uma relação ainda mais forte, com pessoas tendo mais de três vezes mais chances de desenvolver transtornos mentais. Já o abuso emocional se destacou principalmente nos transtornos de ansiedade, também com um risco cerca de três vezes maior.",
+      "Quando os pesquisadores olharam tipo por tipo de trauma, os resultados ficaram bem evidentes. O abuso físico apareceu fortemente associado a vários transtornos mentais, com mais do que o dobro do risco. O abuso sexual mostrou uma relação ainda mais forte, com pessoas tendo mais de três vezes mais chances de desenvolver transtornos mentais. Já o abuso emocional se destacou principalmente nos transtornos de ansiedade, também com um risco cerca de três vezes maior.",
     ],
   },
   6: {
@@ -77,7 +77,7 @@ const bookTemas = {
       "Um recorte dessas pesquisas que é preciso destacar é a relação com a diversidade de gênero e sexualidade. Vamos nos ater aqui a dois estudos do <em>Australian Child Maltreatment Study</em> (ACMS), que pesquisou a relação entre maus-tratos na infância, transtorno mental e diversidade. O primeiro deles estima prevalências muito altas de cinco tipos de maus-tratos (abuso físico, abuso sexual, abuso emocional, negligência e exposição à violência doméstica) entre participantes com identidades diversas, sobretudo no recorte jovem: gênero diverso com 90,5% de quaisquer maus-tratos e 77% multitipo; sexualidades diversas com 85,3% de quaisquer maus-tratos; e 64,3% multitipo (Higgins <em>et al</em>., 2024). ",
     ],
     direita: [
-      "Por sua vez, segundo explora a correlação trauma, maus-tratos, diversidade e transtorno mental (Madzoska <em>et al</em>., 2025). No subgrupo de pessoas com identidades de gênero diversas e história de maus-tratos, o estudo reporta prevalências elevadas de transtorno de ansiedade generalizada (TAG), de 43,3%; transtorno de estresse pós-traumático (TEPT), de 21,3%; autoagressão, 27,8%; e tentativa de suicídio, 7,2%. O estudo observou que as experiências traumáticas e adversas podem se distribuir de forma desigual na população, coexistindo com elevada carga de transtornos e comportamentos autolesivos em subgrupos específicos.",
+      "Por sua vez, o segundo explora a correlação trauma, maus-tratos, diversidade e transtorno mental (Madzoska <em>et al</em>., 2025). No subgrupo de pessoas com identidades de gênero diversas e história de maus-tratos, o estudo reporta prevalências elevadas de transtorno de ansiedade generalizada (TAG), de 43,3%; transtorno de estresse pós-traumático (TEPT), de 21,3%; autoagressão, 27,8%; e tentativa de suicídio, 7,2%. O estudo observou que as experiências traumáticas e adversas podem se distribuir de forma desigual na população, coexistindo com elevada carga de transtornos e comportamentos autolesivos em subgrupos específicos.",
     ],
   },
   9: {

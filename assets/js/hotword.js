@@ -8,6 +8,7 @@ function initHotwords() {
         item.dataset.hotwordReady = 'true';
 
         let timer;
+        const closeDelay = 2500;
         const originalParent = box.parentNode;
         const originalNext = box.nextSibling;
         const hasHover = window.matchMedia('(hover: hover)').matches;
@@ -50,7 +51,7 @@ function initHotwords() {
             }
         }
 
-        function showBox(duration) {
+        function showBox(autoCloseDelay) {
             clearTimeout(timer);
 
             if (box.parentNode !== document.body) {
@@ -58,7 +59,10 @@ function initHotwords() {
             }
 
             positionBox();
-            timer = setTimeout(closeBox, duration);
+
+            if (autoCloseDelay) {
+                timer = setTimeout(closeBox, autoCloseDelay);
+            }
         }
 
         function isOpen() {
@@ -67,11 +71,11 @@ function initHotwords() {
 
         if (hasHover) {
             item.addEventListener('mouseenter', function () {
-                showBox(3000);
+                showBox();
             });
 
             item.addEventListener('mouseleave', function () {
-                timer = setTimeout(closeBox, 300);
+                timer = setTimeout(closeBox, closeDelay);
             });
 
             box.addEventListener('mouseenter', function () {
@@ -79,7 +83,7 @@ function initHotwords() {
             });
 
             box.addEventListener('mouseleave', function () {
-                timer = setTimeout(closeBox, 300);
+                timer = setTimeout(closeBox, closeDelay);
             });
         }
 
@@ -87,8 +91,13 @@ function initHotwords() {
             event.preventDefault();
             event.stopPropagation();
 
-            if (isOpen()) closeBox();
-            else showBox(event.pointerType === 'mouse' ? 3000 : 2500);
+            if (event.pointerType === 'mouse' && hasHover) {
+                showBox();
+            } else if (isOpen()) {
+                closeBox();
+            } else {
+                showBox(closeDelay);
+            }
         });
 
         document.addEventListener('pointerdown', function (event) {
